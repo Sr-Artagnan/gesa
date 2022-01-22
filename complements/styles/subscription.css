@@ -1,0 +1,126 @@
+
+p {
+  font-size: 17px;
+}
+
+.hero {
+  width: 100vw;
+  height: 70vh;
+  background-image: url("../images/cover1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.hero .legend {
+  color: white;
+  z-index: 3;
+  position: relative;
+  text-align: center;
+  font-size: 3.5vmin;
+  animation: legend_animation 2s ease;
+
+}
+
+
+.hero .legend #vector{
+  position: relative;
+} 
+
+@keyframes legend_animation {
+  from {
+  margin-left: -700px;
+}
+  to {
+  margin: 0;
+  }
+}
+
+.subtitle {
+  display:flex;
+	flex-direction: column;
+  align-items: center;
+  align-content: center;
+	font-size: 25px;
+	color: #44475A;
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.img_and_p {
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+}
+
+
+.img_and_p p{
+  display:inline;
+  }
+  
+  .p_distac {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 40px;
+    color: #0C9F4C;
+    text-align: left;
+  }
+  
+  .warning_button {
+    color: #DD4A48;
+    font-size: 25px;
+    position: relative;
+  }
+
+.icon_info {
+  padding: 0px 50px 0px 50px;
+  font-size: 40px;
+  color: #2DC670;
+}
+
+.live_card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  font-weight: 500;
+  color: #44475A;
+  line-height: 30px;
+  margin-top: 50px;
+  width: 100%
+}
+
+.img_icon {
+  height: 50vh;
+}
+
+@media (max-width: 800px) {
+  .img_and_p {
+    flex-direction: column;
+  }
+  .img_icon {
+    margin-bottom: 20px;
+  }
+  .apresentation_video {
+    width: 70vw !important;  
+    height: auto !important;
+  }
+}
+@media (max-width: 500px) {
+.hero {
+  height: 40vh;
+}
+.img_icon{
+  height: 30vh
+}
+.icon_info {
+  padding-left: 0;
+}
+}
+

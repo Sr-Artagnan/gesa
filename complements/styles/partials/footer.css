@@ -1,0 +1,134 @@
+#footer {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  border-top: solid 2px #43ED87;
+}
+
+
+#footer .wrapper {
+  padding: 2.5vh 10vw;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#footer .wrapper .logo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#footer .wrapper .logo .logo-img {
+  margin-right: 10px;
+  width: 40px;
+}
+
+#footer .wrapper .logo .logo-name {
+  color: #0fc65f; 
+  font-weight: 800;
+  font-size: 25px;
+  margin-left: -3px;
+}
+
+#footer .wrapper .logo .Group {
+  color: #0fc65f;
+  font-weight: 600;
+  font-size: 12px;
+  align-items: center;
+  position: relative;
+  margin-left: 30px;
+  opacity: 80%;
+}
+
+#footer .wrapper .logo .Group::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  bottom: 4px;
+  height: 34px;
+  left: -15px;
+  background-color: #0fc65f;
+  transition: ease .3s;
+  align-items: center;
+  opacity: 75%;
+  display: flex;
+}
+
+#footer .contact {
+  display: flex;
+  position: relative;
+  padding: 2vw;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 45%
+}
+
+#footer .contact p{
+ font-size: 13px;
+ text-align: center;
+}
+
+#footer .contact .contact_card {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 20px;
+}
+
+#footer .contact #email #mail_icon, #footer .contact #insta #insta_icon, #footer .contact #whatsapp #whatsapp_icon {
+  padding: 5vw;
+  font-size: 30px;
+  padding: 0;
+}
+  
+#footer .contact #email, #footer .contact #insta, #footer .contact #whatsapp {
+  text-decoration: none; 
+  color: #0fc65f;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 600;
+}
+#footer .contact #email:hover, #footer .contact #insta:hover, #footer .contact #whatsapp:hover {
+  cursor: pointer;
+  text-decoration: underline #0fc65f;
+}
+
+@media (max-width: 1030px){
+  #footer .wrapper .logo .Group{
+    display: none;
+    }
+
+@media (max-width: 800px){
+
+  #footer .wrapper{
+    display: none;
+    }
+  
+  #footer .contact {
+    width: 100%
+  }
+    
+    #footer .contact #email #mail_icon, #footer .contact #insta #insta_icon {
+    padding: 5vw;
+    font-size: 25px;
+    padding: 0;
+    }
+    }
+  
+@media (max-width: 500px){
+  #footer .contact #email #mail_icon, #footer .contact #insta #insta_icon {
+      padding: 5vw;
+      font-size: 25px;
+      padding: 0;
+      margin-right: 10px;
+      margin-left: 5vw;
+    }
+}}

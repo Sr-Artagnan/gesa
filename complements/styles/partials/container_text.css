@@ -1,0 +1,45 @@
+.container_text {
+  padding-top: 70px;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}
+
+.container_text .wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.text_title .topic_number {
+  color: #757575;
+  border-radius: 100%;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 15px 20px;
+  background-color: #cacaca;
+  margin-right: 10px;
+}
+
+.text_title {
+  padding-top: 70px;
+  font-size: 20px;
+  color: #44475A;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.text_title .subtopic_number {
+  color: #757575;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 15px 15px;
+  background-color: #cacaca;
+  margin-right: 10px;
+}
+
+
+.container_text .wrapper .text_content {
+  font-size: 16px;
+}

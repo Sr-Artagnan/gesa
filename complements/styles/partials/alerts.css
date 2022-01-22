@@ -1,0 +1,98 @@
+.alert_div {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: max-content;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vh;
+  z-index: 12;
+  animation: alert 1s ease;
+  flex-direction: column;
+}
+
+@keyframes alert{
+  from {
+    margin-top: -60px;
+  }
+  to {
+    margin-top: 20px;
+  }
+}
+
+.alert_div .congratulations{
+width: 50%;
+  text-align: center;
+  padding: 10px;
+  border: solid 2px #43ED87;
+  background-color: #e3f7eb;
+  border-radius: 8px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+  
+}
+
+#unlock_icon {
+  color: #0C9F4C;
+  font-size: 18px;
+  padding: 0px 5px;
+}
+
+.var_number {
+  width: max-content
+  #43ED87;
+  font-weight: 600;
+}
+
+.alert_div .congratulations p{
+  color: #0C9F4C;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+}
+
+.alert_div .danger{
+    width: 50%;
+  text-align: center;
+  padding: 10px;
+  border: solid 2px #DD4A48;
+  background: #FFD3D3;
+  border-radius: 8px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: fixed;
+}
+
+.alert_div .danger p{
+  color: #DD4A48;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+}
+
+.close_alert{
+  background-color: #DD4A48;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  position: relative;
+  margin-top: 15px;
+  padding: 5px
+}
+
+.close_alert_congrat{
+  background-color: #43ED87;
+}
+
+.close_alert:hover{
+  cursor: pointer;
+  font-size: 15px;
+}
+

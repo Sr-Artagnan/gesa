@@ -1,0 +1,2502 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conteúdo</title>
+
+	<!-- STYLE -->
+	<link rel="stylesheet" href="./complements/styles/content.css">
+	<link rel="stylesheet" href="./complements/styles/partials/info.css">
+	<link rel="stylesheet" href="./complements/styles/partials/container_text.css">
+	<link rel="stylesheet" href="./complements/styles/partials/exercises.css">
+
+
+	<!-- main -->
+	<link rel="shortcut icon" href="./complements/images/logo.png">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="./complements/styles/partials/container.css">
+	<link rel="stylesheet" href="./complements/styles/partials/menu_mob.css">
+	<link rel="stylesheet" href="./complements/styles/partials/header.css">
+	<link rel="stylesheet" href="./complements/styles/partials/footer.css">
+	<link rel="stylesheet" href="./complements/styles/partials/alerts.css">
+		<link rel="stylesheet" href="./complements/styles/partials/link_word.css">
+
+
+	<!--SCRIPTS-->
+	<script type="text/javascript" src="./complements/scripts/menu_mob.js" defer></script>
+	<script type="text/javascript" src="./complements/scripts/content.js" defer></script>
+	<script type="text/javascript" src="./complements/scripts/complements_content.js" defer></script>
+
+
+	<!--BUTTONS-->
+	<link rel="stylesheet" href="./complements/styles/partials/dinamic_buttons.css">
+	<link rel="stylesheet" href="./complements/styles/partials/learn_more.css">
+</head>
+
+<body>
+
+	<header id="header">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="./complements/images/logo.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+
+
+			<nav class="menu">
+				<a href="./index.html" class="menu-link">Sobre</a>
+				<a href="#footer" title="No rodapé" class="menu-link">Contato</a>
+				<a href="./subscription.html#subscription_card" class="menu-link">Inscrição</a>
+				<a href="./classroom.html" class="menu-link">Sala de aula</a>
+			</nav>
+
+		</div>
+
+		<div
+			style="display: flex; align-items: center; align-content: center; justify-content: center; align-self: center; justify-self: center; height: 100%;">
+			<button id="menu_button"><i class="fas fa-bars" style="color: white; font-size: 18px;"></i>
+				<span class="menu_mobile hidden">
+					<span id="close_menu_mobile"><i class="fas fa-angle-up"></i></span>
+					<a href="./index.html" class="menu_mobile_option">Sobre</a>
+					<a href="#footer" class="menu_mobile_option">Contato</a>
+					<a href="./subscription.html" class="menu_mobile_option">Inscrição</a>
+					<a style="border-radius: 0px 0px 5px 5px" href="./classroom.html" class="menu_mobile_option">Sala de aula</a>
+				</span>
+			</button>
+
+		</div>
+
+	</header>
+
+<div class="alert_div">
+	<div class="wrapper danger hidden">
+		<p><b>Acertos insuficientes!</b> Refaça os exercícios do módulo para avançar. <br> Clique no botão abaixo</p>
+		<button class="close_alert" onclick="location.reload()">OK</button>
+		</div>
+		<div class="wrapper congratulations hidden">
+			<p>Parabéns! O módulo seguinte será desbloqueado.<i id="unlock_icon" class="fas fa-unlock"></i> <br> Clique no botão abaixo! </p><br>
+			<button class="close_alert close_alert_congrat" onclick="location.reload()">OK</button>
+		</div>
+	</div>
+
+		<div class="container_module_btns" id="container_module_btns">
+			<div class="line">
+				<span class="line_btn"></span>
+			</div>
+
+			<div class="buttons">
+				<button class="module_btn active_mod mod1_btn" data-module="container_mod1" onclick="openModule(this)" id="1" name="1">Módulo 1</button>
+				<button class="module_btn mod2_btn" data-module="container_mod2" onclick="openModule(this)" id="2" name="2">Módulo 2</button>
+				<button class="module_btn mod3_btn" data-module="container_mod3" onclick="openModule(this)" id="3" name="3">Módulo 3</button>
+				<button class="module_btn mod4_btn" data-module="container_mod4" onclick="openModule(this)" id="4" name="4">Módulo 4</button>
+				<button class="module_btn mod5_btn" data-module="container_mod5" onclick="openModule(this)" id="5" name="5">Módulo 5</button>
+				<button class="module_btn mod6_btn" data-module="container_mod6" onclick="openModule(this)" id="6" name="6">Módulo 6</button>
+			</div>
+		</div>
+
+	<!-- module_1 -->
+	<section id="container_mod1" class="container container_mod1 container_func">
+
+		<section id="module1_content">
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_introduction">Introdução <br> ao Sistema ILPF</h1>
+					<p class="info_description">
+						Neste módulo iremos conhecer as principais caracterísitcas da Integração lavoura-pecuária-floresta, também conhecida como sistema Agrossilvipastoril. Apresentaremos as vantagens e limitações desse importante sistema no cerrado.
+					</p>
+				</div>
+				<img class="info_img info_img_icon" src="./complements/images/module1/img_1.jpg">
+
+			</section>
+
+			<div>
+				<a target="_blank" href="./complements/books/module_1.pdf"  class="download_button">Baixar apostila</a>
+			</div>
+
+			<section class="video_wrapper">
+				<p class="video_description">Acompanhe os vídeos sobre o módulo:</p>
+				<iframe class="video_class" src="https://www.youtube.com/embed/dW2YxCqDLVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<br> <br> <br>
+				<iframe class="video_class" src="https://www.youtube.com/embed/kDXROoBcA-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+
+			<!-- topic 01 mod1 -->
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">01</b>Contextualizando</h1>
+					<p class="text_content">
+
+						&nbsp &nbsp O Brasil é o país que tem o maior potencial em expansão de áreas e aumento na intensidade do uso das áreas agrícolas. O país contribui com a crescente demanda para alimentos em todo o mundo, no entanto a abertura de novas áreas tanto para a produção de alimentos como para a produção de energia tem sido bastante questionada pela população em geral. <br> 
+						&nbsp &nbsp Com isso, os sistemas integrados surgem como uma solução para produzir diferentes produtos agropecuários, com a intensificação do uso das áreas já <button class="word_link">antropizadas <span class="word_description">Uma área antropizada é uma área cujas características originais foram alteradas pela ação do homem. As alterações foram no solo, na vegetação, relevo etc</span>
+						</button>. O uso intensivo não significa o uso excessivo ou indiscriminado dos recursos produtivos, e sim o uso racional e eficiente, o que torna o sistema sustentável.
+					</p>
+
+					<p style="padding-top: 40px;">Veja a seguir as alternativas de sistemas integrados:</p>
+				</div>
+			</section>
+
+			<section class="cards_wrapper">
+
+				<div class="card_info">
+					<img title="redeilpf.org.br/" src="./complements/images/module1/img_3.png" >
+				</div>
+
+				<div class="card_info">
+					<img title="redeilpf.org.br/" src="./complements/images/module1/img_4.png" >
+				</div>
+
+				<div class="card_info">
+					<img title="redeilpf.org.br/" src="./complements/images/module1/img_5.png" >
+				</div>
+
+				<div class="card_info">
+					<img title="redeilpf.org.br/" src="./complements/images/module1/img_6.png" >
+				</div>
+			</section>
+
+			<div class="wrapper_short_info">
+				<h1 class="h1_short_info">Qual o melhor sistema?</h1>
+				<div class="short_info">
+					<img title="vectorstock.com" src="./complements/images/module1/img_7.png">
+
+					<p> A escolha por qual estratégia utilizar dependerá das características da região e da propriedade, como proximidade de mercado, logística, relevo, clima, aptidão da propriedade maquinário disponível, entre outros <a href="#ref_M1">[1]</a>. <br> <br>
+					É importante destacar que todos os sistemas são viáveis a todos os tamanhos de propriedades pequenas, médias e grandes, assim como ao <b>pecuarista</b>, ao <b>agricultor</b> e ao <b>silvicultor;</b>
+					</p>
+
+				</div>
+			</div>
+
+<!-- topic 02 mod1 -->
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">02</b>Sustentabilidade do Sistema</h1>
+					<p class="text_content">A sustentabilidade de um sistema de produção somente é verificado quando atende os seguintes pilares:</p>
+
+					<ul style="  padding-left: 4vw;">
+						<li>Tecnicamente eficiente;</li>
+						<li>Economicamente viável;</li>
+						<li>Ambientalmente adequado e;</li>
+						<li>Socialmente justo.</li>
+					</ul>
+
+				</div>
+			</section>
+
+			<section class="learn_more" style="margin-bottom: 70px;" >
+
+				<i  class="fas fa-video"></i>
+
+				<button onclick="show_info(this)" data-lrn_mr="lrn_mr_8" class="button_visible">Por que utilizar o sistema?</button>
+
+				<div id="lrn_mr_8" class="information hidden">
+					<section class="video_wrapper">
+						<iframe class="video_class" src="https://www.youtube.com/embed/YI7AaIQSJhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</section>
+				</div>
+			</section>
+
+			<section class="wrapper_add_info">
+				<p class="add_info">O sistema de Integração Lavoura Pecuária Floresta é um sistema que integra as atividades agrícolas, pecuárias e florestais realizadas em uma mesma área permitindo uma maior sinergia entre os componentes do agroecossistema, contemplando os quatro pilares da sustentabilidade.</p>
+			</section>
+
+			<div class="isolated_img_div">
+				<img title="revistarural.com.br" class="isolated_img" src="./complements/images/module1/img_8.jpg">
+			</div>
+
+			<div class="wrapper_short_info">
+				<h1 class="h1_short_info">Desafios</h1>
+				<div class="short_info">
+					<img style="width: 80px;" title="pngwing.com" src="./complements/images/module1/img_9.png">
+					<p> Dentre os principais entraves identificados para a adoção do sistema ILPF estão a necessidade de
+						nivelamento do conhecimento entre os pesquisadores, a pouca formação de consultores técnicos e a necessidade
+						de interação e capacidade interna entre os produtores <a href="#ref_M1">[1]</a>.
+				</div>
+			</div>
+
+
+			<!-- topic 03 mod1 -->
+
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">03</b>Benefícios do Sistema ILPF
+					</h1>
+
+					<p> Podemos citar os seguintes benefícios do uso do sistema ILPF: </p>
+					<br>
+
+					<ul>
+						<li>Aumento na renda líquida do produtor;</p> <br>
+						<li>Aumento na produção de grãos, carne, leite e madeira;</p> <br>
+						<li>Melhoria da qualidade e conservação do solo;</p> <br>
+						<li>Possibilidade de aplicação em propriedades rurais de diferentes tamanhos;</p> <br>
+						<li>Melhoria do bem estar animal;</p> <br>
+						<li>Redução da pressão pela abertura de novas áreas;</p> <br>
+						<li>Redução da sazonalidade do uso da mão de obra;</p> <br>
+						<li>Menor risco das atividades devido à diversificação;</p> <br>
+						<li>Mitigação da emissão dos gases de efeito estufa.<a href="#ref_M1">[2]</a></p> <br> <br>
+					</ul>
+
+					<h1 class="h1_short_info">Motivos para adotar o sistema ILPF:</h1>
+
+					<div class="box_info" style="margin-bottom: 60px;">
+						<ul>
+							<li>Redução do impacto ambiental;</li>
+							<li>Recuperação de pastagens;</li>
+							<li>Rotação de culturas por necessidade técnica;</li>
+							<li>Aumento da rentabilidade por hectare;</li>
+							<li>Diminuição do risco financeiro.</li>
+						</ul>
+
+						<img title="beefpoint.com.br" class="box_img_right" src="./complements/images/module1/img_10.png">
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<section class="learn_more">
+
+				<i class="fas fa-video"></i>
+
+				<button onclick="show_info(this)" data-lrn_mr="lrn_mr_1" class="button_visible">Saiba Mais</button>
+
+				<div id="lrn_mr_1" class="information hidden">
+					<section class="video_wrapper">
+						<iframe class="video_class" src="https://www.youtube.com/embed/m3L2yOCyZQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</section>
+				</div>
+			</section>
+
+
+			<!-- topic 04 mod1 -->
+
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">04</b>Expansão do sistema nos últimos anos</h1>
+
+					<p> &nbsp &nbsp Em 10 anos a área ocupada com algum tipo de sistema integrado de produção saltou de 1,87 milhões de hectares para 11,47 milhões. Para 2020 a estimativa foi de 17,4 milhões de hectares. <br>
+					&nbsp &nbsp Do total da área com algum tipo de sistema integrado, 83% são de <b>ILP</b> e 9% de <b>ILPF</b>, ou seja 1,8 milhões de hectares com este último. <br>
+					&nbsp &nbsp No último congresso mundial de ILPF, realizado em maio de 2021, a <b>Associação REDE ILPF</b> lançou um desafio de dobrar esta área até o ano de <b>2030</b>, chegando a <b>35 milhões de hectares</b> <a href="#ref_M1">[3]</a>. <br>
+					&nbsp &nbsp Esta meta permitiria o país <b>aumentar a produção</b> de carne, grãos e madeira, <b>sem a necessidade de abertura de novas áreas</b>.
+					</p>
+
+					<div class="isolated_img_div">
+
+						<img title="embrapa.com.br" class="isolated_img" src="./complements/images/module1/img_11.jpg">
+
+					</div>
+
+		
+							<section class="video_wrapper" style="margin-top: 100px;" >
+								<p style="font-size: 20px; font-weight: 600;" >Conheça uma das histórias de sucesso com a iLPF:</p>
+								<iframe class="video_class" src="https://www.youtube.com/embed/S5s2ER0E0M4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</section>
+
+
+			<!-- topic 05 mod1 -->
+
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">05</b>Considerações</h1>
+
+					<p>
+						Assim, devido aos inúmeros benefícios trazidos pelo sistema, o seu estudo é de extrema importância para que venhamos a ter sistemas de produção mais sustentáveis, economicamente viáveis e acima de tudo, profissionais capacitados para dar o suporte necessário aos produtores.
+					</p>
+
+			</section>
+
+
+			<!-- EXERCISES MOD1 -->
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_title">Exercícios</h1>
+					<p class="info_description">
+						Ao responder os exercícios, você deve acertar no mínimo 3 questões para avançar para o próximo módulo, caso contrário, a página será recarregada e você deverá tentar responder os exercícios novamente.
+					</p>
+				</div>
+
+			</section>
+
+
+			<!-- Question 1 mod1-->
+
+			<section class="master_form master_formM1" id="master_form">
+
+				<section id="1" data-question="Q1" class="form form1 form_from_M1">
+					<p class="question"><b>Questão 1:</b> Dentre as opções abaixo, qual não é uma alternativa de sistema integrado de produção?</p>
+
+					<input class="false input_option" id="option1_q1_M1" hidden type="radio">
+					<label class="option" for="option1_q1_M1">a) ILPF</label>
+
+					<input class="false input_option" id="option2_q1_M1" hidden type="radio">
+					<label class="option" for="option2_q1_M1">b) ILP</label>
+
+					<input class="true false input_option" id="option3_q1_M1" hidden type="radio">
+					<label class="option option_true" for="option3_q1_M1">c) PD</label>
+
+					<input class="false input_option" id="option4_q1_M1" hidden type="radio">
+					<label class="option" for="option4_q1_M1">d) ILF</label>
+
+					<button type="button" id="Q1" class="send_answer send_answer1">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ1">
+							<p>
+								<i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!</b> <br>
+								<b>Resposta Correta.</b> PD, plantio direto é um sistema conservacionista de
+									manejo do solo, onde não há o revolvimento do solo. Ele pode ser
+									uma estratégia de manejo dentro do ILPF, porém sozinho, o Plantio
+									Direto não é um sistema integrado.
+							</p>
+						</div>
+						<div class="hidden wrong_answer wrong_answerQ1">
+							<p><i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+						</div>
+					</div>
+
+				</section>
+
+				<div id="1" class="div_answer hidden">
+					<button class="see_answer" id="ans_Q1_M1">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q1_M1" >c) PD <br>
+						PD, plantio direto é um sistema conservacionista de
+manejo do solo, onde não há o revolvimento do solo. Ele pode ser
+uma estratégia de manejo dentro do ILPF, porém sozinho, o Plantio
+Direto não é um sistema integrado.
+					</p>
+				</div>
+				<!-- Question 2 mod1-->
+
+				<section id="1" data-question="Q2" class="form form2 form_from_M1">
+					<p class="question"><b>Questão 2:</b> De acordo com o material apresentado qual fator abaixo NÃO é
+						considerado um entrave para a adoção do sistema ILPF? </p>
+
+					<input class="true input_option" id="option1_q2_M1" hidden type="radio">
+					<label class="option option_true" for="option1_q2_M1">a) Valor da terra</label>
+
+					<input class="false input_option" id="option2_q2_M1" hidden type="radio">
+					<label class="option" for="option2_q2_M1">b) Nivelamento do conhecimento entre os pesquisadores</label>
+
+					<input class="false input_option" id="option3_q2_M1" hidden type="radio">
+					<label class="option" for="option3_q2_M1">c) Formação de consultores técnicos</label>
+
+					<input class="false input_option" id="option4_q2_M1" hidden type="radio">
+					<label class="option" for="option4_q2_M1">d) Necessidade de interação</label>
+
+					<button type="button" id="Q2" class="send_answer send_answer2">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ2">
+							<p>
+								<i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!</b> <br>
+								<b>Resposta Correta.</b> O Valor da terra não é considerado como um entrave à
+									adoção do Sistema ILPF, pois não é levado em conta pelos
+									produtores que já possuem a terra e consideram implantar o Sistema
+									em suas áreas.
+							</p>
+						</div>
+						<div class="hidden wrong_answer wrong_answerQ2">
+							<p><i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+						</div>
+					</div>
+
+				</section>
+
+				<div id="1" class="div_answer hidden">
+					<button class="see_answer" id="ans_Q2_M1">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q2_M1" >a) Valor da terra <br>
+						O Valor da terra não é considerado como um entrave à
+						adoção do Sistema ILPF, pois não é levado em conta pelos
+						produtores que já possuem a terra e consideram implantar o Sistema
+						em suas áreas. </p>
+				</div>
+
+				<!-- Question 3 mod1-->
+				<section id="1" data-question="Q3" class="form form3 form_from_M1">
+					<p class="question"><b>Questão 3:</b> Qual das opções abaixo NÃO é uma consequência do uso do sistema ILPF?
+					</p>
+
+					<input class="false input_option" id="option1_q3_M1" hidden type="radio">
+					<label class="option" for="option1_q3_M1">a) Melhoria do bem estar animal</label>
+
+					<input class="false input_option" id="option2_q3_M1" hidden type="radio">
+					<label class="option" for="option2_q3_M1">b) Mitigação da emissão dos gases de efeito estufa</label>
+
+					<input class="true input_option" id="option3_q3_M1" hidden type="radio">
+					<label class="option option_true" for="option3_q3_M1">c) Aumento dos processos erosivos no solo</label>
+
+					<input class="false input_option" id="option4_q3_M1" hidden type="radio">
+					<label class="option" for="option4_q3_M1">d) Redução da pressão pela abertura de novas áreas</label>
+
+					<button type="button" id="Q3" class="send_answer send_answer3">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ3">
+							<p>
+								<i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!!</b> <br>
+								<b>Resposta Correta</b>! Os processos erosivos não são benefícios e sim prejuízo ao produtor caso venha a acontecer em sua área. Neste caso o Sistema ILPF contribui para que estes processos não ocorram.
+							</p>
+						</div>
+						<div class="hidden wrong_answer wrong_answerQ3">
+							<p><i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+						</div>
+					</div>
+
+				</section>
+
+				<div id="1" class="div_answer div_answer hidden">
+					<button class="see_answer" id="ans_Q3_M1">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q3_M1" >c) Aumento dos processos erosivos no solo <br> Os processos erosivos não são benefícios e sim prejuízo
+						ao produtor caso venha a acontecer em sua área. Neste caso o
+						Sistema ILPF contribui para que estes processos não ocorram.</p>
+				</div>
+
+				<div class="form" id="1">
+					<button class="finish" id="send_answer_finish" onclick="checkAll()">Próximo módulo</button>
+				</div>
+			</section>
+
+			<!-- References mod1-->
+			<section class="container_text" id="ref_M1">
+				<div class="wrapper references">
+					<h1 class="text_title">REFERÊNCIAS:</h1>
+
+					<p>[1] REDE ILPF. Disponível em: www.redeilpf.org.br. Acesso em: 28 de set. de 2021. </p> <br>
+					<p>[2] STONE, L.F.; BARCELLOS, A.O.; BALBINO, L.C.; Marco Referencial: Integração Lavoura Pecuária Floresta.
+						Brasília, DF. Embrapa 2011. 130 p.</p> <br>
+					<p>[3] CANAL RURAL. Disponível em: https://www.canalrural.com.br/noticias/area-ilpf-brasil-2030/. Acesso em 29
+						de set. de 2021.</p>
+
+				</div>
+			</section>
+
+
+		</section>
+	</section>
+
+
+	</section>
+
+	<!-- module_2 -->
+	<section id="container_mod2" class="container container_mod2 container_func">
+		<section id="module2_content">
+
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_introduction">Manejo da Fertilidade<br>do Solo em áreas de ILPF</h1>
+
+					<p class="info_description"> Neste módulo serão apresentados os fatores que afetam a disponibilidade dos nutrientes para as plantas e como estes devem ser manejados, iniciando-se com a correta análise química e física do solo, além de uma adequada correção da acidez, adubação e manejo dos resíduos orgânicos. Será demonstrado como a fertilidade do solo é essencial ao sucesso do sistema.</p>
+
+				</div>
+
+				<img class="info_img info_img_icon" id="icon_img" title="vecteezy.com" src="./complements/images/module2/img_1.jpg">
+
+			</section>
+
+			<a target="_blank" href="./books/module_2.pdf"class="download_button">Baixar apostila</a>
+
+			<section class="video_wrapper">
+				<p class="video_description">Acompanhe o vídeo introdutório:</p>
+				<iframe class="video_class" src="https://www.youtube.com/embed/nY0rKeAEDsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+
+			<!-- topic 01 mod2 -->
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">01</b>Introdução</h1>
+
+					<p> &nbsp &nbsp Das áreas utilizadas pela agropecuária no Brasil, um percentual elevado, especialmente o relativo às pastagens, encontra-se em alguma fase de degradação. O principal fator desencadeador da degradação está ligado a problemas de fertilidade do solo <a href="#ref_M2">[1]</a>. <br> 
+					&nbsp &nbsp Nesse contexto, o Sistema integração Lavoura-Pecuária-Floresta (ILPF) já está consolidado como uma estratégia para essa recuperação. Por ser um sistema complexo de produção, as recomendações para a correção da fertilidade do solo devem estar adequadas às condições locais do sistema. <br>
+					&nbsp &nbsp A fertilidade do solo está diretamente relacionada com a qualidade deste, que é medida a partir de indicadores. Um bom indicador deve responder de forma sensível ao manejo, estar relacionado com as funções desempenhadas pelo solo, ser compreensível e útil para o agricultor e de forma barata e fácil de medir <a href="#ref_M2">[2]</a>.
+					&nbsp &nbsp Antes da implantação do sistema e durante seu manejo, a fertilidade do solo deve ser observada e manejada de acordo com três principais atributos: <br>
+						&nbsp &nbsp - Atributos físicos do solo; <br>
+						&nbsp &nbsp - Atributos químicos do solo; <br>
+						&nbsp &nbsp - Atributos biológicos do solo. <br></p>
+
+				</div>
+			</section>
+
+			<!-- topic 02 mod2 -->
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">02</b>Atributos Físicos do Solo</h1>
+
+					<p> &nbsp &nbsp Antes da implantação do sistema de ILPF, é necessário avaliar se existe alguma restrição ao crescimento das raízes, tanto das culturas anuais, quanto das espécies arbóreas. Para isso é necessário avaliar se há camadas compactadas ou alguma restrição à infiltração de água, como grandes declives ou solos muito argilosos.</p>
+
+					<div class="box_info">
+						&nbsp &nbsp A forma mais fácil de observar se há camadas compactadas em campo é verificando a resistência à penetração deste, que é feita por um equipamento conhecido por penetrômetro. Quando é identificada a compactação do solo, recomenda-se utilizar um sistema de manejo que possibilite romper a camada compactada. A escarificação é uma forma de reduzir a resistência do solo à penetração com pouca mobilização, o que é importante quando se trabalha com sistema de plantio direto (SPD).
+
+						<img title="Fonte: Canaoeste" class="box_img_right" src="./complements/images/module2/img_3.jpg">
+
+					</div>
+
+					<div class="box_info">
+
+						<img title="embrapa.com.br" class="box_img_left" src="./complements/images/module2/img_4.jpg">
+
+						<p> &nbsp &nbsp Quando a camada compactada está em profundidades não atingidas pelos escarificadores, a subsolagem é recomendada<a href="#ref_M2">[3]</a>.
+						&nbsp &nbsp Outros atributos que devem ser verificados antes e após a implantação do sistema são aqueles que vão influenciar no crescimento das raízes e disponibilidade de água no solo, como: Densidade do solo de partículas, porosidade total, textura do solo, velocidade de infiltração básica e infiltração acumulada de água no solo, estrutura e estabilidade dos agregados, entre outros. Tais atributos podem ser diagnosticados pelo técnico responsável a partir de análises de laboratório de amostras deformadas e indeformadas de solo <a href="#ref_M2">[4]</a>.</p>
+
+					</div>
+				</div>
+			</section>
+			<!-- topic 03 mod2 -->
+
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">03</b>Atributos Químicos do Solo</h1>
+
+
+					<p> &nbsp &nbsp As análises químicas são as mais comuns de serem realizadas. São de grande importância para a verificação dos teores dos nutrientes essenciais ao desenvolvimento das plantas e para a verificação de existência de acidez no solo, que é muito comum de ocorrer nos solos do cerrado. <br>
+					&nbsp &nbsp Vários estudos têm mostrado os benefícios nos atributos químicos do solo provocados pela utilização de sistemas de integração: <br>
+					</p>
+
+					<ul>
+						<li>A presença de animais no sistema acelera o processo de ciclagem de nutrientes por disponibilizá-los na forma mineralizada por meio das fezes e urina. </li>
+						<li> Em Sistema ILP (integração Lavoura-Pecuária) um dos fatores que mais contribuem para a melhoria na fertilidade é a ciclagem dos nutrientes e a eficiência no uso de fertilizantes, em função das diferentes necessidades das culturas em rotação. </li>
+						<li>A combinação de pastagens seguidas de culturas anuais para a produção de grãos é mais eficiente na manutenção da qualidade química do solo, favorecendo o desenvolvimento das plantas.</li>
+						<li>As espécies com sistemas radiculares de diferentes formas e tamanhos promovem maior ciclagem de nutrientes <a href="#ref_M2">[5]</a>. </li>
+					</ul> <br>
+
+					<p>Antes da implantação do sistema é necessário realizar os procedimentos listados nos subtópicos seguintes:</p>
+
+
+				</div>
+			</section>
+
+			<section class="container_dinamic">
+
+				<section class="dinamic_buttons">
+					<button class="d_button active dinamic-btn" data-target="content-1">
+						3.1 Amostragem de Solo </button>
+
+					<button class="d_button dinamic-btn" data-target="content-2">
+						3.2 Calagem </button>
+
+					<button class="d_button dinamic-btn" data-target="content-3">
+						3.3 Gessagem </button>
+
+				</section>
+
+				<section class="dinamic_content">
+
+					<div class="p_content content-1 box_info">
+						<p>&nbsp &nbsp É uma etapa muito importante para que os resultados das análises químicas estejam de acordo com as características de cada área. Para que as amostras sejam representativas, a área a ser amostrada deverá ser a mais homogênea possível, subdividida em glebas ou talhões. Quanto à profundidade de amostragem, para a maioria das culturas, as amostras simples são coletadas na camada de 0 a 20 cm. Para áreas novas, principalmente quando pretende estabelecer culturas perenes, é indicado amostrar as camadas de 0 a 20 cm e de 20 a 40 cm <a href="#ref_M2">[6]</a>.</p>
+
+						<img title="embrapa.com.br" class="box_img_right" src="./complements/images/module2/img_5.jpg">
+
+					</div>
+
+					<div class="hidden p_content content-2 box_info">
+						<p>&nbsp &nbsp Os solos do cerrado são conhecidos por apresentarem acidez elevada, com altos teores de alumínio (Al) trocável e a deficiência de nutrientes como P, cálcio (Ca) e magnésio (Mg). Dessa forma, para que o potencial agrícola seja atingido, a correção da acidez do solo pela calagem faz-se necessária. <br>
+						&nbsp &nbsp No Sistema ILPF, pratica-se o cultivo de várias culturas de diversos graus de tolerância à acidez do solo. Tendo como base o cultivo de diferentes espécies, a recomendação de calagem deve priorizar a espécie mais exigente. No caso de SPD, após a sua implantação, recomenda-se, a calagem com aplicação de doses anuaismenores, em lugar de doses elevadas a cada três ou quatro anos <a href="#ref_M2">[7]</a>.
+						</p>
+
+						<img title="embrapa.com.br" class="box_img_right" src="./complements/images/module2/img_6.jpg">
+
+					</div>
+
+					<div class="hidden p_content content-3 box_info">
+						<p>&nbsp &nbsp De acordo com as análises químicas, caso o produtor queira implantar espécies arbóreas mais exigentes, a prática de aplicação de gesso agrícola tem sido uma boa opção para sanar a deficiência de Ca em profundidade, que geralmente está associada à toxicidade de Alumínio. Por esse fato, o uso do gesso tem sido recomendado junto com o calcário, proporcionando, assim, melhor distribuição do nutriente magnésio presente no calcário no perfil do solo <a href="#ref_M2">[7]</a>.
+						</p>
+
+						<img title="codevasf.gov.br" class="box_img_right" src="./complements/images/module2/img_7.jpg">
+
+					</div>
+				</section>
+			</section>
+
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="subtopic_number">3.4</b>Recomendações e manejo de adubação</h1>
+
+					<p> &nbsp &nbsp Em sistemas que utilizam a sucessão e a rotação de culturas, as recomendações de adubação priorizam a cultura com maior exigência nutricional. No caso de implantação do sistema, deve-se atentar para realizar uma adubação de plantio na espécie florestal, de acordo com a recomendação para a mesma, ou caso não haja alguma recomendação para a região, seguir a recomendação de algum técnico. <a href="#ref_M2">[8]</a>. <br> 
+					&nbsp &nbsp Para o manejo da adubação, cabe lembrar que vai depender muito do nível de fertilidade do solo. Em solos de baixa fertilidade, pode ser interessante também a adubação da forrageira semeada na entrelinha de cultivo do milho, principalmente com P e K, para obter uma boa formação do pasto. Em solos onde os níveis de fertilidade enquadram-se com níveis maiores de fertilidade, pode-se efetuar a adubação apenas para a cultura do milho, por exemplo. Deve-se atentar também para a forma de aplicação e a época, adequando melhor ao sistema que for adotado. <br><br></p>
+
+					<div class="img_isolated_div">
+						<img style="margin-bottom: 70px;" title="embrapa.com.br" class="isolated_img" src="./complements/images/module2/img_8.jpg">
+					</div>
+
+					<p> &nbsp &nbsp Atualmente, a cultura florestal mais utilizada em sistemas de iLPF tem sido o Eucalipto, que, apesar de ser uma espécie de crescimento rápido, necessita de adubações para melhorar seu incremento de madeira e diminuir seu tempo de corte. A maior proporção dos nutrientes requeridos por espécies de rápido crescimento, como as de eucalipto, deve ser suprida até a idade de três anos, logo, a adubação de plantio e as coberturas são essenciais para o desenvolvimento da espécie florestal no sistema <a href="#ref_M2">[8]</a>. <br> </p>
+
+				</div>
+			</section>
+
+			
+			<section class="learn_more" style="margin-bottom: 70px;" >
+
+				<i  class="fas fa-video"></i>
+
+				<button onclick="show_info(this)" data-lrn_mr="lrn_mr_2" class="button_visible">Saiba Mais</button>
+
+				<div id="lrn_mr_2" class="information hidden">
+					<section class="video_wrapper">
+						<iframe class="video_class" src="https://www.youtube.com/embed/C9xamr4nnuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</section>
+				</div>
+			</section>
+
+			<!-- topic 04 mod2-->
+
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">04</b>Atributos Biológicos do Solo</h1>
+
+					<p> &nbsp &nbsp Os benefícios da ILPF sobre os atributos biológicos do solo têm sido mostrados em vários estudos: </p><br>
+					<ul>
+						<li>A deposição de biomassa das árvores e das gramíneas na superfície do solo consiste num meio importante de ciclagem de nutrientes.</li>
+						<li>A disponibilidade de grande quantidade de resíduos orgânicos, em constante renovação pelas árvores e pela pastagem, aumenta os teores de carbono e melhora as condições de agregação e porosidade do solo <a href="#ref_M2">[9]</a>.</li>
+						<li>Após a colheita da lavoura, as forrageiras podem aproveitar os nutrientes residuais da lavoura. </li>
+						<li>Uma das características importantes para o melhoramento da qualidade física e biológica do solo é justamente a quantidade de palhada deixada sobre o solo e raízes no perfil do solo. </li>
+						<li>A decomposição das raízes forma uma rede de canalículos no solo, influenciando diretamente nas trocas	gasosas e infiltração da água <a href="#ref_M2">[10]</a></li>
+					</ul>
+
+					<div class="box_info">
+						<ul>
+							<li>Além disso, estima-se que tanto a biomassa quanto os produtos de madeira podem reter muito carbono. A potencialidade de sequestro de carbono do componente florestal e a viabilidade econômica do sistema iLPF são determinados, de acordo com os estoques de carbono presentes no solo, nas raízes e na parte aérea das árvores, demonstrando que a comercialização dos créditos de carbono pode trazer retorno econômico ao produtor no período de implantação do sistema <a href="#ref_M2">[11]</a></li>(SPD).
+						</ul>
+
+						<img title="embrapa.com.br" class="box_img_right" src="./complements/images/module2/img_9.jpg">
+
+					</div>
+					<br>
+
+				</div>
+			</section>
+
+			<!-- topic 05 mod2 -->
+
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">05</b>Considerações</h1>
+
+					<p> - O manejo adequado da fertilidade do sistema ajuda a obter melhores produtividades das lavouras, da forragem e mais produção de madeira em um menor período de tempo, além de diminuir os riscos por erosão. <br>
+					- Nesse contexto, o uso do sistema de plantio direto (SPD) passou a ser uma das melhores e mais usadas práticas de manejo da fertilidade em áreas de iLPF, visando a melhoria dos atributos físicos, químicos e biológicos do solo, com suas técnicas que visam diminuir a compactação do solo, a manutenção de resíduos culturais na superfície do solo e diversificação de espécies com uso de rotação, sucessão e/ou consorciação de culturas <a href="#ref_M2">[12]</a>.</p>
+
+				</div>
+			</section>
+
+			<!-- EXERCISES MOD2 -->
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_title">Exercícios</h1>
+					<p class="info_description"> Ao responder os exercícios, você deve acertar no mínimo 3 questões para avançar para o próximo módulo, caso contrário, a página será recarregada e você deverá tentar responder os exercícios novamente. </p>
+
+				</div>
+			</section>
+
+
+			<!-- Question 1 mod2 -->
+
+			<section class="master_form master_formM2" id="master_form">
+				<section id="2" data-question="Q1" class="form form1 form_from_M2">
+					<p class="question"><b>Questão 1:</b> Com relação a um bom indicador de qualidade do solo, marque a alternativa incorreta:</p>
+
+					<input class=" false input_option" hidden id="option1_q1_M2" type="radio">
+					<label class="option" for="option1_q1_M2">a) Deve ser responsivo de forma sensível ao manejo do solo;</label>
+
+					<input class=" false input_option" hidden id="option2_q1_M2" type="radio">
+					<label class="option" for="option2_q1_M2">b) Deve ser de fácil compreensão e útil ao produtor;</label>
+
+					<input class=" true input_option" hidden id="option3_q1_M2" type="radio">
+					<label class="option option_true" for="option3_q1_M2">c) Deve estar relacionado somente aos atributos físicos do solo;</label>
+
+					<input class=" false input_option" hidden id="option4_q1_M2" type="radio">
+					<label class="option" for="option4_q1_M2">d) Deve ser fácil de medir e barato.</label>
+
+					<button type="button" id="Q1" class="send_answer send_answer1">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ1">
+
+							<p>
+								<i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!</b> <br>
+								<b>Resposta Correta.</b> Um bom indicador de qualidade do solo deve estar
+								relacionado com as funções desempenhadas por este, incluindo os atributos físicos, químicos e biológicos do solo.</p>
+
+						</div>
+
+						<div class="hidden wrong_answer wrong_answerQ1">
+							<p>
+								<i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b></p>
+						</div>
+					</div>
+				</section>
+
+				<div id="2" class=" div_answer hidden">
+					<button class="see_answer" id="ans_Q1_M2">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q1_M2" >Resposta: Letra (c)<br>
+						Um bom indicador de qualidade do solo deve estar
+						relacionado com as funções desempenhadas por este, incluindo os atributos físicos, químicos e biológicos do solo.
+					</p>
+				</div>
+
+				<!-- Question 2 mod2-->
+
+				<section id="2" data-question="Q2" class="form form2 form_from_M2">
+					<p class="question"><b>Questão 2:</b> Antes da implantação do sistema de iLPF é necessário avaliar se existe alguma restrição ao crescimento das raízes, tanto das culturas anuais, quanto das espécies arbóreas. Para isso é necessário avaliar se há camadas compactadas ou alguma restrição à infiltração de água, como grandes declives ou solos muito argilosos. Com base nisso, marque a afirmação correta.</p>
+
+					<input class=" false input_option" id="option1_q2_M2" hidden type="radio">
+					<label class="option" for="option1_q2_M2">a) Antes da implantação do sistema, basta verificar se há alguma restrição ao crescimento das raízes, usando um escarificador.</label>
+
+					<input class=" true input_option" id="option2_q2_M2" hidden type="radio">
+					<label class="option option_true" for="option2_q2_M2">b) Quando a camada compactada se encontra em profundidades maiores, recomenda-se realizar a subsolagem.</label>
+
+					<input class=" false input_option" id="option3_q2_M2" hidden type="radio">
+					<label class="option" for="option3_q2_M2">c) Os atributos que influenciam na disponibilidade de água no solo e crescimento das raízes não são tão relevantes quando há grandes declives ou solos muito argilosos.</label>
+
+					<input class=" false input_option" id="option4_q2_M2" hidden type="radio">
+					<label class="option" for="option4_q2_M2">d) Quando há compactação no solo recomenda-se usar um sistema de manejo que não remova as camadas compactadas.</label>
+
+					<button type="button" id="Q2" class="send_answer send_answer2">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ2">
+
+							<p>
+								<i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!</b> <br>
+								<b>Resposta Correta.</b> Em camadas compactadas de solo onde a escarificação não se torna efetiva, é necessário o uso de subsolagem. Recomenda-se realizar a subsolagem antes da implantação do sistema de iLPF, e, após sua implantação, trabalhar com plantas que favoreçam a descompactação do solo, com sistemas radiculares mais fortes e profundos.</p>
+
+						</div>
+						<div class="hidden wrong_answer wrong_answerQ2">
+							<p><i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+
+						</div>
+					</div>
+				</section>
+
+				<div id="2" class="div_answer hidden">
+					<button class="see_answer" id="ans_Q2_M2">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q2_M2" >Resposta: letrra (b) <br>
+						Em camadas compactadas de solo onde a escarificação não se torna efetiva, é necessário o uso de subsolagem. Recomenda-se realizar a subsolagem antes da implantação do sistema de iLPF, e, após sua implantação, trabalhar com plantas que favoreçam a descompactação do solo, com sistemas radiculares mais fortes e profundos.
+					</p>
+				</div>
+
+				<!-- Question 3 mod2-->
+				<section id="2" data-question="Q3" class="form form3 form_from_M2">
+					<p class="question"><b>Questão 3:</b> Com relação aos atributos químicos do solo, é incorreto afirmar:
+					</p>
+
+					<input class=" false input_option" id="option1_q3_M2" hidden type="radio">
+					<label class="option" for="option1_q3_M2">a) As espécies de plantas com sistemas radiculares de diferentes formas e tamanhos promovem maior ciclagem de nutrientes.</label>
+
+					<input class=" true input_option" id="option2_q3_M2" hidden type="radio">
+					<label class="option option_true" for="option2_q3_M2">b) Os solos do cerrado são conhecidos por apresentarem baixa acidez, mas apresentam deficiência de nutrientes como fósforo (P), cálcio (Ca) e magnésio (Mg). Por isso a calagem não tem sido uma prática viável atualmente.</label>
+
+					<input class="false input_option" id="option3_q3_M2" hidden type="radio">
+					<label class="option" for="option3_q3_M2">c) De acordo com as análises químicas, caso o produtor queira implantar espécies arbóreas mais exigentes, a prática de aplicação de gesso agrícola tem sido uma boa opção para sanar a deficiência de cálcio em profundidade, que geralmente está associada à toxicidade de alumínio.</label>
+
+					<input class=" false input_option" id="option4_q3_M2" hidden type="radio">
+					<label class="option" for="option4_q3_M2">d) Em solos de baixa fertilidade, pode ser interessante também a adubação da forrageira semeada na entrelinha de cultivo do milho, principalmente com fósforo e potássio, para obter uma boa formação do pasto.</label>
+
+					<button type="button" id="Q3" class="send_answer send_answer3">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ3">
+
+							<p><i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!!</b> <br>
+								<b>Resposta Correta.</b> Os solos do Cerrado geralmente apresentam acidez elevada, sendo necessária a prática de calagem visando reduzir a acidez e melhorar a disponibilidade de nutrientes, com o fósforo (P), cálcio (Ca) e magnésio (Mg). Deve-se ressaltar que tal prática deve ser orientada por um técnico responsável, a partir da análise química do solo. </p>
+
+						</div>
+
+						<div class="hidden wrong_answer wrong_answerQ3">
+							<p><i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+						</div>
+					</div>
+				</section>
+
+				<div id="2" class="div_answer hidden">
+					<button class="see_answer" id="ans_Q3_M2">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q3_M2" >Resposta: letra (b) <br>
+						Os solos do Cerrado geralmente apresentam acidez elevada, sendo necessária a prática de calagem visando reduzir a acidez e melhorar a disponibilidade de nutrientes, com o fósforo (P), cálcio (Ca) e magnésio (Mg). Deve-se ressaltar que tal prática deve ser orientada por um técnico responsável, a partir da análise química do solo. 
+					</p>
+				</div>
+
+				<!-- Question 4 mod2-->
+
+				<section id="2" data-question="Q4" class="form form4 form_from_M2">
+					<p class="question"><b>Questão 4:</b> São exemplos de benefícios de sistemas de iLPF sobre atributos biológicos do solo, exceto:</p>
+
+					<input class="true input_option" id="option1_q4_M2" hidden type="radio">
+					<label class="option option_true" for="option1_q4_M2">a) A disponibilidade de grande quantidade de resíduos orgânicos, em constante renovação pelas árvores e pela pastagem, diminui os teores de carbono e não influi nas condições de agregação e porosidade do solo.</label>
+
+					<input class="false input_option" id="option2_q4_M2" hidden type="radio">
+					<label class="option" for="option2_q4_M2">b) Uma das características importantes para a melhora da qualidade física e biológica do solo é justamente a quantidade de palhada deixada sobre o solo e as raízes no perfil do solo.</label>
+
+					<input class=" false input_option" id="option3_q4_M2" hidden type="radio">
+					<label class="option" for="option3_q4_M2">c) A deposição de biomassa das árvores e das gramíneas na superfície do solo consiste num meio importante de ciclagem de nutrientes.</label>
+
+					<input class=" false input_option" id="option4_q4_M2" hidden type="radio">
+					<label class="option" for="option4_q4_M2">d) A decomposição das raízes forma uma rede de canalículos no solo, influenciando diretamente nas trocas gasosas e infiltração da água.</label>
+
+					<button type="button" id="Q4" class="send_answer send_answer4">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ4">
+							<p>
+								<i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!</b> <br>
+								<b>Resposta Correta.</b> A disponibilidade de grande quantidade de resíduos orgânicos, em constante renovação pelas árvores e pela pastagem, aumenta os teores de carbono e melhora as condições de agregação e porosidade do solo, além de favorecer a ciclagem de nutrientes e maior fertilidade do solo a longo prazo.</p>
+						</div>
+
+						<div class="hidden wrong_answer wrong_answerQ4">
+							<p><i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+
+						</div>
+					</div>
+				</section>
+
+				<div id="2" class="div_answer hidden">
+					<button class="see_answer" id="ans_Q4_M2">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q4_M2" >Resposta: letra (a) <br>
+						A disponibilidade de grande quantidade de resíduos orgânicos, em constante renovação pelas árvores e pela pastagem, aumenta os teores de carbono e melhora as condições de agregação e porosidade do solo, além de favorecer a ciclagem de nutrientes e maior fertilidade do solo a longo prazo.</p>
+				</div>
+
+				<div class="form" id="2">
+					<button class="finish" id="send_answer_finish" onclick="checkAll()">Próximo módulo</button>
+				</div>
+			</section>
+
+
+			<!-- References mod2-->
+			<section class="container_text" id="ref_M2">
+				<div class="wrapper references">
+					<h1 class="text_title">REFERÊNCIAS:</h1>
+
+					<p>[1] MACEDO, M. C. M. Degradação de pastagens: conceitos, alternativas e métodos de recuperação. Informe Agropecuário. Pastagem, Belo Horizonte, v.Z6, n.226, p.36-42, 2005.<br>
+					[2] DORAN, J.W. & ZEISS, M.R. Soil health and sustainability; Managing the biotic component of soil quality. Appl. Soil. Ecol.,5:3-11, 2000. <br>
+					[3] BERGAMIN, A.C. Compactação do solo em sistemas intensivos de produção. Informações Agronômicas, [s.l], v. 164, p. 1-12, dez. 2018. <br>
+					[4] INGARAMO, O.E. Indicadores físicos de la degradación Del suelo. La Coruña, Universidade da Coruña,	2003. 298p. (Tese de Doutorado). <br>
+					[5] MACEDO, M.C.M. Integração lavoura e pecuária: o estado da arte e inovações tecnológicas. Rev. Bras. Zootecnia. 38:133-146,2009. <br>
+					[6] CANTARUTTI, R.B.; ALVAREZ v., V.H.; RIBEIRO, A.C. Amostragem do solo. In: RIBEIRO, A.C.; GUIMARÃES, P.T.G.; ALVAREZ v., V.H. (Ed.). Recomendação para o uso de corretivos e fertilizantes em Minas Gerais: 5ª aproximação. Viçosa, MG: Comissão de Fertilidade do Solo do Estado de Minas Gerais, 1999. p.13-Z0. <br>
+					[7] ALVAREZ v., V.H.; RIBEIRO, A.C. Calagem. In: RIBEIRO, A.C.; GUIMARÃES, P.T.G.; ALVAREZ V.,V.H. (Ed.). Recomendação para o uso de corretivos e fertilizantes em Minas Gerais: 5a aproximação. Viçosa, MG: Comissão de Fertilidade do Solo do Estado de Minas Gerais, 1999. p.43-60. <br>
+					[8] Freire, F. M., Coelho, A. M., de BARROS, N. F., de Barros Filho, N. F., & NEVES, J. Manejo da fertilidade do solo no Sistema Integração Lavoura-Pecuária-Floresta. Embrapa Milho e Sorgo-Artigo em periódico indexado (ALICE), 2010. <br>
+					[9] LOSS, A.; RIBEIRO, E. C.; PEREIRA, M. G.; COSTA, E. M. Atributos físicos e químicos do solo em sistemas de consórcio e sucessão de lavoura, pastagem e silvipastoril em Santa Teresa, ES. Bioscience Journal, v. 30, n. 5, p. 1347-1357, 2014. <br>
+					[10] ALVARENGA, R.C.; NOCE, A. M. Integração Lavoura-Pecuária. Sete Lagoas: Embrapa Milho e Sorgo, 2005. 16p. (Boletim Técnico, 47). <br>
+					[11] CERRI, C.C.; MAIA, S.F.M.; GALDOS, M.V.; CERRI, C.E.P.; FEIGL, B.J.; BERNOUX, M. Brazilian greenhouse gas emissions: the importance of agriculture and livestock. Scientia Agricola, v.66, n.6, p.831-843, 2009. <br>
+					[12] DENARDIN, José Eloir et al. Diretrizes do sistema plantio direto no contexto da agricultura conservacionista. Passo Fundo: Embrapa Trigo, v. 15, 2012.</p>
+
+				</div>
+			</section>
+</section>
+		</section>
+
+	<!-- module_3 -->
+	<section id="container_mod3" class="container container_mod3 container_func">
+		<section>
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_introduction">Plantio de culturas anuais em áreas de ILPF</h1>
+
+					<p class="info_description"> Neste módulo iremos apresentar as opções de culturas anuais para o sistema agrossilvipastoril. <br> No cerrado, apresentando sua importância no sistema, suas vantagens e limitações, assim como seu manejo adequado para alta produtividade. </p>
+				</div>
+
+				<img class="info_img info_img_icon" id="icon_img" title="pngtree.com" src="./complements/images/module3/img_1.png">
+
+			</section>
+
+			<a target="_blank" href="./books/module_3.pdf" class="download_button">Baixar apostila</a>
+		</section>
+
+		<section class="video_wrapper">
+			<p class="video_description">Acompanhe o vídeo que apresenta o conteúdo deste módulo:</p>
+			<iframe class="video_class" src="https://www.youtube.com/embed/LyEXGiL4uvo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</section>
+
+		
+<!-- topic 01 mod3 -->
+		<section class="container_text">
+
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">01</b>Introdução</h1>
+
+				<p> &nbsp &nbsp A estratégia iLPF, na prática, contempla quatro modalidades de sistemas integrados de produção, as quais podem ser facilmente identificadas e, cada uma delas, é composta por um grande número de arranjos e modelos derivados ajustados às diferentes condições econômicas, sociais e culturais de quem as aplica. Assim, dentro do atual conceito de iLPF, estão contempladas: <br> <br>
+				&nbsp &nbsp I. Integração Lavoura-Pecuária (iLP ou agropastoril); <br>
+				&nbsp &nbsp II. Integração Pecuária-Floresta (iPF ou silvipastoril); <br>
+				&nbsp &nbsp III. Integração Lavoura-Floresta (iLF ou silviagrícola), e; <br>
+				&nbsp &nbsp IV. Integração Lavoura-Pecuária-Floresta (iLPF ou agrossilvipastoril). <br> <br>
+
+				Desta forma, a lavoura estará ausente apenas nos sistemas silvipastoril <a href="#ref_M3">[1]</a>. </p>
+
+			</div>
+		</section>
+
+		<section class="container_text">
+
+			<div class="wrapper">
+				<h1 class="text_title">Benefícios da lavoura em ILPF:</h1>
+
+				<div class="isolated_img_div">
+					<img class="isolated_img" style="width: 60%; margin-bottom: 70px;" src="./complements/images/module3/img_10.jpg" title="embrapa.com.br">
+				</div>
+
+				<p><i class="icon_li fas fa-check-circle"></i>Amortização total ou parcial do custo de implantação do sistema; <br> 
+				<i class="icon_li fas fa-check-circle"></i>Controle de plantas daninhas nos entre renques do componente florestal pela lavoura; <br> 
+				<i class="icon_li fas fa-check-circle"></i>Otimização no uso de fertilizantes; <br>
+				<i class="icon_li fas fa-check-circle"></i>Aumento na reciclagem de nutrientes pelo componente florestal; <br> 
+				<i class="icon_li fas fa-check-circle"></i>Possível fixação biológica de nitrogênio, quando utilizadas espécies leguminosas no componente agrícola <br> 
+				<i class="icon_li fas fa-check-circle"></i>Maior flexibilidade técnica e econômica dentro dos sistemas iLPF; <br>
+				<i class="icon_li fas fa-check-circle"></i>Mitigação dos efeitos antrópicos indesejados; <br> 
+				<i class="icon_li fas fa-check-circle"></i>Componente principal para correção, adubação e dimensionamento dos sistemas ILPF; <br> 
+				<i class="icon_li fas fa-check-circle"></i>Retorno econômico mais rápido; <br>
+				<i class="icon_li fas fa-check-circle"></i>Possibilidade de uma mesma espécie para diferentes finalidades.
+				</p>
+
+			</div>
+		</section>
+
+		<!-- topic 02 mod3 -->
+
+		<section class="container_text" style="flex-direction: column;">
+
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">02</b>Principais Culturas Agrícolas Utilizadas em ILPF</h1>
+
+				<p> &nbsp &nbsp Atualmente, as principais culturas agrícolas utilizadas dentro da iLPF nas regiões Norte, Centro-oeste e Sudeste brasileiro são: arroz de terras altas, soja, milho, sorgo, milheto e algumas alternativas promissoras tais como feijão-caupi, Crotalaria ochroleuca e nabo-forrageiro <a href="#ref_M3">[1]</a>.
+				<br> 
+				&nbsp &nbsp Será abordado abaixo algumas culturas e seus motivos que fazem com que estas culturas sejam as mais utilizadas no sistema iLPF.<br>
+				</p> <br> <br>
+
+				<section class="learn_more">
+
+					<i  class="fas fa-video"></i>
+	
+					<button onclick="show_info(this)" data-lrn_mr="lrn_mr_3" class="button_visible">Saiba Mais</button>
+	
+					<div id="lrn_mr_3" class="information hidden">
+						<section class="video_wrapper">
+							<iframe class="video_class" src="https://www.youtube.com/embed/fMzHnYuze7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</section>
+					</div>
+				</section>
+
+				<h1 class="text_title"><b class="subtopic_number">2.1</b>Milho ( <i>Zea mays</i>)</h1>
+
+				<div class="box_info">
+					<p> &nbsp &nbsp A produção de milho destaca-se no contexto da integração lavoura pecuária, devido a inúmeras aplicações que esse grande produtor de grãos possui, na propriedade agrícola, sendo utilizado na alimentação animal na forma de grãos, de forragem verde ou conservada, na forma de rolão e silagem<a href="#ref_M3">[2]</a>. </p>
+
+					<img title="embrapa.com.br" class="box_img_right" src="./complements/images/module3/img_11.jpg">
+
+				</div> <br> <br>
+
+				<p>&nbsp &nbsp Uma das vantagens do milho em comparação com outras culturas, principalmente cereais, consiste na sua qualidade na consorciação com capim. Vantagem observada pela competividade do consorcio visto que o porte dessa planta, exerce depois de estabelecidas, grande supressão em relação a demais espécies que crescem no local. A disponibilidade de herbicidas graminicidas seletivos ao milho, possibilita obter resultados excelentes com a consorciação milho com planta forrageira <a href="#ref_M3">[2]</a>. <br>
+				&nbsp &nbsp Vale destacar da cultura é que ela apresenta elevado potencial produtivo, com bom valor de mercado na maioria dos anos agrícolas, com produtividade de grãos variando de <b>2.000 a mais de m10.000 kg/ha</b>, tem uma excelente resposta a adubação, especialmente a nitrogenada, tem capacidade de produz elevada quantidade de resíduos culturais, existe uma gama enorme de matérias (híbridos simples, duplos, triplos e variedades) no mercado que podem ser selecionados para melhor adequar ao clima e solo da área de implantação <a href="#ref_M3">[1]</a>. <br>
+				&nbsp &nbsp O controle de plantas daninhas, doenças e pragas é idêntico ao realizado no cultivo tradicional, tendo atenção as pragas e <button class="word_link">patógenos polífagos<span class="word_description">Patógenos que atacam um grande número de espécies vegetais.</span> </button>, que são um dos grandes problemas de sistemas integrados <a href="#ref_M3">[1]</a>. <br> 
+				&nbsp &nbsp Apresenta algumas exigências sendo os materiais de alta tecnologia exigentes quanto às condições químicas do solo, notadamente em relação à disponibilidade de nitrogênio e potássio, seguindo-se cálcio, magnésio e fósforo, apresenta exigência elevada quanto à radiação solar, podendo tornar-se inviável para regiões sob alta incidência de nuvens na fase fisiológica do enchimento de grãos, e é precedente desaconselhável para outras gramíneas agrícolas no sistema de rotação ou sucessão de culturas, notadamente para o arroz de terras altas <a href="#ref_M3">[1]</a>. <br>
+				&nbsp &nbsp Na Figura abaixo pode-se observar a cultura do <b>milho em sistema integrado de produção com o Pequi</b> (<i>Caryocar brasiliense</i>) sendo a espécie florestal do sistema no terceiro ano após a implantação.
+				<br> <br> </p>
+
+				<div class="isolated_img_div">
+					<img title="GESA IFTM" class="isolated_img" src="./complements/images/module3/img_12.jpg">
+				</div> <br> <br>
+			</div>
+
+
+			<!-- Sorghum-->
+			<div class="wrapper">
+				<h1 class="text_title"><b class="subtopic_number">2.2</b>Sorgo (<i>Sorghum bicolor,
+					Moench</i>)</h1>
+
+				<div class="box_info">
+					<p> &nbsp &nbsp Constitui uma opção viável, para atender a demanda dos produtores, devido as sua composição química ser semelhante ao milho, possibilitando uma fermentação adequada, consequentemente esse alimento tem a disponibilidade de conservação na forma de silagem, outro fator interessante é a sua elevada taxa de proteína bruta em algumas variedades e maior tolerância a seca <a href="#ref_M3">[3]</a>.</p>
+
+					<img title="embrapa.com.br" class="box_img_right" src="./complements/images/module3/img_13.jpg">
+
+				</div>
+
+				<p class="text_content" style="margin-top: 35px;">&nbsp &nbsp O sorgo consiste num tipo de planta típica de clima quente, com características <button class="word_link">xerófilas <span class="word_description">Plantas que estão adaptadas a ambientes secos e que sobrevivem com quantidades de água reduzidas.</span> </button>, que além de apresentar uma relativa baixa exigência em termos de fertilidade do solo, possui alta tolerância a estresses abióticos como: deficiência hídrica, solos com alto teor de salinidade e encharcamento. Em relação à característica de encharcamento, o sorgo se torna tolerante quando é plantado após a lavoura de arroz, em sistemas de iLPF<a href="#ref_M3">[4]</a>. <br>
+				&nbsp &nbsp Outras vantagens apresentadas é o grande potencial produtivo de grãos, com produtividades variando de <b>1.000 a mais de 7.000 Kg/ha</b>, elevado potencial produtivo de forragem, tanto para pastejo quanto para corte, representa uma boa opção de safrinha com materiais apropriados para qualquer fase da janela de semeadura, apresenta grande facilidade no consórcio com forrageiras, facilitando e, no caso do sorgo granífero, custeando parcialmente a inserção da forrageira dentro do sistema iLPF <a href="#ref_M3">[1]</a>. <br>
+				&nbsp &nbsp O sorgo possui algumas características culturais que precisam ser muito bem manejadas para viabilizá-lo dentro dos sistemas iLPF pois, apresenta baixa tolerância ao Al3+, quando comparado ao milheto, apresenta maiores exigências em relação à maioria dos atributos químicos e físicos do solo não sendo, desta forma, recomendado para qualquer condição edafoclimática, apresenta maior competição com forrageiras dentro dos consórcios e é um precedente desaconselhável para algumas culturas, notadamente o arroz de terras altas. <a href="#ref_M3">[1]</a>. <br> <br> <br> </p>
+
+				<div class="isolated_img_div">
+					<img title="GESA IFTM" class="isolated_img" src="./complements/images/module3/img_14.jpg" alt="">
+				</div> <br> <br>
+
+			</div>
+
+			<!-- Glycine max -->
+			<div class="wrapper">
+				<h1 class="text_title"><b class="subtopic_number">2.3</b>Soja (<i>Glycine max</i>)</h1>
+
+				<div class="box_info">
+					<p> &nbsp &nbsp A soja é a cultura agrícola mais utilizada na ILPF, pois apresenta uma série de característica relevantes para o sistema: é uma leguminosa e, portanto, fixadora de nitrogênio, prestando serviço ambiental ao reduzir a necessidade de entrada de nitrogênio mineral nos sistemas iLPF; é a lavoura mais cultivada e de maior importância agro econômica no Brasil; é classificada como <b>“commodity”</b> agrícola, tendo seu preço regulado pelo mercado internacional que, por sua vez, está favorável nos últimos anos e assim deverá permanecer frente à demanda crescente de alimentos no mundo, possui elevado potencial produtivo, atingindo patamares de <b>6.000 kg/ha</b>; pode ser utilizada na renovação e/ou reforma de pastagens degradadas; possui sistema radicular pivotante e razoavelmente agressivo; é uma ótima precedente para a maioria das demais culturas agrícolas; é apropriada para ser cultivada no SPD sobre outras forrageiras<a href="#ref_M3">[1]</a>.</p>
+
+					<img title="embrapa.com.br" class="box_img_right" src="./complements/images/module3/img_15.jpg">
+
+				</div> <br> <br>
+
+				<p>&nbsp &nbsp Apresenta desvantagens como: </p>
+				<ul>
+				 	<li> Produz pouca palhada residual e de degradação rápida; </li>
+				 	<li> Apresenta dificuldade para ser consorciada com forrageiras; essas duas características anteriores somadas à questão legal do vazio sanitário inviabiliza seu cultivo de safrinha dentro da maioria dos sistemas iLPF;
+					</li>
+					<li> Apresenta baixa tolerância ás condições químicas desfavoráveis do solo como elevada acidez e alumínio trocável (Al3+) e baixa saturação por bases (V%); </li>
+					<li> Apresenta pouca adaptação ao ambiente de abertura de novas áreas; respeitar um intervalo mínimo de 15 dias após a dessecação, exigindo um planejamento impecável do sistema, pois problemas de fitotoxicidade na soja por exsudados da cobertura morta em decomposição (ácidos fracos e glifosato) podem ocorrer<a href="#ref_M3">[1]</a>.</li> <br>
+				</ul>
+
+				<p> O <b>Manejo de plantas daninhas</b> consiste no maior desafio fitotécnico da soja dentro da iLPF, notadamente quando integrado com o componente florestal. Neste caso, a estratégia de manejo vai depender, principalmente, da idade e das espécies florestais, dos sistemas de cultivo e da quantidade de palhada no solo. Na implantação do sistema iLPF com componente florestal e lavoura de soja, uma das estratégias mais utilizadas é implantar o componente florestal na área só após a aplicação dos herbicidas na soja. O manejo de doenças e pragas é realizado de forma idêntica ao convencional, dando destaque para pragas e fitopatógenos polífagos do sistema como a <i>H. armigera</i> e o <i>Pratylenchus brachiurus</i> <a href="#ref_M3">[1]</a>. <br> <br> <br> </p>
+
+				<div class="isolated_img_div">
+					<img title="silomax.com.br" class="isolated_img" src="./complements/images/module3/img_16.jpg">
+				</div> <br> <br>
+			</div>
+
+			<!-- milheto Pennisetum glaucum -->
+			<div class="wrapper">
+				<h1 class="text_title"><b class="subtopic_number">2.4</b>Milheto (<i>Pennisetum glaucum</i>)
+				</h1>
+
+				<div class="box_info">
+					<p> &nbsp &nbsp O milheto apresenta vantagens como: crescimento rápido e com rebrota, permitindo a entrada de animais a partir dos 35 dias após sua implantação quando as <button class="word_link">condições edafoclimáticas <span class="word_description">Características definidas através de factores do meio, tais como o clima, o relevo, a litologia, a temperatura, a humidade do ar, a radiação, o tipo de solo, o vento, a composição atmosférica e a precipitação pluvial</span> </button> são favoráveis; apresenta uma produtividade de grãos variando entre 500 a 1500 Kg ha-1 ainda, que, dificilmente será esta a finalidade principal dentro dos sistemas ILPF; é muito menos exigente em relações às condições edafoclimáticas quando comparado ao milho e ao sorgo sendo, por isso, recomendado para fechamento da semeadura na safrinha; é um excelente precedente para a maioria das culturas; apresenta materiais com fator de reprodução para nematoides extremamente baixos, notadamente para o <i>Pratylenchus brachyurus</i>, sendo uma excelente alternativa de safrinha para áreas com solos infestados por esse fitopatógeno; apresenta facilidade de ser consorciado com forrageiras podendo, inclusive, ser semeado com as mesmas em uma única operação; baixo custo de implantação quando utilizadas sementes produzidas na própria fazenda; apresenta grande facilidade na dessecação e boa ciclagem de nutrientes<a href="#ref_M3">[1]</a>. </p>
+
+					<img title="embrapa.com.br" class="box_img_right" src="./complements/images/module3/img_17.jpg">
+
+				</div> <br><br>
+
+				<p>&nbsp &nbsp O milheto, por outro lado, possui algumas
+					características culturais que precisam ser muito bem manejadas para viabilizá-lo dentro dos sistemas ILPF: apresenta baixa produção de palhada (que pode ser ampliada, se consorciado com forrageiras, tal como a <i>B. ruziziensis</i>); apresenta degradação muito rápida da palhada <a href="#ref_M3">[1]</a></p>
+			</div>
+
+			<!-- feijão-caupi -->
+			<div class="wrapper">
+				<h1 class="text_title"><b class="subtopic_number">2.5</b>Feijão-Caupi</h1> <br> <br>
+
+				<p>&nbsp &nbsp Apontado como uma das alternativas promissoras de leguminosa forrageira para solos de textura média e argilosa, o feijão-caupi, cultivado na safrinha dentro da iLPF apresenta características relevantes para o sistema, tais como:<a href="#ref_M3">[1]</a></p>
+
+				<ul>
+					<li>É uma leguminosa e, portanto, tem a capacidade de fixar nitrogênio do ar e aportar esse macronutriente para o sistema; utilizado como forrageira principalmente, é uma excelente fonte de proteínas de alta palatabilidade para os animais;</li>
+					<li>Apresenta um sistema radicular pivotante e muito agressivo, agindo na descompactação do solo e melhorando as condições físicas do mesmo;</li>
+					<li>É muito menos exigente em relações às condições edafoclimáticas quando comparado ao milho, sendo, por isso, recomendado para fechamento da semeadura na safrinha; é um excelente precedente para a maioria das culturas, notadamente para o arroz de terras altas;</li>
+					<li>Quando utilizado como leguminosa forrageira, apresenta facilidade de ser consorciado com outras forrageiras; apresenta grande facilidade na dessecação e boa ciclagem de nutrientes.</li>
+				</ul>
+
+				<p> &nbsp &nbsp Por outro lado, o feijão-caupi possui algumas características culturais que demandam ser muito bem manejadas para viabilizá-lo dentro dos sistemas iLPF, são elas:<a href="#ref_M3">[1]</a>.</p>
+
+				<ul>
+					<li>Quando utilizado solteiro para forragem, pode provocar timpanismo nos animais, além de deixar baixa produção de palhada. Esses fatos exigem seu consórcio com forrageiras gramíneas, tais como a B. ruziziensis ou <i>B. brizantha Cv Paiaguás</i>;</li>
+					<li>Quando utilizado para grãos, a tecnologia do consórcio com forrageiras gramíneas ainda não está consolidada sendo, por isso, desaconselhável; </li>
+					<li>Pode se tornar uma “ponte verde” para nematóides dentro dos sistemas integrados, notadamente o <i>Pratylenchus brachyurus</i>, sendo desaconselhável seu cultivo na safrinha em áreas com solos infestados por esse fitopatógeno; elevado custo das sementes, fato que encarece sua implantação. Esse fato pode ser contornando quando são utilizadas sementes produzidas na própria fazenda.</li>
+				</ul> <br> <br>
+
+				<div class="isolated_img_div">
+					<img title="embrapa.com.br" class="isolated_img" src="./complements/images/module3/img_18.jpg">
+				</div> <br> <br>
+			</div>
+
+			<!-- crotalária -->
+			<div class="wrapper">
+				<h1 class="text_title"><b class="subtopic_number">2.6</b>Crotalária</h1>
+
+				<p class="text_content" style="margin-top: 35px;">&nbsp &nbsp A Crotalária <i>ochroleuca</i> também é apontada como uma das alternativas promissoras de leguminosa forrageira para solos de textura média e argilosa cultivada na safrinha dentro da iLPF por apresentar as seguintes características relevantes para o sistema:</p>
+
+				<ul>
+					<li>É uma leguminosa e, portanto, tem a capacidade de fixar nitrogênio do ar e aportar esse macro nutriente para o sistema; pode ser utilizada como forrageira (uso principal) e também produzir grãos em mesmo cultivo, constituindo uma excelente fonte de proteínas de alta palatabilidade para os animais;</li>
+					<li>Apresenta um sistema radicular pivotante e agressivo, agindo na descompactação do solo e melhorando as condições físicas do mesmo;</li>
+					<li>É muito menos exigente em relações às condições edafoclimáticas quando comparada ao milho, sendo, por isso, recomendada para fechamento da semeadura na safrinha; é um excelente precedente para a maioria das culturas, notadamente para o arroz de terras altas; .</li>
+					<li>Quando utilizada como leguminosa forrageira, apresenta facilidade de ser consorciada com outras forrageiras;</li>
+					<li>Apresenta grande facilidade na dessecação e boa ciclagem de nutrientes;</li>
+					<li>apresenta fator de reprodução para nematoides extremamente baixo, notadamente para o <i>Pratylenchus brachyurus</i>, sendo uma excelente alternativa de safrinha para áreas com solos infestados por esse fitopatógeno <a href="#ref_M3">[1]</a>
+					</li>
+				</ul> <br> <br>
+
+				<div class="isolated_img_div">
+					<img title="embrapa.com.br" style="width: 50vw" class="isolated_img" src="./complements/images/module3/img_19.jpg">
+				</div> <br> <br>
+			</div>
+
+			<!-- EXERCISES MOD3-->
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_title">Exercícios</h1>
+					<p class="info_description">
+						Ao responder os exercícios, você deve acertar no mínimo 3 questões para avançar para o próximo módulo, caso
+						contrário, a página será recarregada e você deverá tentar responder os exercícios novamente.
+					</p>
+				</div>
+
+			</section>
+
+		</section>
+
+
+			<!-- Question 1 mod3-->
+
+			<section class="master_form master_formM3" id="master_form">
+				<section id="3" data-question="Q1" class="form form1 form_from_M3">
+					<p class="question"><b>Questão 1:</b> São benefícios da lavoura para o Sistema ILPF, exceto:</p>
+
+					<input class=" false input_option" id="option1_q1_M3" hidden type="radio">
+					<label class="option" for="option1_q1_M3">a) Amortiza total ou parcialmente o custo de implantação do sistema;</label>
+
+					<input class=" true input_option" id="option2_q1_M3" hidden type="radio">
+					<label class="option option_true" for="option2_q1_M3">b) Estimula o crescimento de plantas daninhas entre os renques de árvores;</label>
+
+					<input class="false input_option" id="option3_q1_M3" hidden type="radio">
+					<label class="option" for="option3_q1_M3">c) Possível fixação biológica de nitrogênio quando utilizadas espécies leguminosas;</label>
+
+					<input class=" false input_option" id="option4_q1_M3" hidden type="radio">
+					<label class="option" for="option4_q1_M3">d) Possibilidade de uma mesma espécie para diferentes finalidades.</label>
+
+					<button id="Q1" type="button" class="send_answer send_answer1">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ1">
+							<p>
+								<i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!</b> <br>
+								<b>Resposta Correta.</b> O sombreamento realizado pela cultura anual e pelas árvores dificulta o crescimento de plantas daninhas. </p>
+						</div>
+
+						<div class="hidden wrong_answer wrong_answerQ1">
+							<p><i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+						</div>
+					</div>
+				</section>
+
+				<div id="3" class=" div_answer hidden">
+					<button class="see_answer" id="ans_Q1_M3">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q1_M3" >Resposta: letra (b) <br>
+						O sombreamento realizado pela cultura anual e pelas árvores dificulta o crescimento de plantas daninhas.</p>
+				</div>
+
+				<!-- Question 2 mod3-->
+
+				<section id="3" data-question="Q2" class="form form2 form_from_M3">
+					<p class="question"><b>Questão 2:</b> Dentre as culturas listadas abaixo, qual não é comumente utilizada em sistemas ILPF nas regiões Norte, Centro-oeste e Sudeste brasileiro?</p>
+
+					<input class=" true input_option" id="option1_q2_M3" hidden type="radio">
+					<label class="option option_true" for="option1_q2_M3">a) Arroz irrigado</label>
+
+					<input class=" false input_option" id="option2_q2_M3" hidden type="radio">
+					<label class="option" for="option2_q2_M3">b) Soja</label>
+
+					<input class=" false input_option" id="option3_q2_M3" hidden type="radio">
+					<label class="option" for="option3_q2_M3">c) Milho</label>
+
+					<input class=" false input_option" id="option4_q2_M3" hidden type="radio">
+					<label class="option" for="option4_q2_M3">d) Sorgo</label>
+
+					<button id="Q2" type="button" class="send_answer send_answer2">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ2">
+							<p>
+								<i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!</b> <br>
+								<b>Resposta Correta.</b> Atualmente, as principais culturas agrícolas utilizadas dentro da iLPF nas regiões Norte, Centro-oeste e Sudeste brasileiro são: arroz de terras altas, soja, milho, sorgo, milheto e algumas alternativas promissoras tais como feijão-caupi, Crotalaria e nabo-forrageiro. </p>
+						</div>
+
+						<div class="hidden wrong_answer wrong_answerQ2">
+							<p><i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+
+						</div>
+					</div>
+				</section>
+
+				<div id="3" class="div_answer hidden">
+					<button class="see_answer" id="ans_Q2_M3">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q2_M3" >Resposta: letra (a)<br>
+						Atualmente, as principais culturas agrícolas utilizadas dentro da iLPF nas regiões Norte, Centro-oeste e Sudeste brasileiro são: arroz de terras altas, soja, milho, sorgo, milheto e algumas alternativas promissoras tais como feijão-caupi, Crotalaria e nabo-forrageiro. 
+					</p>
+				</div>
+
+				<!-- Question 3 mod3 -->
+				<section id="3" data-question="Q3" class="form form3 form_from_M3">
+					<p class="question"><b>Questão 3:</b> Qual dessas culturas pode ser utilizada na alimentação animal na forma de grãos, de forragem verde ou conservada, na forma de rolão e silagem? </p>
+
+					<input class=" false input_option" id="option1_q3_M3" hidden type="radio">
+					<label class="option" for="option1_q3_M3">a) Arroz de sequeiro</label>
+
+					<input class="false input_option" id="option2_q3_M3" hidden type="radio">
+					<label class="option" for="option2_q3_M3">b) Feijão-caupi</label>
+
+					<input class="true input_option" id="option3_q3_M3" hidden type="radio">
+					<label class="option  option_true" for="option3_q3_M3">c) Milho</label>
+
+					<input class="false input_option" id="option4_q3_M3" hidden type="radio">
+					<label class="option" for="option4_q3_M3">d) Crotalária</label>
+
+					<button type="button" id="Q3" class="send_answer send_answer3">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ3">
+							<p>
+								<i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!!</b> <br>
+								<b>Resposta Correta.</b> A produção de milho destaca-se no contexto da integração lavoura pecuária, devido a inúmeras aplicações que os grãos possuem na propriedade agrícola, sendo utilizado na alimentação animal na forma de grãos, de forragem verde ou conservada, na forma de rolão e silagem. </p>
+						</div>
+
+						<div class="hidden wrong_answer wrong_answerQ3">
+							<p><i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+
+						</div>
+					</div>
+				</section>
+
+				<div id="3" class="div_answer hidden">
+					<button class="see_answer" id="ans_Q3_M3">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q3_M3" >Resposta: letra (c)<br>
+						A produção de milho destaca-se no contexto da integração lavoura pecuária, devido a inúmeras aplicações que os grãos possuem na propriedade agrícola, sendo utilizado na alimentação animal na forma de grãos, de forragem verde ou conservada, na forma de rolão e silagem.</p>
+				</div>
+
+				<!-- Question 4 mod3-->
+
+				<section data-question="Q4" id="3" class="form form4 form_from_M3">
+					<p class="question"><b>Questão 4:</b> Qual dessas culturas é uma excelente alternativa de safrinha para áreas com solos infestados por nematóides <i>Pratylenchus brachyurus?</i></p>
+
+					<input class=" false input_option" id="option1_q4_M3" hidden type="radio">
+					<label class="option" for="option1_q4_M3">a) Milheto</label>
+
+					<input class="false input_option" id="option2_q4_M3" hidden type="radio">
+					<label class="option" for="option2_q4_M3">b) Soja</label>
+
+					<input class=" false input_option" id="option3_q4_M3" hidden type="radio">
+					<label class="option" for="option3_q4_M3">c) Nabo forrageiro</label>
+
+					<input class=" true input_option" id="option4_q4_M3" hidden type="radio">
+					<label class="option option_true" for="option4_q4_M3">d) Crotalária</label>
+
+					<button id="Q4" type="button" class="send_answer send_answer4">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ4">
+							<p>
+								<i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!</b> <br>
+								<b>Resposta Correta.</b> A <i>Crotalária ochroleuca</i> apresenta fator de
+									reprodução para nematoides extremamente baixo, notadamente para o <i>Pratylenchus brachyurus</i>, sendo uma excelente alternativa de safrinha para áreas com solos infestados por esse fitopatógeno. </p>
+
+						</div>
+						<div class="hidden wrong_answer wrong_answerQ4">
+							<p><i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+
+						</div>
+					</div>
+				</section>
+
+				<div id="3" class="div_answer hidden">
+					<button class="see_answer" id="ans_Q3_M3">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q3_M3" >Resposta: letra (d)<br>
+						A <i>Crotalária ochroleuca</i> apresenta fator de
+						reprodução para nematoides extremamente baixo, notadamente para o <i>Pratylenchus brachyurus</i>, sendo uma excelente alternativa de safrinha para áreas com solos infestados por esse fitopatógeno. 
+					</p>
+				</div>
+
+				<div class="form" id="3">
+					<button class="finish" id="send_answer_finish" onclick="checkAll()">Próximo módulo</button>
+				</div>
+			</section>
+
+			<!-- References mod3 -->
+			<section class="container_text" id="ref_M3">
+				<div class="wrapper references">
+					<h1 class="text_title">REFERÊNCIAS:</h1>
+
+					<p>[1] WRUCK, F, J; BEHLING, M; LANGE, A. Produção da lavoura em sistemas de ILPF. In: BUNGENSTAB, D. J.; ALMEIDA, R. G. de; LAURA, V. A.; BALBINO, L. C.; FERREIRA, A. D. (Ed.). ILPF: inovação com integração de lavoura, pecuária e floresta. Brasília, DF: Embrapa, 2019. Cap. 21, p. 319-345.<br>
+					[2] ALVARENGA, R. C.; NETO, M.M.G; RAMALHO, J. H.; GARCIA, J.C.; VIANA, M.C.; CASTRO, A.A.D.N. Sistema e Integração Lavoura- Pecuária: O Modelo implantado na Embrapa Milho e Sorgo. Sete Lagoas: Embrapa Milho e Sorgo, 2006. 9p. (Circular Técnica, 93). <br>
+					[3] ALVARENGA, R.C.; RODRIGUES, J.A.S.; SANTOS, F.C.; GONTIJO NETO, M.M.; VIANA, M.C.M. A cultura do sorgo em sistemas integrados lavoura-pecuária ou lavourapecuária floresta. Sete Lagoas: Embrapa Milho e Sorgo, 2011. 14p. (Circular Técnica, 172).<br>
+					[4] SOUZA, J.W.T; SOUZA, B.M.L; SILVA, C.M. SISTEMA DE INTEGRAÇÃO LAVOURA-PECUÁRIA-FLORESTA (ILPF). Ciência Animal, v.30, n.3, p.71-84, 2020. 71</p>
+
+				</div>
+			</section>
+		</section>
+
+	<!-- module_4 -->
+	<section id="container_mod4" class="container container_mod4 container_func">
+		<section>
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_introduction">Escolha da forrageira para área de ILPF</h1>
+					<p class="info_description">
+						Neste módulo vamos conhecer as principais espécies de gramíneas utilizadas em ILPF e os benefícios que esse elemento traz para esse tipo de integração.
+					</p>
+				</div>
+				<img class="info_img info_img_icon" id="icon_img" title="pngtree.com"
+					src="./complements/images/module4/img_1.jpg" alt="">
+
+			</section>
+
+			<a target="_blank" href="./books/module_4.pdf" class="download_button">Baixar apostila</a>
+		</section>
+
+		<section class="video_wrapper">
+			<p class="video_description">Acompanhe o vídeo introdutório: Escolha da Espécie Forrageira - Parte 1</p>
+			<iframe class="video_class" src="https://www.youtube.com/embed/Vj5B5PG1rgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</section>
+
+<!-- topic 01 mod4 -->
+
+		<section class="container_text">
+
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">01</b>Introdução</h1><br><br>
+
+				<p>&nbsp &nbsp Benefícios da pastagem para o sistema iLPF:</p>
+				<br> <br>
+
+				<p><i class="icon_li fas fa-check-circle"></i>Melhoria dos atributos químicos, físicos e biológicos do solo, em função do incremento da matéria orgânica; <br>
+				<i class="icon_li fas fa-check-circle"></i>Maior desenvolvimento do sistema radicular, tornando a planta menos suscetível ao déficit hídrico; <br>
+				<i class="icon_li fas fa-check-circle"></i>Controle mais eficiente de pragas, doenças e plantas daninhas; <br>
+				<i class="icon_li fas fa-check-circle"></i>Maior ciclagem de nutrientes; <br>
+				<i class="icon_li fas fa-check-circle"></i>Aumento da capacidade de suporte das pastagens; <br>
+				<i class="icon_li fas fa-check-circle"></i>Aumento do valor nutritivo das forrageiras <a href="#ref_M4">[1]</a>.
+				<br> <br>
+
+				<p>&nbsp &nbsp O estabelecimento de gramíneas a partir do primeiro ano do plantio das árvores tende a ser mais efetivo do que em sistemas com árvores já desenvolvidas e com maior sombreamento. O manejo de forrageiras em iLPF deve ser mais criterioso, evitando-se manter a altura de pastejo abaixo do recomendado, para permitir maior acúmulo de reservas e favorecer a rebrotação <a href="#ref_M4">[2]</a>.</p> <br> <br>
+
+				<div class="box_info">
+
+					<img title="embrapa.com.br" class="box_img_left" src="./complements/images/module4/img_3.jpg"> <br> <br>
+
+					<p> &nbsp &nbsp A produção por animal tende a ser maior em sistemas de iLPF, pelo melhor valor nutritivo da forrageira e pelo maior conforto térmico dos animais em pastejo proporcionados pelo sombreamento. Com isso, espera-se melhor desempenho relativo com animais de maior exigência e produtividade, desde que atendidas as demandas por água e minerais, com adequado manejo sanitário e do pasto. Nesse sentido, o produtor pode contar com animais terminados em menor tempo e com melhor qualidade de carne<a href="#ref_M4">[3]</a>.</p>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- topic 02 mod4 -->
+
+		<section class="container_text">
+
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">02</b>Espécies de Gramíneas mais
+					Utilizadas em ILPF</h1>
+
+				<section class="cards_wrapper">
+					<div class="card_info_edit">
+						<p><i>Brachiaria brizantha cv Marandu</i> <br> <br> O gênero Brachiaria é a gramínea mais plantada no Brasil, sendo utilizada em todas as fases de cria, recria e engorda, tendo em vista o manejo adequado. A cultivar Marandu constitui um capim de alta produção de matéria seca, boa adaptabilidade e bom valor nutritivo <a href="#ref_M4">[4]</a>. Gramínea de crescimento cespitoso, possui rizomas muito curtos, intenso afilhamento nos nós superiores ao colmo. Em relação a sementes, são ligeiramente maiores a outros cultivares de braquiárias <a href="">[5]</a>.</p>
+
+						<img class="img_card" title="mfrural.com.br" src="./complements/images/module4/img_4.jpg">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Brachiaria brizantha cv Xaraés</i> <br> <br>
+							Planta forrageira cespitosa, tendo uma característica importante que é enraizar nos nós basais e apresentar altura média de 1,5 m. o capim xaraes é indicado em solos de média fertilidade, bem drenados e de textura média <a href="#ref_M4">[5]</a>. Embora seu desempenho seja inferior ao capim Marandu, o capim Xaraés com maior velocidade de rebrota e maior produção de forragem, garante alta capacidade de suporte e maior produtividade por área<a href="#ref_M4">[5]</a>. </p>
+
+						<img class="img_card" title="pastotech.com.br" src="./complements/images/module4/img_5.jpg">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Brachiaria brizantha cv Xaraés</i> <br> <br>
+							Ocupa aproximadamente 55% das pastagens, fato comprovado pelo mercado de sementes, movimentando cerca de 115 milhões de dólares. Esta alta produção é justificada, principalmente pela sua adaptabilidade a diversos sistemas de produção e a diversas condições edafoclimáticas <a href="#ref_M4">[5]</a>. </p>
+
+						<img class="img_card" title="sementesalvorada.com.br" src="./complements/images/module4/img_6.jpg">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Panicum maximum cv. Mombaça</i> <br> <br>
+							Originalmente africana, essa gramínea forrageira apresenta crescimento cespitoso, perene, possuindo de <b>12 a 18 % de proteína bruta</b> na matéria seca, sendo bastante utilizada no pastoreio e silagem. A fertilidade do solo desempena importante papel no desenvolvimento do Mombaça, na sua produtividade e concentração de nutrientes nas folhas<a href="#ref_M4">[7]</a>. </p>
+
+						<img class="img_card" title="sementesgermine.com.br" src="./complements/images/module4/img_7.jpg">
+
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<section class="learn_more" style="margin-bottom: 70px;" >
+
+			<i  class="fas fa-video"></i>
+
+			<button onclick="show_info(this)" data-lrn_mr="lrn_mr_5" class="button_visible">Saiba sobre a escolha da espécie</button>
+
+			<div id="lrn_mr_5" class="information hidden">
+				<section class="video_wrapper">
+					<p>Escolha da espécie Forrageira</p>
+					<iframe class="video_class" src="https://www.youtube.com/embed/dHrfoTMq-Po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</section>
+			</div>
+		</section>
+
+		<!-- topic 03 -->
+		<h1 class="text_title"><b class="topic_number">03</b>Modalidades de Plantio</h1>
+
+		<p>As modalidades de plantio em iLPF são baseadas nas da integração Lavoura-Pecuária (iLP), que são variadas e diversas. Por isso, é importante conhecê-las para escolher aquela que melhor se adequa à propriedade <a href="#ref_M4">[8]</a> </p>
+
+		<section class="container_dinamic">
+
+			<section class="dinamic_buttons">
+				<button class="d_button active dinamic-btn" data-target="content-4">
+					Sistema Barreirão </button>
+
+				<button class="d_button dinamic-btn" data-target="content-5">
+					Sistema Santa Fé </button>
+
+				<button class="d_button dinamic-btn" data-target="content-6">
+				Sistema Santa Brígida </button>
+
+			</section>
+			<section class="dinamic_content">
+
+				<div class="p_content content-4 box_info">
+					<p>&nbsp &nbsp O Sistema Barreirão (SB) trata-se de uma tecnologia de recuperação/renovação de pastagens que utiliza o cultivo de culturas anuais (arroz de terras altas, milho, sorgo e milheto) consorciado com gramíneas forrageiras, principalmente as braquiárias, o andropogon e os panicuns<a href="#ref_M4">[8]</a>. </p>
+
+					<img title="embrapa.com.br" class="box_img_right" src="./complements/images/module4/img_8.jpg">
+				</div>
+
+				<div class="hidden p_content content-5 box_info">
+					<p>&nbsp &nbsp O Sistema Santa Fé (SSF) fundamenta-se na produção consorciada de lavouras de grãos, especialmente milho, sorgo, milheto, arroz e soja, com forrageiras, principalmente as braquiárias, em áreas de lavoura com solo parcial, ou devidamente corrigido. Os principais objetivos desse sistema são a produção de forrageiras para a entressafra, além de palhada em quantidade e qualidade para o Sistema Plantio Direto (SPD)<a href="#ref_M4">[8]</a>. </p>
+
+					<img title="embrapa.com.br" class="box_img_right" src="./complements/images/module4/img_9.jpg" alt="solo">
+				</div>
+
+				<div class="hidden p_content content-6 box_info">
+					<p>&nbsp &nbsp O Sistema Santa Brígida (SSB) consiste no consórcio de gramíneas (milho ou sorgo e forrageiras) com leguminosas (feijão guandu-anão e crotalária), proporcionando um aumento do aporte de nitrogênio ao sistema, via fixação biológica do nitrogênio atmosférico. Podem-se citar como vantagens desse sistema a diversificação das palhadas para o SPD, a melhoria na qualidade das pastagens e o enriquecimento da silagem com proteína verdadeira<a href="#ref_M4">[8]</a>. </p>
+
+					<img title="codevasf.gov.br" class="box_img_right" src="./complements/images/module4/img_10.jpg" alt="solo">
+
+				</div>
+			</section>
+		</section>
+
+		<!-- topic 04 -->
+		<section class="container_text">
+
+			<div class="wrapper">
+
+				<h1 class="text_title"><b class="topic_number">04</b>Formas de semeadura</h1>
+
+				<div class="box_info">
+
+					<p> <b>Pré-semeadura à lanço</b> <br>
+						&nbsp &nbsp As sementes da forrageira são distribuídas a lanço, geralmente via tratorizada ou aérea, imediatamente antes da semeadura da cultura de grãos. A incorporação das sementes é parcial e ocorre em função da movimentação de solo provocada pela ação dos mecanismos de sulcagem e cobertura das sementes das semeadoras<a href="#ref_M4">[8]</a>. </p>
+
+					<img title="Fonte: USP" class="box_img_right" src="./complements/images/module4/img_11.jpg" alt=""> <br> <br>
+				</div> <br> <br>
+
+				<div class="box_info">
+
+					<p> <b>Pré-semeadura na linha</b> <br>
+						&nbsp &nbsp Consiste na semeadura da forrageira imediatamente antes da semeadura da cultura de grãos por meio da utilização de uma semeadora de forrageiras. Essa modalidade é mais utilizada em solos férteis para formação de pastagens com panicuns, por apresentarem sementes muito pequenas e que devem ser semeadas a profundidades entre dois e quatro centímetros<a href="#ref_M4">[8]</a>. </p>
+
+					<img title="Fonte: USP" class="box_img_right" src="./complements/images/module4/img_12.jpg"> <br> <br>
+
+				</div> <br> <br>
+
+				<div class="box_info">
+
+					<p> <b>Semeadura simultânea</b> <br>
+						&nbsp &nbsp As sementes da forrageira são semeadas no mesmo instante da cultura de grãos por meio da mistura das sementes da forrageira no adubo de plantio da cultura de grãos, ou do uso da terceira caixa (caixa-reservatório para sementes pequenas) nas semeadoras mais modernas e/ou da adaptação das caixas de distribuição de sementes de soja (discos com perfurações adaptadas para as sementes da forrageira), mantendo-se a caixa de distribuição de sementes de soja entre as duas caixas de semente de milho<a href="#ref_M4">[8]</a>. </p>
+
+					<img title="Fonte: USP" class="box_img_right" src="./complements/images/module4/img_13.jpg" alt=""> <br> <br>
+				</div> <br> <br>
+
+				<div class="box_info">
+
+					<p> <b>Semeadura defasada</b> <br>
+						&nbsp &nbsp Consiste na implantação da forrageira após o período crítico de competição com a cultura de grãos. Geralmente, as sementes da forrageira são misturadas ao fertilizante nitrogenado (predominantemente a
+						ureia), o qual é incorporado superficialmente ao solo <a href="#ref_M4">[8]</a>. <br>
+						&nbsp &nbsp Outra possibilidade de defasagem é a utilização da sobressemeadura da forrageira na cultura de grãos. Essa modalidade tem sido utilizada para implantação de braquiárias na cultura do milho e da soja e, mais recentemente, de panicuns na soja, em regiões do Cerrado com melhor distribuição do regime de chuvas (Sudoeste de Goiás e Norte do Mato Grosso), onde se cultivam variedades precoces<a href="#ref_M4">[8]</a>. </a>. </p>
+
+					<img title="Fonte: USP" class="box_img_right" src="./complements/images/module4/img_14.jpg" alt=""> <br> <br>
+				</div> <br> <br>
+
+				<div class="box_info">
+
+					<p> <b>Semeadura em sucessão</b> <br>
+						&nbsp &nbsp A forrageira é semeada imediatamente após a colheita da cultura de grãos implantada no verão, buscando-se aproveitar a umidade residual do solo e as chuvas do outono, visando à produção de forragem para pastejo, fenação, silagem ou produção de palhada para o SPD, evitando-se, assim, o pousio da área, o que pode ocasionar a proliferação de plantas daninhas, pragas e doenças<a href="#ref_M4">[8]</a>. </p>
+
+					<img title="Fonte: USP" class="box_img_right" src="./complements/images/module4/img_16.jpg"> <br> <br>
+
+				</div> <br> <br>
+			</div>
+		</section>
+
+		<section class="learn_more">
+
+			<i  class="fas fa-video"></i>
+
+			<button onclick="show_info(this)" data-lrn_mr="lrn_mr_4" class="button_visible">Saiba Mais</button>
+
+			<div id="lrn_mr_4" class="information hidden">
+				<section class="video_wrapper">
+					<p>Parte 2: Escolha da espécie forrageira - Formas de semeadura</p>
+					<iframe class="video_class" src="https://www.youtube.com/embed/wikYfUxmMD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</section>
+			</div>
+		</section>
+
+		<!-- EXERCISES MOD4 -->
+		<section class="info">
+
+			<div class="wrapper">
+				<h1 class="info_title" style="font-weight: 800; color: #282A36;">Exercícios</h1>
+				<p class="info_description">
+					Ao responder os exercícios, você deve acertar no mínimo 3 questões para avançar para o próximo módulo, caso contrário, a página será recarregada e você deverá tentar responder os exercícios novamente. </p>
+
+			</div>
+		</section>
+
+
+		<!-- Question 1 mod4-->
+
+		<section  class="master_form master_formM5" id="master_form">
+			<section data-question="Q1" id="4" class="form form1 form_from_M4">
+
+				<p class="question"><b>Questão 1:</b> Entre as opções abaixo, qual delas não está relacionada aos benefícios da pastagem para o sistema ILPF?</p>
+
+				<input class=" false input_option" id="option1_q1" hidden type="radio">
+				<label class="option" for="option1_q1">a) Maior desenvolvimento do sistema radicular;</label>
+
+				<input class=" false input_option" id="option2_q1" hidden type="radio">
+				<label class="option" for="option2_q1">b) Controle de plantas daninhas;</label>
+
+				<input class=" true input_option" id="option3_q1" hidden type="radio">
+				<label class="option option_true" for="option3_q1">c) Alta fixação de Nitrogênio;</label>
+
+				<input class=" false input_option" id="option4_q1" hidden type="radio">
+				<label class="option" for="option4_q1">d) Aumento da capacidade de suporte das pastagens.</label>
+
+				<button id='Q1' type="button" class="send_answer send_answer1">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ1">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> A fixação de Nitrogênio é mais eficaz em culturas
+								leguminosas, nas gramíneas/pastagens a reposição desse nutriente é realizada com adubação nitrogenada. </p>
+					</div>
+
+					<div class="hidden wrong_answer wrong_answerQ1">
+						<p><i class="fas fa-times-circle"></i>
+						<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="4" class=" div_answer hidden">
+				<button class="see_answer" id="ans_Q1_M4">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q1_M4" >Resposta: letra (c)<br>
+					A fixação de Nitrogênio é mais eficaz em culturas
+					leguminosas, nas gramíneas/pastagens a reposição desse nutriente é realizada com adubação nitrogenada. 
+				</p>
+			</div>
+
+			<!-- Question 2 -->
+			<section id="4" data-question="Q2" class="form form2 form_from_M4">
+				<p class="question"><b>Questão 2:</b> Das espécies mencionadas abaixo, qual não é muito utilizada em sistema ILPF?</p>
+
+				<input class=" true input_option" id="option1_q2" hidden type="radio">
+				<label class="option option_true" for="option1_q2">a) Arachis pintoi cv. BRA 031496</label>
+
+				<input class=" false input_option" id="option2_q2" hidden type="radio">
+				<label class="option" for="option2_q2">b) Brachiaria brizantha cv. Marandu</label>
+
+				<input class=" false input_option" id="option3_q2" hidden type="radio">
+				<label class="option" for="option3_q2">c) Brachiaria decumbens cv. Basilisk</label>
+
+				<input class=" false input_option" id="option4_q2" hidden type="radio">
+				<label class="option" for="option4_q2">d) Panicum maximum cv. Mombaça</label>
+
+				<button id="Q2" type="button" class="send_answer send_answer2">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ2">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> Apesar de ser uma forrageira leguminosa muito rica, apresenta limitações quanto à tolerância ao sombreamento. Enquanto as demais toleram até 75%, o amendoim forrageiro (<i>Arachis pintoi cv. BRA 031496</i>) não tolera mais que 50%. </p>
+					</div>
+
+					<div class="hidden wrong_answer wrong_answerQ2">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="4" class=" div_answer hidden">
+				<button class="see_answer" id="ans_Q2_M4">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q2_M4" >Resposta: letra(a)<br>
+					Apesar de ser uma forrageira leguminosa muito rica, apresenta limitações quanto à tolerância ao sombreamento. Enquanto as demais toleram até 75%, o amendoim forrageiro (<i>Arachis pintoi cv. BRA 031496</i>) não tolera mais que 50%. 
+				</p>
+			</div>
+
+			<!-- Question 3 mod4 -->
+			<section id="4" data-question="Q3" class="form form3 form_from_M4">
+				<p class="question"><b>Questão 3:</b> Qual das formas de semeadura é mais indicada para alguém que quer minimizar a competição da forrageira com a cultura de grãos? </p>
+
+				<input class=" false input_option" id="option1_q3" hidden type="radio">
+				<label class="option" for="option1_q3">a) Pré-semeadura à lanço;</label>
+
+				<input class="false input_option" id="option2_q3" hidden type="radio">
+				<label class="option" for="option2_q3">b) Pré-semeadura na linha;</label>
+
+				<input class="false input_option" id="option3_q3" hidden type="radio">
+				<label class="option" for="option3_q3">c) Semeadura simultânea;</label>
+
+				<input class=" true input_option" id="option4_q3" hidden type="radio">
+				<label class="option option_true" for="option4_q3">d) Semeadura defasada.</label>
+
+				<button id="Q3" type="button" class="send_answer send_answer3">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ3">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!!</b> <br>
+							<b>Resposta Correta.</b> A competição entre a forrageira e a cultura de grãos é minimizada porque a implantação da forrageira se dá após o período crítico de competição. </p>
+					</div>
+
+					<div class="hidden wrong_answer wrong_answerQ3">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="4" class=" div_answer hidden">
+				<button class="see_answer" id="ans_Q3_M4">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q3_M4" >Resposta: letra (d) <br>
+					A competição entre a forrageira e a cultura de grãos é minimizada porque a implantação da forrageira se dá após o período crítico de competição. 
+				</p>
+			</div>
+
+			<!-- Question 4 mod4-->
+			<section id="4" data-question="Q4" class="form form4 form_from_M4">
+				<p class="question"><b>Questão 4:</b> Quais são as características da Semeadura de Sucessão?</p>
+
+				<input class=" false input_option" id="option1_q4_M4" hidden type="radio">
+				<label class="option" for="option1_q4_M5">a) A forrageira é distribuída a lanço, antes da semeadura da cultura de grãos;</label>
+
+				<input class=" true input_option" id="option2_q4_M4" hidden type="radio">
+				<label class="option option_true" for="option2_q4_M4">b) A forrageira é semeada imediatamente após a colheita da cultura de grãos do verão;</label>
+
+				<input class=" false input_option" id="option3_q4_M4" hidden type="radio">
+				<label class="option" for="option3_q4_M5">c) A forrageira é semeada antes da semeadura da cultura de grãos;</label>
+
+				<input class=" false input_option" id="option4_q4_M4" hidden type="radio">
+				<label class="option" for="option4_q4_M5">d) A forrageira é semeada no mesmo instante da cultura de grãos.</label>
+
+				<button id="Q4" type="button" class="send_answer send_answer4">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ4">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> Esse tipo de semeadura aproveita a umidade residual do solo e as chuvas do outono, produz forragem para pastejo, fenação, silagem ou produz palhada para o Sistema	de Plantio Direto (SPD).</p>
+					</div>
+
+					<div class="hidden wrong_answer wrong_answerQ4">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div class="form" id="4">
+				<button class="finish" id="send_answer_finish" onclick="checkAll()">Próximo módulo</button>
+			</div>
+		</section>
+
+		<div id='4' class=" div_answer hidden">
+			<button class="see_answer" id="ans_Q4_M4">
+				Ver resposta</button>
+			<p class="hidden answer ans_Q4_M4" >Resposta: letra (b)<br>
+				Esse tipo de semeadura aproveita a umidade residual do solo e as chuvas do outono, produz forragem para pastejo, fenação, silagem ou produz palhada para o Sistema	de Plantio Direto (SPD).
+			</p>
+		</div>
+
+
+		<!-- References mod4 -->
+		<section class="container_text" id="ref_M4">
+			<div class="wrapper references">
+				<h1 class="text_title">REFERÊNCIAS:</h1>
+
+				<p>[1] KICHEL, A. N. COSTA, J. A. A. da ALMEIDA, R. G. de PAULINO, V. T. Sistemas de Integração lavoura-pecuária-floresta (iLPF)- Experiências no BRASIL. Boletim de Indústria Animal, Nova Odessa, v. 71, n. 1, p. 94-105, 2014.  <br>
+				[2] EMBRAPA Gado de Corte, 2012. Uso de forrageiras em sistemas de integração Lavoura-Pecuária-Floresta (iLPF). Disponível em: https://www.embrapa.br/en/busca-de-solucoes-tecnologicas/-/produto-servico/3822/uso-de-forrageiras-em-sistemas-de-integracao-lavoura-pecuaria-floresta-ilpf. Acesso em 09 de setembro de 2021 <br>
+				[3] ALMEIDA, R. G. O planejamento e a gestão do sistema iLPF. Disponível em: https://www.researchgate.net/profile/Roberto-Almeida-4/publication/282671341_O_planejamento_e_a_gestao_do_sistema_ILPF/links/5617e3d008ae044edbacf495/O-planejamento-e-a-gestao-do-sistema-ILPF.pdf. Acesso em 09 de setembro de 2021.  <br>
+				[4] COSTA, K.A.P.; ROSA, B.; OLIVEIRA, I.P.; CUSTÓDIO, D.P.; SILVA, D.C. Efeito da Estacionalidade na Produção de Matéria Seca e Composição Bromatológica da Brachiaria brizantha cv. Marandu. Ciência Animal Brasileira, v.6, n.3, p.187-193, 2005. <br>
+				[5] MARTUSCELLO, J.A.; JANK, L.; NETO, M. M. G.; LAURA, V.A.; CUNHA, D.N.F.V. Produção de gramíneas do gênero Brachiaria sob níveis de sombreamento. Revista Brasileira de Zootecnia, v.38, n.7, p.1183-1190, 2009. <br>
+				[6] EUCLIDES, V.P.B.; MACEDO, M.C.M.; ZIMMER, A.H.; JANK, L.; OLIVEIRA, M.P. de. Avaliação dos capins Mombaça e Massai sob pastejo. Revista Brasileira de Zootecnia, v.37, n.1, pp.18-26, 2008 <br>
+				[7] BRAZ, A.J.B.P.; SILVEIRA, P.M.; KLIEMANN, H.J.; ZIMMERMANN, J.P. Acumulação de Nutrientes em folhas de Milhetos e dos Capins Braquiárias e Mombaça. Pesquisa de Agropecuária Tropical, v.34, p.83-87, 2004. <br>
+				[8] USP. Módulo 2 – Implantação do Sistema ILP. Disponível em: https://edisciplinas.usp.br/pluginfile.php/5782801/mod_resource/content/1/Modulo2_ILP.pdf. Acesso em 09 de setembro de 2021.</p>
+
+			</div>
+		</section>
+	</section>
+
+	<!-- module_5 -->
+	<section id="container_mod5" class="container container_mod5 container_func">
+
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_introduction">Arranjo Florestal e Escolha da Espécie</h1>
+					<p class="info_description">
+						Neste módulo vamos conhecer as principais espécies de gramíneas utilizadas em ILPF e os benefícios que esse elemento traz para esse tipo de integração. </p>
+
+				</div>
+				<img style="box-shadow: none;" class="info_img icon_img_icon" id="icon_img" title="pt.vecteezy.com" src="./complements/images/module5/img_1.jpg">
+			</section>
+
+			<a target="_blank" href="./books/module_5.pdf" class="download_button">Baixar apostila</a>
+
+			<section class="video_wrapper">
+				<p class="video_description">Acompanhe o vídeo introdutório: Arranjo florestal e escolha da espécie arbórea</p>
+				<iframe class="video_class" src="https://www.youtube.com/embed/mPwyDy-hUr8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+
+		<!-- topic 01 -->
+		<section class="container_text">
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">01</b>Introdução</h1> <br> <br>
+
+				<p class="text_content">&nbsp &nbsp Dentro do contexto do sistema de iLPF, o
+					componente florestal pode trazer vários benefícios econômicos e ambientais, que podem ser citados:</p> <br>
+				<br>
+
+				<p><i class="icon_li fas fa-check-circle"></i>As espécies florestais proporcionam a mitigação dos gases do efeito estufa, resultante da maior capacidade de sequestro de carbono; <br>
+				<i class="icon_li fas fa-check-circle"></i>Fornecem produtos florestais, como: madeira, para diversas finalidades, frutos, essências, folhas e até as cascas de algumas espécies podem ser usadas; <br>
+				<i class="icon_li fas fa-check-circle"></i>Redução dos riscos por erosão; <br>
+				<i class="icon_li fas fa-check-circle"></i>Melhoria da recarga e da qualidade da água; <br>
+				<i class="icon_li fas fa-check-circle"></i>Maior ciclagem de nutrientes; <br>
+				<i class="icon_li fas fa-check-circle"></i>Fonte de renda extra após alguns anos de implantação; <br>
+				<i class="icon_li fas fa-check-circle"></i>Podem ser usadas para cadastro em programas governamentais de fomento e crédito rural, além de possibilitar a venda de créditos de carbono<a href="#ref_M5">[1]</a>.</p>
+				<br> <br>
+
+				<div style="display: flex; justify-content: center;">
+					<img style="width: 50vw; margin-bottom: 70px;" title="Fonte: Autor" class="isolated_img" src="./complements/images/module5/img_2.jpg">
+
+				</div>
+			</div>
+		</section>
+
+		<!-- topic 02 -->
+		<section class="container_text">
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">02</b>Arranjo Florestal</h1>
+
+				<p>Um dos principais pontos a serem considerados durante o planejamento da implantação de um sistema de iLPF, é a finalidade de utilização dos produtos florestais, sendo que o mais comum é a madeira, e o manejo das árvores. </p>
+
+				<section class="wrapper_add_info">
+					<p class="add_info">A qualidade da madeira é influenciada por vários fatores, sendo os principais: espécie arbórea, espaçamento e manejo silvicultural (Podas, controle de plantas daninhas e adubações de plantio e cobertura)<a href="#ref_M5">[2]</a>.</p>
+				</section>
+
+				<p>A ilPF pode ser facilitada pela adequada distribuição espacial das árvores no terreno, visando práticas de conservação do solo e água, favorecimento do trânsito de máquinas e a observância de aspectos comportamentais dos animais e sombreamento das culturas anuais. Para tanto, o arranjo espacial mais simples e eficaz é o de <b>renques</b>, em que as árvores são plantadas em faixas (linhas simples ou múltiplas), com espaçamentos amplos. Os produtores que desejam privilegiar a produção de madeira podem utilizar renques mais estreitos ou maior número de linhas em cada faixa (maior número de árvores por hectare); enquanto os que preferem a atividade agrícola e/ou pecuária podem utilizar espaçamentos maiores, ou seja, renques mais largos (menos linhas em cada faixa) <a href="#ref_M5">[3]</a> </p>
+
+			</div>
+		</section> <br> <br> <br>
+
+		<div class="isolated_img_div">
+			<img style="width: 50vw; margin-bottom: 70px;" title="Fonte: PORFÍRIO-DA-SILVA, et. al, (2019)" class="isolated_img" src="./complements/images/module5/img_3.jpg">
+
+			<p>A: Linhas Simples; <br>
+				B: Linhas Duplas;<br>
+				C: Linhas Triplas</p> <br> <br>
+		</div>
+
+		<div class="box_info">
+			<p> &nbsp &nbsp Com base nessas informações, os estudos tem se voltado mais para esses três tipos de arranjos, visando a produção de madeira. O critério para a distância entre os renques baseia-se que uma faixa de árvores não pode distanciar mais do que 10 vezes a sua altura. Nesse caso, as estratégias de manejo a serem tomadas vão depender da distância entre os renques e o objetivo da produção: <br> <br>
+			- Plantios em espaçamentos menores, tanto no renque de plantio das árvores quanto entre os renques, terá um maior volume de madeira por hectare. Necessita de desbastes precoces, se comparado com espaçamentos mais amplos, podendo ser uma alternativa para produção de madeira para uso múltiplo, como lenha, carvão, postes para cercas.
+			<br> - Plantios em espaçamentos maiores produzem toras de maior diâmetro já no primeiro desbaste, que poderão ser feitos mais tardiamente do que quando as árvores são plantadas em espaçamentos menores. Sendo mais usados para produção de madeira para serraria. <br>
+			- Entre os renques, para possibilitar o trânsito de máquinas e equipamentos agrícolas, uma boa opção é utilizar distâncias iguais ao tamanho desses equipamentos acrescidas de dois metros <a href="#ref_M5">[3]</a>. </p> <br>
+
+			<img title="Fonte: PORFÍRIO-DA-SILVA, et. al, (2019)" class="box_img_right"
+				src="./complements/images/module5/img_4.jpg"> <br> <br>
+		</div>
+
+		<!-- topic 03 -->
+		<section class="container_text">
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">03</b>Escolha da Espécie</h1>
+
+				<p>&nbsp &nbsp A escolha da espécie florestal para o sistema deve se basear pela região e características da área e pela finalidade do mesmo. Sendo assim, a escolha da espécie florestal depende também das condições do local de plantio (clima, tipo de solo, relevo); existência de conhecimentos e assistência técnica sobre aquela espécie; produtividade e rentabilidade do plantio e disponibilidade de sementes melhoradas ou mudas <a href="#ref_M5">[4]</a>. <br> <br>
+				&nbsp &nbsp Algumas características devem ser atendidas para que uma espécie florestal possa ser utilizada no sistema de iLPF: </p>
+
+				<p><i class="icon_li fas fa-check-circle"></i>Adaptação às condições climáticas e aos solos da propriedade rural;	 <br>
+				<i class="icon_li fas fa-check-circle"></i>Troncos altos, copa pouco densa, raízes profundas e sem sapopemas (raízes laterais tabulares); <br>
+				<i class="icon_li fas fa-check-circle"></i>Resistência aos ventos, pragas e doenças; <br>
+				<i class="icon_li fas fa-check-circle"></i>Forma, tamanho e densidade da copa não impedir a transmissão da luz; <br>
+				<i class="icon_li fas fa-check-circle"></i>Ter boa velocidade de crescimento e sobrevivência; <br>
+				<i class="icon_li fas fa-check-circle"></i>Ter valor econômico ou ambiental <a href="#ref_M5">[4]</a>.</p>
+
+			</div>
+		</section>
+
+		<!-- topic 04 -->
+		<section class="container_text">
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">04</b>Principais Espécies Utilizadas no Bioma Cerrado</h1>
+
+				<p>Com base nas informações sobre a escolha da espécie, de acordo com as condições do local e a finalidade do plantio, seguem as principais espécies usadas em iLPF no bioma Cerrado e algumas com potencial de uso:</p>
+
+				<section class="cards_wrapper" style="margin-bottom: 70px;">
+					<div class="card_info_edit" style="height: 900px;">
+						<p><i>Eucalipto (Eucalyptus spp.)</i> <br> <br> Nativa da Austrália, essa espécie é a <b>mais plantada no Brasil</b>, e a mais usada em sistemas de iLPF. Diversas espécies desse gênero são plantadas, cabendo ao produtor e ao técnico responsável a escolha do melhor clone ou variedade, de acordo com a disponibilidade local. <br>
+						Possui diversas finalidades, como: Madeira para serraria, mourões e lascas tratadas, escoras para construção civil, lenha e carvão. <br>
+						Por ser a espécie mais estudada em sistemas de iLPF, esta possui uma grande diversidade de materiais, boa disponibilidade de tecnologias e insumos, além de ótimas características para adequação ao sistema, como tronco reto e alto, sistema radicular profundo e sem <button class="word_link">sapopemas <span class="word_description">Sapopema é o nome tupi dado para a raiz grande que se desenvolve junto com o tronco de várias árvores das florestas pluviais.</span> </button>. Possui também rápido crescimento, baixa mortalidade, elevada produção, boa tolerância a ventos, a pragas e doenças . <a href="#ref_M5">[4]</a>. </p>
+
+						<img class="img_card" title="sementesoesp.com.br" src="./complements/images/module5/img_5.png">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Teca (Tectona grandis)</i> <br> <br>
+							Originária do sudeste da Ásia, essa espécie tem sido bem difundida em plantios sob iLPF, principalmente no estado de Mato Grosso. Já possui clones melhorados e adaptados ao Cerrado. Sua madeira, de alto valor agregado, é muito utilizada para serraria e exportação. Durante seu manejo, o material das podas pode servir como mourões e lascas tratadas e para lenha. Possuem boa disponibilidade de tecnologias e insumos, tronco alto e sistema radicular sem sapopemas, crescimento médio, baixa mortalidade e boa produção. Além de boa tolerância a ventos, pragas e doenças<a href="#ref_M5">[4]</a>. </p>
+
+						<img class="img_card" title="embrapa.br" src="./complements/images/module5/img_6.jpg">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Mogno Africano (Khaya ivorensis; Khaya senegalensis; Khaya anthoteca)</i> <br> <br>
+							De origem africana, essas três espécies são as que melhor se adaptaram às condições de produção no Brasil e no Cerrado. São plantas de madeira nobre, ciclo de crescimento médio, boa desrama natural (reduzindo custos), e ótima conformação de tronco, raíz e entrada de luz. Uma dificuldade no uso dessa espécie é o fato do seu crescimento ser um pouco lento e suas folhas serem muito atrativas para o consumo de bovinos. Possui boa tolerância a ventos, pragas e doenças<a href="#ref_M5">[4]</a>. </p>
+
+						<img class="img_card" title="Fonte: AUTOR" src="./complements/images/module5/img_7.jpg">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Acácia (Acacia mangium)</i> <br> <br>
+							É uma espécie nativa da parte noroeste da Austrália, de Papua Nova-Guiné e do oeste da Indonésia, tem uma elevada produção de biomassa e é indicada para solos mais arenosos e consórcios. É pouco usada em áreas com iLPF por ter pouca viabilidade econômica (sua madeira é barata e usada para lenha e carvão). Possui algumas dificuldades para ser usada em sistemas de iLPF por ter uma conformação de copa desfavorável, falta de tecnologias para produção no cerrado, pouca tolerância a doenças fúngicas depois de podadas e alta mortalidade de mudas<a href="#ref_M5">[4]</a>. </p>
+
+						<img class="img_card" title="celuloseonline.com.br" src="./complements/images/module5/img_8.jpg" alt="">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Mogno Brasileiro (Swietenia macrophylla)</i> <br> <br>
+							Essa espécie é nativa da Amazônia, possui todas as qualidades que o Mogno Africano apresenta, além de ser uma madeira nobre e altamente valorizada no mercado nacional e internacional. Mas seu cultivo tem sido inviabilizado no Cerrado devido a <b>broca do ponteiro (<i>Hypsypyla grandella</i>)</b>, que faz com que haja a perda do tronco reto e apresente nós na madeira, inviabilizando sua venda para o mercado de serraria, e muitas vezes até matando as mudas<a href="#ref_M5">[4]</a>. </p>
+
+						<img class="img_card" title="Fonte: AUTOR" src="./complements/images/module5/img_9.jpg" alt="">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Cedro Australiano (Toona ciliata)</i> <br> <br> Uma das principais vantagens do cultivo do cedro australiano em iLPF é sua resistência aos ataques da broca da gema apical (<i>Hypsipyla grandella</i>), que causa grandes danos ao Mogno brasileiro. Outra característica relevante do cedro-australiano é a tolerância à sombra na fase jovem, ponto importante par ser observado em plantios consorciados. É uma espécie que apresenta boa conformação de copa, crescimento rápido, boa resistência a ventos, pragas e doenças, além de ter uma madeira de bom preço de mercado para serraria<a href="#ref_M5">[5]</a>. </p>
+
+						<img class="img_card" title="sementesarbocenter.com.br" src="./complements/images/module5/img_10.jpg">
+					</div>
+
+					<div class="card_info_edit">
+						<p>Pequi <i>(Caryocar brasiliense)</i> <br> <br>
+							O pequizeiro é uma espécie nativa do Cerrado, atinge entre 8 e 12 metros de altura e seu tronco possui circunferência média de 2,5 metros. Por ser uma espécie de copa muito aberta, recomenda-se o plantio com maiores distâncias entre as plantas. Há poucos estudos com essa espécie em sistemas de iLPF, mas seu cultivo é bastante promissor, devido aos vários produtos que podem ser obtidos, como os frutos, óleos das sementes, uso da casca e até de sua madeira<a href="#ref_M5">[6]</a>. </p>
+
+						<img class="img_card" title="ppmac.org" src="./complements/images/module5/img_11.png">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Baru (Dipteryx alata)</i> <br> <br>
+							O baru é uma espécie disseminada no Bioma Cerrado e uma das espécies mais promissoras para cultivo, devido a seu uso múltiplo, alta taxa de germinação de sementes e de estabelecimento de mudas. A madeira é de alta densidade, durável e utilizada para cercas, produção de lenha e serraria. Tanto a polpa quanto a semente são comestíveis e ricas em calorias e sais minerais. Sua altura média é de 15 metros e sua copa pode ser alongada ou larga, de 6 a 11 m de diâmetro. Assim como o pequizeiro, ainda há poucos estudos com essa espécie em sistemas de iLPF, mas que a mesma se demonstra muito promissora para plantios consorciados, já que possui grande resistência a pragas e doenças, além de disponibilizar vários produtos além da madeira<a href="#ref_M5">[7]</a>. </p>
+
+						<img class="img_card" title="researchgate.net" src="./complements/images/module5/img_12.png">
+
+					</div>
+				</section>
+
+				<section class="learn_more">
+
+					<i  class="fas fa-video"></i>
+		
+					<button onclick="show_info(this)" data-lrn_mr="lrn_mr_6" class="button_visible">Saiba Mais</button>
+		
+					<div id="lrn_mr_6" class="information hidden">
+						<section class="video_wrapper">
+							<p>Desempenho de Plantas Arbóreas em ILPF - Roraima</p>
+							<iframe class="video_class" src="https://www.youtube.com/embed/BQf43OCb0dc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</section>
+					</div>
+				</section>
+
+				<h1 class="text_title"><b class="topic_number">05</b>Considerações</h1>
+				<p>De acordo com as características da propriedade e da finalidade do sistema de iLPF, o produtor pode optar por diferentes espécies como componente florestal, e organizar o arranjo do plantio de acordo com seus objetivos. <br>
+				Existem estudos com outras espécies sendo desenvolvidos em diferentes partes do Bioma Cerrado, onde cabe destacar a importância da assistência técnica local para a escolha da melhor opção para o incremento da renda, da produtividade e dos benefícios ambientais que cada espécie irá trazer ao sistema. </p>
+
+			</div>
+		</section>
+
+		<!-- EXERCISES MOD5-->
+		<section class="info">
+			<div class="wrapper">
+
+				<h1 class="info_title" style="font-weight: 800; color: #282A36;">Exercícios</h1>
+				<p class="info_description"> Ao responder os exercícios, você deve acertar no mínimo 3 questões para avançar para o próximo módulo, caso contrário, a página será recarregada e você deverá tentar responder os exercícios novamente. </p>
+			</div>
+
+		</section>
+
+				<!-- Question 1 mod5-->
+				<section class="master_form master_formM4" id="master_form">
+					<section id="5" data-question="Q1" class="form form1 form_from_M5">
+						<p class="question"><b>Questão 1:</b> Dentre os benefícios econômicos e ambientais que o componente florestal pode trazer, marque a alternativa incorreta:</p>
+		
+						<input class=" false input_option" id="option1_q1_M5" hidden type="radio">
+						<label class="option" for="option1_q1_M5">a) Fornecem produtos florestais, como: madeira, para diversas finalidades, frutos, essências, folhas e até as cascas de algumas espécies podem ser usadas.</label>
+		
+						<input class=" false input_option" id="option2_q1_M5" hidden type="radio">
+						<label class="option" for="option2_q1_M5">b) As espécies florestais proporcionam a mitigação dos gases do efeito estufa, resultante da maior capacidade de sequestro de carbono.</label>
+		
+						<input class=" false input_option" id="option3_q1_M5" hidden type="radio">
+						<label class="option" for="option3_q1_M5">c) Melhoria da recarga e da qualidade da água</label>
+		
+						<input class=" true input_option" id="option4_q1_M5" hidden type="radio">
+						<label class="option option_true" for="option4_q1_M5">d) Aumento dos riscos por erosão.</label>
+		
+						<button id="Q1" type="button" class="send_answer send_answer1">Responder</button>
+		
+						<div class="feedback">
+							<div class="hidden correct_answer correct_answerQ1">
+								<p>
+									<i class="fas fa-check-circle"></i>
+									<b>PARABÉNS!</b> <br>
+									<b>Resposta Correta.</b> O plantio de espécies arbóreas reduz o risco de erosão devido às raízes das árvores serem profundas e criarem uma malha que segura o solo, evitando que este seja levado pela água das chuvas. </p>
+		
+							</div>
+							<div class="hidden wrong_answer wrong_answerQ1">
+								<p><i class="fas fa-times-circle"></i>
+									<b>RESPOSTA INCORRETA!</b>
+							</div>
+						</div>
+					</section>
+		
+					<div id="5" class=" div_answer hidden">
+						<button class="see_answer" id="ans_Q1_M5">
+							Ver resposta</button>
+						<p class="hidden answer ans_Q1_M5" >Resposta: letra (d) <br>
+							O plantio de espécies arbóreas reduz o risco de erosão devido às raízes das árvores serem profundas e criarem uma malha que segura o solo, evitando que este seja levado pela água das chuvas. 
+						</p>
+					</div>
+		
+					<!-- Question 2 mod5-->
+					<section id="5" data-question="Q2" class="form form2 form_from_M5">
+						<p class="question"><b>Questão 2:</b> Quanto ao arranjo florestal em sistemas de iLPF, é incorreto afirmar:</p>
+		
+						<input class=" false input_option" id="option1_q2_M5" hidden type="radio">
+						<label class="option" for="option1_q2_M5">a) A qualidade da madeira é influenciada por vários fatores, sendo os principais: espécie arbórea, espaçamento e manejo silvicultural (podas, controle de plantas daninhas e adubações de plantio e cobertura).</label>
+		
+						<input class=" true  input_option" id="option2_q2_M5" hidden type="radio">
+						<label class="option option_true" for="option2_q2_M5">b) Plantios em espaçamentos menores, tanto no renque de plantio das árvores quanto entre os renques, terá um menor volume de madeira por hectare. </label>
+		
+						<input class=" false input_option" id="option3_q2_M5" hidden type="radio">
+						<label class="option" for="option3_q2_M5">c) Plantios em espaçamentos maiores produzem toras de maior diâmetro já no primeiro desbaste, que poderão ser feitos mais tardiamente do que quando as árvores são plantadas em espaçamentos menores.</label>
+		
+						<input class=" false input_option" id="option4_q2_M5" hidden type="radio">
+						<label class="option" for="option4_q2_M5">d) Entre os renques, para possibilitar o trânsito de máquinas e equipamentos agrícolas, uma boa opção é utilizar distâncias iguais ao tamanho desses equipamentos acrescidas de dois metros.</label>
+		
+						<button id="Q2" type="button" class="send_answer send_answer2">Responder</button>
+		
+						<div class="feedback">
+							<div class="hidden correct_answer correct_answerQ2">
+								<p><i class="fas fa-check-circle"></i>
+									<b>PARABÉNS!</b> <br>
+									<b>Resposta Correta.</b> Plantios em espaçamentos menores, tanto no renque de plantio das árvores quanto entre os renques, terá um maior volume de madeira por hectare, mas necessita de mais tratos culturais e manejos de podas e desbastes mais precoces. É uma boa alternativa para produção de madeira para biomassa e carvão. </p>
+							</div>
+							<div class="hidden wrong_answer wrong_answerQ2">
+								<p><i class="fas fa-times-circle"></i>
+									<b>RESPOSTA INCORRETA!</b>
+							</div>
+						</div>
+					</section>
+		
+					<div  id="5" class="div_answer hidden">
+						<button class="see_answer" id="ans_Q2_M5">
+							Ver resposta</button>
+						<p class="hidden answer ans_Q2_M5" >Resposta: letra (a) <br>
+							Plantios em espaçamentos menores, tanto no renque de plantio das árvores quanto entre os renques, terá um maior volume de madeira por hectare, mas necessita de mais tratos culturais e manejos de podas e desbastes mais precoces. É uma boa alternativa para produção de madeira para biomassa e carvão. 
+						</p>
+					</div>
+		
+					<!-- Question 3 mod5 -->
+					<section id="5" data-question="Q3" class="form form3 form_from_M5">
+						<p class="question"><b>Questão 3:</b> 3. Marque a alternativa incorreta para características que devem ser atendidas para que uma espécie florestal possa ser utilizada no sistema de iLPF:
+						</p>
+		
+						<input class=" true input_option" id="option1_q3_M5" hidden type="radio">
+						<label class="option  option_true" for="option1_q3_M5">a) Pouca adaptação às condições climáticas e aos solos da propriedade rural, já que espécies florestais são mais resistentes que culturas anuais.</label>
+		
+						<input class="false input_option" id="option2_q3_M5" hidden type="radio">
+						<label class="option" for="option2_q3_M5">b) Resistência aos ventos, pragas e doenças.</label>
+		
+						<input class="false input_option" id="option3_q3_M5" hidden type="radio">
+						<label class="option" for="option3_q3_M5">c) Forma, tamanho e densidade da copa não impedir a transmissão da luz.</label>
+		
+						<input class=" false input_option" id="option4_q3_M5" hidden type="radio">
+						<label class="option" for="option4_q3_M5">d) Ter valor econômico ou ambiental.</label>
+		
+						<button id="Q3" type="button" class="send_answer send_answer3">Responder</button>
+		
+						<div class="feedback">
+							<div class="hidden correct_answer correct_answerQ3">
+								<p>
+									<i class="fas fa-check-circle"></i>
+									<b>PARABÉNS!!</b> <br>
+									<b>Resposta Correta.</b> É necessário que a espécie arbórea seja bem adaptada às condições climáticas e do solo da propriedade, visando uma menor incidência de pragas e doenças, crescimento mais rápido, e menor chance de prejuízos econômicos por morte de mudas mal adaptadas. </p>
+							</div>
+		
+							<div class="hidden wrong_answer wrong_answerQ3">
+								<p><i class="fas fa-times-circle"></i>
+									<b>RESPOSTA INCORRETA!</b>
+		
+							</div>
+						</div>
+					</section>
+		
+					<div id="5" class=" div_answer hidden">
+						<button class="see_answer" id="ans_Q3_M5">
+							Ver resposta</button>
+						<p class="hidden answer ans_Q3_M5" >Resposta: letra (a)<br>
+							É necessário que a espécie arbórea seja bem adaptada às condições climáticas e do solo da propriedade, visando uma menor incidência de pragas e doenças, crescimento mais rápido, e menor chance de prejuízos econômicos por morte de mudas mal adaptadas. 
+						</p>
+					</div>
+		
+					<!-- Question 4 mod5-->
+					<section id="5" data-question="Q4" class="form form4 form_from_M5">
+						<p class="question"><b>Questão 4:</b> Dentre as espécies florestais que vinham sendo usadas em iLPF no Cerrado, qual se tornou inviável devido à uma praga?</p>
+		
+						<input class=" false input_option " id="option1_q4_M5" hidden type="radio">
+						<label class="option" for="option1_q4_M5">a) Acácia</label>
+		
+						<input class=" false input_option" id="option2_q4_M5" hidden type="radio">
+						<label class="option " for="option2_q4_M5">b) Mogno Africano</label>
+		
+						<input class=" true input_option " id="option3_q4_M5" hidden type="radio">
+						<label class="option option_true" for="option3_q4_M5">c) Mogno Brasileiro</label>
+		
+						<input class=" input_option " id="option4_q4_M5" hidden type="radio">
+						<label class="option" for="option4_q4_M5">d) Cedro Australiano</label>
+		
+						<button id="Q4" type="button" class="send_answer send_answer4">Responder</button>
+		
+						<div class="feedback">
+							<div class="hidden correct_answer correct_answerQ4">
+								<p>
+									<i class="fas fa-check-circle"></i>
+									<b>PARABÉNS!</b> <br>
+									<b>Resposta Correta.</b> O cultivo de Mogno Brasileiro tem sido inviabilizado no cerrado devido a broca do ponteiro (Hypsypyla grandella), que faz com que haja a perda da dominância apical (tronco reto) e apareçam nós na madeira, inviabilizando sua venda para o mercado de serraria. Tal praga pode aparecer em níveis de infestação tão elevados que, em muitos plantios pode haver morte de quase todas as árvores. </p>
+		
+							</div>
+							<div class="hidden wrong_answer wrong_answerQ4">
+								<p><i class="fas fa-times-circle"></i>
+									<b>RESPOSTA INCORRETA!</b>
+		
+							</div>
+						</div>
+					</section>
+		
+					<div id="5" class=" div_answer hidden">
+						<button class="see_answer" id="ans_Q4_M5">
+							Ver resposta</button>
+						<p class="hidden answer ans_Q4_M5" >Resposta: letra (c)<br>
+							O cultivo de Mogno Brasileiro tem sido inviabilizado no cerrado devido a broca do ponteiro (Hypsypyla grandella), que faz com que haja a perda da dominância apical (tronco reto) e apareçam nós na madeira, inviabilizando sua venda para o mercado de serraria. Tal praga pode aparecer em níveis de infestação tão elevados que, em muitos plantios pode haver morte de quase todas as árvores. 
+						</p>
+					</div>
+		
+					<div class="form" id="5">
+						<button class="finish" id="send_answer_finish" onclick="checkAll()">Próximo módulo</button>
+					</div>
+				</section>
+		
+
+		<!-- References mod5 -->
+		<section class="container_text" id="ref_M5">
+			<div class="wrapper references">
+				<h1 class="text_title">REFERÊNCIAS:</h1>
+
+				<p>[1] BALBINO, L.C.; BARCELLOS, A.O.; STONE, L.F. Marco referencial: Integração Lavoura-Pecuária- Floresta (iLPF). 1ª ed., Brasília: Embrapa, 2011. 130p. <br>
+				[2] FERREIRA, A. D.; SERRA, A. P.; MELOTTO, A. M.; BUNGENSTAB, D. J., & Laura, V. A. (2019). Manejo das árvores e propriedades da madeira em sistema de ILPF com eucalipto. Embrapa Café-Capítulo em livro científico (ALICE). <br>
+				[3] PORFÍRIO-DA-SILVA, V.; MORAeS A.; MeDRADO, M. J. S. Planejamento do número de árvores na composição de sistemas de Integração Lavoura-Pecuária-Floresta (iLPF). colombo: embrapa Florestas, 2008. 4 p. (embrapa Florestas. comunicado técnico, 219).  <br>
+				[4] WRUCK, F.J. Sistemas de iLPF no bioma Cerrado. 2017. Disponível em: http://ead.senar.org.br/wpcontent/uploads/capacitacoes_conteudos/ilpf/CURSO_6/Aula3_-_Principais_Estrtg_Esp_Florestais_iLPF_Bioma_Cerrado.pdf. Acesso em: 09 de outubro de 2021 <br>
+				<p>[5] NAVROSKI, M. C., de OLIVEIRA PEREIRA, M., BORSOI, G. A., KALIL FILHO, A. N., NASCIMENTO, B., & da ROSA, D. P. (2017). Tolerância ao frio e características silviculturais do cedro-australiano no sul do Brasil. Pesquisa Florestal Brasileira, 37(89), 47-54. <br>
+				[6] SANTOS, F. S.; FERREIRA SANTOS, R.; PEREIRA DIAS, P.; ZANÃO JR, L. A.; TOMASSONI, F. A CULTURA DO PEQUI (Caryocar brasiliense Camb.). Acta Iguazu, [S. l.], v. 2, n. 3, p. 46–57, 2000. DOI: 10.48075/actaiguaz.v2i3.8620.Disponível em: https://e-revista.unioeste.br/index.php/actaiguazu/article/view/8620. Acesso em: 14 out. 2021 <br>
+				[7] SANO, S. M.; RIBEIRO, J. F.; DE BRITO, M. A. Baru: biologia e uso. Embrapa Cerrados-Documentos (INFOTECA-E), 2004.</p>
+
+			</div>
+		</section>
+	</section>
+
+	<!-- module_6 -->
+	<section  id="container_mod6" class="container container_mod6 container_func">
+		<section>
+	
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_introduction">Aspectos Econômicos</h1>
+					<p class="info_description"> Neste módulo abordaremos as características econômicas e análises financeiras do sistema de integração Lavoura-Pecuária-Floresta. Serão analisados os custos, lucratividade e viabilidade econômica do sistema. </p>
+
+				</div>
+				<img class="info_img info_img_icon" id="icon_img" title="pt.vecteezy.com" src="./complements/images/module6/img_1.png">
+			</section>
+
+			<a target="_blank"  href="./books/module_6.pdf" class="download_button">Baixar apostila</a>
+		</section>
+
+		<!-- topic 01 -->
+		<section class="container_text">
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">01</b>Introdução</h1>
+
+				<p class="text_content">
+					Várias vantagens podem ser citadas em favor dos sistemas de integração lavoura-pecuária (ILP), pecuária-floresta (IPF) e lavoura-pecuária-floresta (ILPF). Muitas delas têm um caráter social, extrapolando a porteira da fazenda, outras se restringem ao estabelecimento rural. Os principais benefícios econômicos diretos para o produtor são:<br> <br>
+				</p>
+
+				<p><i class="icon_li fas fa-check-circle"></i>Aumento do produto total; <br>
+			
+				<i class="icon_li fas fa-check-circle"></i>Melhor aproveitamento da mão-de-obra; <br>
+				<i class="icon_li fas fa-check-circle"></i>Redução do custo unitário dos produtos; <br>
+				<i class="icon_li fas fa-check-circle"></i>Aumento do lucro, como resultado da maior produção e menor custo; <br>
+				<i class="icon_li fas fa-check-circle"></i>Melhor distribuição e diversificação das receitas ao longo do ano, gerando um fluxo de caixa mais equilibrado; <br>
+				<i class="icon_li fas fa-check-circle"></i>Redução dos riscos na produção e nos preços, devido à diversificação de atividades <a href="#ref_M6">[1]</a>; <br>
+				<i class="icon_li fas fa-check-circle"></i>Redução no uso de insumos e recursos não renováveis (fertilizantes minerais e combustíveis fosseis).</p>
+
+				<!-- topic 02 -->
+				<h1 class="text_title"><b class="topic_number">02</b>Características Econômicas da iLPF</h1>
+
+				<p>
+				Listam-se a seguir as principais características desse tipo de exploração: <br> <br>
+				• Grande número de alternativas de produção disponíveis, possibilitando inúmeras combinações de atividades. Salienta-se a complexidade dessa escolha, decorrente da dinâmica dos sistemas em sucessão, onde as variáveis espaço e tempo são fundamentais; <br>
+				• Numerosas possibilidades de combinação dos fatores de produção (terra, capital e trabalho e seus desdobramentos). Tal característica é ainda mais visível na pecuária, onde os sistemas de produção são extremamente flexíveis quanto ao emprego de tecnologias e ao nível de uso de insumos; <br>
+				• Caracterização de um processo de mudança a partir de um sistema já existente, seja ele de produção vegetal ou animal, salientando-se a dificuldade na definição das espécies vegetais, especialmente do componente arbóreo, ideais para cada condição; <br>
+				• Planos de produção que envolvem investimentos cujos efeitos se prolongam por um longo horizonte de tempo; <br>
+				• Efeitos defasados do uso de determinados insumos. Por exemplo, a adubação da lavoura pode beneficiar a pastagem que a sucede durante vários anos; <br>
+				• Em busca da produtividade e da sustentabilidade, os objetivos dos produtores tendem a ser múltiplos, ao invés de se restringirem à simples maximização do lucro; <br>
+				• Na composição dos benefícios dos sistemas de integração, há diversos “produtos” de difícil valoração monetária, por falta de valor de mercado, como por exemplo, os efeitos positivos na microflora e microfauna do solo, na redução da erosão, no microclima e no bem-estar animal <a href="#ref_M6">[1]</a>. </p>
+
+				<div class="isolated_img_div" style="margin-bottom: 70px;">
+					<img title="grnews.com.br" class="isolated_img" src="./complements/images/module6/img_2.jpg">
+				</div>
+
+				<!-- topic 03 -->
+				<h1 class="text_title"><b class="topic_number">03</b> Principais aspectos que as
+					análises financeiras de sistemas de integração têm demonstrado</h1>
+
+				<p>É possível observar, por meio da análise dos resultados, os seguintes aspectos: <br> <br>
+				&nbsp • Os custos de implantação dos sistemas de produção diluem-se nos <b> primeiros 3 a 5 anos</b>, e tendem a estabilizar-se à medida que as relações biofísicas entre os diferentes componentes também se estabilizam. <br>
+				&nbsp • As receitas tendem a superar os custos, gerando fluxo de caixa positivo, nesse mesmo período, entre 3 e 5 anos da implantação. <br>
+				&nbsp • Considerando-se a utilização de espécies que podem demandar manejo pontual para a obtenção da produção, como espécies madeireiras, por exemplo, podem ocorrer picos de custos, seguidos igualmente por picos de receita, mantendo o sistema <b>financeiramente estável.</b> <br> <br> </p>
+
+
+				<div class="box_info">
+					<p>&nbsp • A mão de obra tem se mostrado como um importante componente do custo de produção desses sistemas de produção. Esse aspecto é ainda mais destacado quando se considera a remuneração da mão de obra familiar utilizada nas mesmas condições de remuneração daquela contratada. <br>
+					&nbsp • Sistemas em que há maior emprego de mão de obra familiar, a despeito das mesmas condições de remuneração, mostram-se mais lucrativos. <br>
+					&nbsp • A diversificação da produção promove, de forma geral, estabilização na receita, uma vez que variações negativas nos preços de um produto podem ser compensadas por variações positivas nos preços de outro. <br>
+					&nbsp • Sistemas extremamente diversos (mais de dez espécies) apresentam alto grau de dificuldade para planejamento e condução, o que resulta em baixa produtividade e altos custos <a href="#ref_M6">[2]</a>. </p>
+
+					<img title="deere.com.br" class="box_img_right" src="./complements/images/module6/img_3.jpg"> <br> <br>
+				</div>
+
+				<h1 class="text_title"><b class="topic_number">04</b> Análise de viabilidade econômica da implantação do sistema ILPF em Brotas-SP</h1>
+
+				<p>&nbsp &nbsp O estudo de caso realizado por GODOY (2020) foi realizado considerando uma área de 120 ha, sendo 45 ha de agricultura, 8 ha de atividade florestal e 67 ha de pecuária. As atividades produtivas foram milho (safra), recria de pecuária de corte com compra de bezerro desmamado (7,5 arrobas) para venda de boi magro (cerca de 12 arrobas) e madeira de eucalipto com uma razão de 111 árvores em pé/ha.</p> <br> <br>
+
+				<div class="tables">
+					<h1 class="text_title"><b class="subtopic_number">4.1</b>Custo Operacional Total (COT)</h1>
+					<img class="table_img" src="./complements/images//module6/img_4.jpg" alt="">
+				</div> <br> <br>
+
+				<p> &nbsp &nbsp O centro de custo da Pecuária, contribuiu com o maior valor em termos de custo, com a necessidade de aquisição de R$ 369.619,20 em bezerros desmamados. Sendo assim a distribuição do custo efetivo foi de <b>24,88%</b> para lavoura, <b>69,84%</b> para pecuária e <b>5,28%</b> para floresta. <br>
+				&nbsp &nbsp Adicionando ao COT o custo de oportunidade do capital de giro (R$ 40.300,36) o custo de oportunidade de capital investido de benfeitoria e infraestrutura (R$ 6.385,85), máquinas e equipamentos (18.912,44) e culturas perenes (R$ 4.944,49), chega-se em um custo total (CT) de R$ 870.405,92 na implantação do sistema.
+				</p> <br> <br>
+
+				<div class="tables">
+					<h1 class="text_title"><b class="subtopic_number">4.2</b>Receita Bruta Projetada</h1>
+					<p> &nbsp &nbsp Estimou-se a produção de milho com produtividade média de 140 sacas/ha, a pecuária com ganho de 4 arrobas em 1 ano com taxa de lotação de 2,3 UA/ha e 1% de taxa de mortalidade e para o entro florestal um ganho de 0,08 m3/árvore/ano</p>
+
+					<img class="table_img" src="./complements/images//module6/img_5.jpg" alt="">
+				</div><br> <br>
+
+				<div class="tables">
+					<h1 class="text_title"><b class="subtopic_number">4.3</b>Lucro Total da ILPF</h1>
+
+					<img class="table_img" src="./complements/images//module6/img_6.jpg" alt="">
+
+					<p> <br> <br> &nbsp &nbsp Portanto o lucro total da ILPF totalizou <b>R$ 79.198,97</b>, sendo R$ 44.890,37 para Lavoura; R$ 9.663,09 para a Pecuária e R$ 24.645,51 para Floresta. Nota-se que:
+					&nbsp &nbsp • A pecuária é uma disponibilidade de capital de curto prazo, sendo sustentadora da capacidade de geração do caixa do sistema;
+					&nbsp &nbsp • Na margem de lucro a Lavoura assume o melhor resultado operacional, sendo responsável por proporcionar a oportunidade de novos investimentos e autofinanciamento do sistema;
+					&nbsp &nbsp • A área florestal representa uma reserva de caixa que pode ser acionada quando necessário. </p>
+
+					<section class="wrapper_add_info">
+						<p class="add_info">Os custos unitários computados para cada produto foram de R$ 30,77/saca de milho; R$ 2.857,75/Boi magro vendido e de R$ 36,00/m3 de madeira de eucalipto.</p>
+
+					</section>
+				</div>
+
+				<section class="learn_more" style="margin-bottom: 70px;" >
+
+					<i  class="fas fa-video"></i>
+	
+					<button onclick="show_info(this)" data-lrn_mr="lrn_mr_7" class="button_visible">Conheça algumas fazendas de sucesso no uso de ILPF</button>
+	
+					<div id="lrn_mr_7" class="information hidden">
+						<section class="video_wrapper">
+							<iframe class="video_class" src="https://www.youtube.com/embed/YecqpLvn2L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</section> <br> <br> <br> <br>
+							<section class="video_wrapper">
+								<iframe class="video_class" src="https://www.youtube.com/embed/trUhXXAR9As" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</section>
+					</div>
+				</section>
+
+				<h1 class="text_title"><b class="topic_number">05</b>Considerações</h1>
+
+				<p>&nbsp &nbsp Portando, pode se observar que o sistema ILPF traz vantagens para o meio ambiente por ser um método de produção que otimiza toda a produção da área, alcançando uma sinergia entre os componentes gerando lucro razoável com a produção de diversos produtos na mesma área. <br> <br>
+				&nbsp &nbsp Acesse a <b>apostila complementar</b> abaixo, onde contém resultados de diferentes pesquisas sobre ILPF realizadas no IFTM - Campus Uberlândia.
+				</p>
+
+					<a target="_blank" href="./complements/books/module_7.pdf"  class="download_button complement">Baixar material complementar</a>
+
+			</div>
+		</section>
+
+		<!-- EXERCISES MOD6-->
+		<section class="info">
+
+			<div class="wrapper">
+				<h1 class="info_title" style="font-weight: 800; color: #282A36;">Exercícios</h1>
+				<p class="info_description"> Ao responder os exercícios, você deve acertar no mínimo 3 questões para avançar para o próximo módulo, caso contrário, a página será recarregada e você deverá tentar responder os exercícios novamente. </p>
+
+			</div>
+		</section>
+
+		<!-- Question 1 mod6-->
+		<section  class="master_form master_formM6" id="master_form">
+			<section data-question="Q1"  id="6" class="form form1 form_from_M6">
+				<p class="question"><b>Questão 1:</b> São vantagens do Sistema ILPF, exceto:</p>
+
+				<input class=" true input_option" id="option1_q1_M6" hidden type="radio">
+				<label class="option option_true" for="option1_q1_M6">a) Dispensa mão-de-obra terceirizada;</label>
+
+				<input class=" false input_option" id="option2_q1_M6" hidden type="radio">
+				<label class="option" for="option2_q1_M6">b) Melhor distribuição e diversificação das receitas ao longo do ano;.</label>
+
+				<input class=" false input_option" id="option3_q1_M6" hidden type="radio">
+				<label class="option" for="option3_q1_M6">c) Redução no uso de insumos e recursos não renováveis; </label>
+
+				<input class=" false input_option" id="option4_q1_M6" hidden type="radio">
+				<label class="option" for="option4_q1_M6">d) Redução do custo unitário dos produtos.</label>
+
+				<button id="Q1" type="button" class="send_answer send_answer1">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ1">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> A mão-de-obra, terceirizada ou fixa, se faz necessária e pode ser bem aproveitada por ter sempre algo a ser feito no sistema ILPF. </p>
+
+					</div>
+					<div class="hidden wrong_answer wrong_answerQ1">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="6" class=" div_answer hidden">
+				<button class="see_answer" id="ans_Q1_M6">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q1_M6" >Resposta: letra (a)<br>
+					A mão-de-obra, terceirizada ou fixa, se faz necessária e pode ser bem aproveitada por ter sempre algo a ser feito no sistema ILPF. 
+				</p>
+			</div>
+
+			<!-- Question 2 mod6-->
+
+			<section id="6"  data-question="Q2" class="form form2 form_from_M6">
+				<p class="question"><b>Questão 2:</b> Qual das características abaixo não se enquadra no Sistema ILPF?</p>
+
+				<input class=" false input_option" id="option1_q2_M6" hidden type="radio">
+				<label class="option" for="option1_q2_M6">a) Grande número de alternativas de produção, possibilitando inúmeras combinações de atividades;</label>
+
+				<input class=" false input_option" id="option2_q2_M6" hidden type="radio">
+				<label class="option" for="option2_q2_M6">b) Em busca da produtividade e da sustentabilidade, os objetivos dos produtores tendem a ser múltiplos;</label>
+
+				<input class=" true input_option" id="option3_q2_M6" hidden type="radio">
+				<label class="option  option_true" for="option3_q2_M6">c) Efeitos pontuais no uso de determinados insumos agrícolas como fertilizantes;</label>
+
+				<input class=" false input_option" id="option4_q2_M6" hidden type="radio">
+				<label class="option" for="option4_q2_M6">d) Na pecuária, os sistemas de produção são extremamente flexíveis quanto ao emprego de tecnologias e ao nível de uso de insumos.</label>
+
+				<button id="Q2" type="button" class="send_answer send_answer2">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ2">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> Efeitos defasados no uso de determinados insumos, por exemplo, a adubação da lavoura pode beneficiar a pastagem que a sucede durante vários anos. </p>
+
+					</div>
+					<div class="hidden wrong_answer wrong_answerQ2">
+						<p><i class="fas fa-times-circle"></i>
+						<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="6" class=" div_answer hidden">
+				<button class="see_answer" id="ans_Q2_M6">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q2_M6" >Resposta: letra (c)<br>
+					Efeitos defasados no uso de determinados insumos, por exemplo, a adubação da lavoura pode beneficiar a pastagem que a sucede durante vários anos. 
+				</p>
+			</div>
+
+			<!-- Question 3 mod6-->
+			<section id="6" data-question="Q3"class="form form3 form_from_M6">
+				<p class="question"><b>Questão 3:</b> Entre os aspectos citados abaixo qual não reflete a realidade em Sistemas Integrados de Produção? </p>
+
+				<input class=" false input_option" id="option1_q3_M6" hidden type="radio">
+				<label class="option" for="option1_q3_M6">a) Os custos de implantação diluem-se nos primeiros 3 a 5 anos;</label>
+
+				<input class="false input_option" id="option2_q3_M6" hidden type="radio">
+				<label class="option" for="option2_q3_M6">b) Sistemas com mais de 10 espécies apresentam alto grau de dificuldade para planejamento e condução;</label>
+
+				<input class="false input_option" id="option3_q3_M6" hidden type="radio">
+				<label class="option" for="option3_q3_M6">c) Sistemas em que há maior emprego de mão-de-obra familiar mostraram-se mais lucrativos;</label>
+
+				<input class=" true input_option" id="option4_q3_M6" hidden type="radio">
+				<label class="option option_true" for="option4_q3_M6">d) A diversificação na produção não promove estabilização na receita.</label>
+
+				<button id="Q3" type="button" class="send_answer send_answer3">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ3">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!!</b> <br>
+							<b>Resposta Correta.</b> A diversificação da produção promove estabilização na receita, uma vez que, variações negativas nos preços de um produto podem ser compensadas por variações positivas nos preços de outro. </p>
+
+					</div>
+					<div class="hidden wrong_answer wrong_answerQ3">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="6" class=" div_answer hidden">
+				<button class="see_answer" id="ans_Q3_M6">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q3_M6" >Resposta: letra (d)<br>
+					A diversificação da produção promove estabilização na receita, uma vez que, variações negativas nos preços de um produto podem ser compensadas por variações positivas nos preços de outro. 
+				</p>
+			</div>
+
+			<div class="form" id="6" style="display: flex; align-items: center">
+				<p style="color: #dd4a48"><i class="warning_button fas fa-exclamation-triangle"></i>&nbsp Se você acertar às questões, ao clicar no botão abaixo, será aberto um formulário onde você precisa inserir seus dados e fazer a avaliação do curso, a fim de obter o certificado</b></p>
+				<button class="finish" target="_blank" id="send_answer_finish" onclick="to_certify()">Finalizar o curso</button>
+			</div>
+		</section>
+
+
+		<!-- References mod6-->
+		<section class="container_text" id="ref_M6">
+			<div class="wrapper references">
+				<h1 class="text_title">REFERÊNCIAS:</h1>
+
+				<p>[1] COSTA, F. P.; CEZAR, I. M.; FILHO, G. A. de M.; BUNGENSTAB, D. J. Custo-benefício dos sistemas de produção em integração. In: BUNGENSTAB, D. J.; ALMEIDA, R. G. de; LAURA, V. A.; BALBINO, L. C.; FERREIRA, A. D. (Ed.). ILPF: inovação com integração de lavoura, pecuária e floresta. Brasília, DF: Embrapa, 2019. Cap. 9, p. 131-138. <br>
+				[2] UNEB. Aspectos econômicos e ambientais da integração lavoura pecuária floresta. Disponível em: http://www.neppa.uneb.br/wp-content/uploads/2018/06/ILPF-Aspectos-econ%C3%B4micos-e-ambientais.pdf. Acesso em 14 de setembro de 2021. <br>
+				[3] GODOY, D. O. Análise econômica de um sistema de Integração Lavoura, Pecuária e Floresta (ILPF) no município de Brotas-SP: Um estudo de caso com economia de escopo. Dissertação (Mestrado – Programa de Pós-Graduação em Mestrado Profissional Gestão e Inovação na Industria Animal), Faculdade de Zootecnia e Engenharia de Alimentos, Universidade de São Paulo, Pirassununga, 2020</p>
+
+			</div>
+		</section>
+	</section>
+	</section>
+
+	<div class="iftm_logo">
+		<a href="https://iftm.edu.br/"><img style="height: 20vh;" src="./complements/images/iftm.jpeg" alt=""></a>
+		<div class="wrapper_arrow">
+			<a href="#container_module_btns"><i class="arrow_to_top fas fa-arrow-alt-circle-up"></i></a>
+		</div>
+	</div>
+
+	<footer id="footer">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="./complements/images/logo_normal.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+		</div>
+
+		<div class="contact">
+			<div class="contact_card">
+				<a href="mailto: gesaiftm@gmail.com" id="email"><i id="mail_icon" class="far fa-envelope"
+						style="font-weight: 300"></i>
+					<br>
+					<p id="email">gesaiftm@gmail.com</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://chat.whatsapp.com/JWBzgsyMQsWG9ibh3MSYEg" id="whatsapp"> <i id="whatsapp_icon"
+						class="fab fa-whatsapp" style="font-weight: 300"></i> <br>
+					<p id="whatsapp" class="cont">Grupo GESA</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://www.instagram.com/gesa_iftm/" id="insta"><i id="insta_icon" class="fab fa-instagram"
+						style="font-weight: 300"></i> <br>
+					<p id="insta" class="cont">Gesa_IFTM</p>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
