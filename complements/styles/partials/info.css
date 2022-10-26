@@ -23,7 +23,7 @@
 .info .wrapper .info_title::before {
   content: "";
   height: 30px;
-  background-color: #43ED87;
+  background-color: #40bfa2;
   width: 8px;
   display: inline-block;
   position: relative;
@@ -43,7 +43,7 @@
 }
 
  .info_img {
-  box-shadow: 15px 15px 0 #43ED87;
+  box-shadow: 15px 15px 0 #40bfa2;
   border-radius: 8px;
   display: flex;
   height: 55vmin;

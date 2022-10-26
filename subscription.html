@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./complements/styles/subscription.css" />
     <link rel="stylesheet" href="./complements/styles/partials/info.css" />
     <link rel="stylesheet" href="./complements/styles/partials/schedules.css" />
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
 
     <!-- main -->
     <link rel="shortcut icon" href="./complements/images/logo.png">
@@ -20,16 +21,11 @@
     <!-- SCRIPTS -->
     <script
       type="text/javascript"
-      src="./complements/scripts/header_change.js"
-      defer
-    ></script>
-    <script
-      type="text/javascript"
       src="./complements/scripts/menu_mob.js"
       defer
     ></script>
 
-    <title>INSCRIÇÃO - GESA</title>
+    <title>CRONOGRAMA - GESA</title>
   </head>
   <body>
     <header id="header">
@@ -44,10 +40,11 @@
         </div>
 
         <nav class="menu">
-          <a href="./index.html" class="menu-link">Sobre</a>
-          <a href="#footer" title="No rodapé" class="menu-link">Contato</a>
-          <a href="./subscription.html" class="menu-link">Inscrição</a>
-          <a href="./classroom.html" class="menu-link">Sala de aula</a>
+          <a href="./index.html" class="menu-link" id="home_link">Sobre</a>
+          <a href="#footer" title="No rodapé" id="cont_link" class="menu-link">Contato</a>
+          <a href="./subscription.html" id="cron_link"
+           class="menu-link">Cronograma</a>
+          <a href="./classroom.html" class="menu-link" id="class_link">Sala de aula</a>
         </nav>
       </div>
 
@@ -68,7 +65,7 @@
             <span id="close_menu_mobile"><i class="fas fa-angle-up"></i></span>
             <a href="./index.html" class="menu_mobile_option">Sobre</a>
             <a href="#footer" class="menu_mobile_option">Contato</a>
-            <a href="./subscription.html" class="menu_mobile_option">Inscrição</a>
+            <a href="./subscription.html" class="menu_mobile_option">Cronograma</a>
             <a
               style="border-radius: 0px 0px 5px 5px"
               href="./classroom.html"
@@ -80,25 +77,22 @@
       </div>
     </header>
 
-    <div class="hero">
-      <div class="legend">
-        <h1 id="legend_1">
-          IMPLANTAÇÃO DO <br />
-          <b style="color: #43ed87">SISTEMA ILPF NO CERRADO</b>
-        </h1>
-      </div>
-    </div>
 
-    <section class="container">
-      <section class="info" style="flex-direction: column">
+    <section  class="container">
+      <section class="info" style="flex-direction: column; padding-top: 50px;">
         <div class="wrapper" style="margin: 0">
-          <h1 class="info_title">APRESENTAÇÃO</h1>
+          <h1 class="info_title">APRESENTAÇÃO e CRONOGRAMA</h1>
           <p class="info_description">
             Neste curso online de capacitação, com <b>carga horária de 24 hrs</b>, você irá conhecer mais sobre o
-            sistema de Integração Lavoura-Pecuária-Floresta, terá acesso a
-            apostilas, vídeos e exercícios elaborados por profissionais
-            capacitados e, ao final do curso, receberá um certificado de
-            participação.
+            sistema Agrosilvipastoril (SASP), terá acesso a
+            apostilas, vídeos e exercícios e ao final do curso, receberá um certificado de
+            participação. 
+            O <b>período para conclusão</b> deste curso vai do dia 07/11/2022 até 09/12/2022. <br>
+            Na data de 09/12/2022 haverá um <b>dia de de campo</b> no centro de estudos de sistemas Agrosilvipastoris do IFTM Campus Uberlândia, 
+            com professores da área, onde as peculiaridades do sistema serão demonstradas na prática e poderão ser sanadas as 
+            eventuais dúvidas. No entanto, a participação nessa atividade <b>não é obrigatória</b> para que haja a emissão de certificado.
+            A conclusão somente será totalmente validada após o <b>envio do formulário de avaliação</b> contido no módulo "Conclusão", e o 
+            <b>certificado de participação</b> será disponibilizado pela coordenação de extensão do IFTM Campus Uberlândia algumas semanas após a conclusão.
           </p>
         </div>
       </section>
@@ -114,12 +108,12 @@
         <section class="module_info">
           <div class="module_title">
             <h1 class="module_number">1°</h1>
-            <h1 class="module_name">Introdução ao ILPF</h1>
+            <h1 class="module_name">Introdução ao SASP</h1>
           </div>
 
           <div style="margin-left: 10px" class="lessons">
             <p style="list-style: none; font-weight: 800; text-align: center">
-              <b style="color: #2dc670; font-weight: 800"
+              <b style="color: #40bfa2; font-weight: 800"
                 >CARGA HORÁRIA:&nbsp</b
               >
               4 hrs
@@ -137,11 +131,11 @@
 
             <p class="module_lesson">
               <b class="color_green">Tópico 3: &nbsp</b>
-              Benefícios do ILPF;
+              Benefícios e desafios;
             </p>
 
             <p class="module_lesson">
-              <b style="color: #2dc670">Tópico 4: &nbsp</b>
+              <b style="color: #40bfa2">Tópico 4: &nbsp</b>
               Expansão do Sistema no Últimos anos;
             </p>
 
@@ -157,12 +151,12 @@
         <section class="module_info">
           <div class="module_title">
             <h1 class="module_number">2°</h1>
-            <h1 class="module_name">Manejo da Fertilidade do Solo em ILPF</h1>
+            <h1 class="module_name">Manejo da Fertilidade do Solo em SASP</h1>
           </div>
 
           <div style="margin-left: 10px" class="lessons">
             <p style="list-style: none; font-weight: 800; text-align: center">
-              <b style="color: #2dc670; font-weight: 800"
+              <b style="color: #40bfa2; font-weight: 800"
                 >CARGA HORÁRIA:&nbsp</b
               >
               4 hrs
@@ -204,7 +198,7 @@
 
           <div style="margin-left: 10px" class="lessons">
             <p style="list-style: none; font-weight: 800; text-align: center">
-              <b style="color: #2dc670; font-weight: 800"
+              <b style="color: #40bfa2; font-weight: 800"
                 >CARGA HORÁRIA:&nbsp</b
               >
               4 hrs
@@ -242,7 +236,7 @@
 
           <div style="margin-left: 10px" class="lessons">
             <p style="list-style: none; font-weight: 800; text-align: center">
-              <b style="color: #2dc670; font-weight: 800"
+              <b style="color: #40bfa2; font-weight: 800"
                 >CARGA HORÁRIA:&nbsp</b
               >
               4 hrs
@@ -284,7 +278,7 @@
 
           <div style="margin-left: 10px" class="lessons">
             <p style="list-style: none; font-weight: 800; text-align: center">
-              <b style="color: #2dc670; font-weight: 800"
+              <b style="color: #40bfa2; font-weight: 800"
                 >CARGA HORÁRIA:&nbsp</b
               >
               4 hrs
@@ -319,102 +313,34 @@
           </div>
         </section>
 
-        <section class="module_info" id="module_info_6">
+        <section class="module_info"  id="module_info_6">
           <div class="module_title">
             <h1 class="module_number">6°</h1>
-            <h1 class="module_name">Aspectos Econômicos</h1>
+            <h1 class="module_name">Dia de campo</h1>
           </div>
 
-          <div style="margin-left: 10px" class="lessons">
+          <div style="display: flex; align-items: left; margin-left: 10px" class="lessons">
             <p style="list-style: none; font-weight: 800; text-align: center">
-              <b style="color: #2dc670; font-weight: 800"
+              <b style="color: #40bfa2; font-weight: 800"
                 >CARGA HORÁRIA:&nbsp</b
               >
               4 hrs
             </p>
+              <p style="display: flex; align-items:center; padding-top: 20px"><i class="icon_info far fa-calendar-alt"></i>09/12/2022</p>
+              <p style="display: flex; align-items:center; padding-top: 20px">
+                <i class="icon_info far fa-clock"></i>8:20 - 14:40 (Horário de Brasília)
+              </p>
+              <p style="display: flex; align-items:center; padding-top: 20px">
+                <i class="icon_info far fa-location"></i> IFTM Campus Uberlândia &nbsp;<b style="font-weight: 400;font-size: 12px; color:rgb(161, 161, 161)">(Veja o mapa)</b>
+              </p>
 
-            <p class="module_lesson">
-              <b class="color_green">Tópico 1: &nbsp</b>
-              Introdução
-            </p>
-
-            <p class="module_lesson">
-              <b class="color_green">Tópico 2: &nbsp</b>
-              Características Econômicas da Integração Lavoura-Pecuária-Floresta
-            </p>
-
-            <p class="module_lesson">
-              <b class="color_green">Tópico 3: &nbsp</b>
-              Principais Aspectos aue as Análises Financeiras de Sistemas de
-              Integração têm Demonstrado
-            </p>
-
-            <p class="module_lesson">
-              <b class="color_green">Tópico 4: &nbsp</b>
-              Análise de Viabilidade Econômica da Implantação do Sistema Ilpf em
-              Brotas-Sp
-            </p>
-
-            <p class="module_lesson">
-              <b class="color_green">Tópico 5: &nbsp</b>
-              Receita Bruta Projetada
-            </p>
-
-            <p class="module_lesson">
-              <b class="color_green">Tópico 6: &nbsp</b>
-              Lucro Total do ILPF e Valores Unitários
-            </p>
-
-            <p class="module_lesson">
-              <b class="color_green">Tópico 7: &nbsp</b>
-              Considerações
-            </p>
-
-            <p class="module_lesson">3 Exercícios</p>
           </div>
         </section>
       </section>
 
       <!-- Live -->
       <section class="info" style="flex-direction: column">
-        <div class="wrapper" style="margin: 0">
-          <h1 class="info_title">LIVE DE ENCERRAMENTO</h1>
-          <p class="info_description" style="flex-direction: column">
-            &nbspAo final do curso, no dia <b>09/12/2021</b> haverá uma apresentação ao vivo com os
-            organizadores do evento, onde serão apresentados resultados de
-            pesquisas realizadas no IFTM - Campus Uberlândia, sobre o sistema
-            ILPF. A participação na reunião não será obrigatória para receber o
-            certificado. <br />
-            &nbsp &nbsp Durante a live poderão ser sanadas as dúvidas referentes
-            ao conteúdo. <br />
-            <b
-              >&nbsp &nbsp O link da reunião no Google Meet será enviado no seu
-              e-mail.</b
-            >
-          </p>
-
-          <div class="live_card">
-            <p><i class="icon_info far fa-calendar-alt"></i>09/12/2021</p>
-            <p style="padding-top: 20px">
-              <i class="icon_info far fa-clock"></i>19:30 (Horário de Brasília)
-            </p>
-          </div>
-
-          <div class="live_card">
-            <div style="margin-left: 10px" class="lessons">
-              <p style="list-style: none; font-weight: 800; text-align: center">
-                <b style="color: #2dc670; font-weight: 800">ORGANIZADORES:</b>
-              </p>
-
-              <p class="module_lesson">Luis Augusto da Silva Domingues</p>
-              <p class="module_lesson">Siro Paulo Moreira</p>
-              <p class="module_lesson">Alexandre Naves Rezende Faria</p>
-              <p class="module_lesson">Cristiane Silva Barbosa Araújo</p>
-              <p class="module_lesson">Suelen Nunes Soares</p>
-              <p class="module_lesson">Jonatas Rezende Artagnan</p>
-            </div>
-          </div>
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6148.192485546164!2d-48.295726443925794!3d-18.778112602005994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a43997e9aa5861%3A0xf0e960f78aa0aa5e!2sCentro%20de%20estudos%20em%20Sist.%20Agrosilvipastoris!5e1!3m2!1spt-BR!2sbr!4v1666227050803!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
 
       <!-- Certified -->
@@ -427,7 +353,7 @@
               style="
                 padding: 0px 50px 0px 50px;
                 font-size: 80px;
-                color: #2dc670;
+                color: #40bfa2;
               "
               class="fas fa-user-check"
             ></i>
@@ -435,59 +361,13 @@
           <p class="info_description" style="display: inline">
             <br />
             &nbsp &nbsp Os certificados de participação, com reconhecimento
-            nacional serão emitidos semanas depois da conclusão do curso, para o
+            nacional serão eviados algumas semanas depois da conclusão do curso, para o
             seu e-mail cadastrado no site de eventos, constando uma
             <b>carga horária total de 24 hrs.</b>
           </p>
         </div>
       </section>
-
-      <!--SUBSCRIBE-->
-      <section
-        class="info"
-        style="flex-direction: column; margin-top: 100px"
-        id="subscription_card"
-      >
-        <div class="wrapper">
-          <h1 class="info_title">INSCREVA-SE</h1>
-        </div>
-
-        <div class="img_and_p">
-          <img
-            class="img_icon"
-            title="gratispng.com/"
-            src="./complements/images/farmer.jpg"
-            alt="imagem"
-          />
-          <div>
-            <p class="p_distac">É super fácil!</p>
-            <br />
-            <br />
-            <br />
-            <p>
-              Basta acessar o link da página oficial do IFTM e se inscrever no
-              evento:
-              <a href="https://iftm.edu.br/eventos/minicursoilpf/"
-                >https://iftm.edu.br/eventos/minicursoilpf/</a
-              >. Após algum tempo, será encaminhado um link para seu e-mail, onde você poderá acessar a sala de aula.
-            </p>
-            <br />
-            <br />
-            <p style="color: #dd4a48">
-              <i class="warning_button fas fa-exclamation-triangle"></i>&nbsp
-              &nbsp <b>Obs:</b> Se você ainda não é cadastrado na página de
-              eventos, é só
-              <a href="https://iftm.edu.br/sistema-eventos/cadastro.php">
-                clicar aqui
-              </a>
-              e se cadastrar sem problemas.
-            </p>
-            <br />
-            <br />
-          </div>
-        </div>
       </section>
-    </section>
 
       <div class="iftm_logo">
         <a href="https://iftm.edu.br/"><img style="height: 20vh;" src="./complements/images/iftm.jpeg" alt=""></a>
@@ -524,7 +404,7 @@
         </div>
         <div class="contact_card">
           <a
-            href="https://chat.whatsapp.com/JWBzgsyMQsWG9ibh3MSYEg"
+            href="https://chat.whatsapp.com/LCHVQ9RcYoa8yTDaPfpsZE"
             id="whatsapp"
           >
             <i

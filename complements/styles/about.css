@@ -28,6 +28,20 @@
   animation: legend_animation 2s ease;
 }
 
+#header .wrapper .menu #home_link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 22px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+#header .wrapper .menu #home_link{
+  font-weight: 600;
+}
+
 @keyframes legend_animation {
   from {
   margin-left: -700px;
@@ -51,7 +65,7 @@
   .subtitle::before {
     content: "";
     height: 30px;
-    background-color: #43ED87;
+    background-color: #40bfa2;
     width: 8px;
     display: inline-block;
     position: relative;

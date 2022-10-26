@@ -17,9 +17,9 @@
 
 .button_light:hover {
   cursor: pointer;
-  border: solid 3px #43ED87; 
-  box-shadow: 5px 5px 10px #2DC670;
-  color: #2DC670;
+  border: solid 3px #40bfa2; 
+  box-shadow: 5px 5px 10px #40bfa2;
+  color: #40bfa2;
 }
 
 @media (max-width: 1030px) {

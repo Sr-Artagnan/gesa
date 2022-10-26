@@ -3,7 +3,7 @@
   background-color: white;
   width: 100%;
   height: 80px;
-  border-top: solid 2px #43ED87;
+  border-top: solid 2px #40bfa2;
 }
 
 
@@ -29,14 +29,14 @@
 }
 
 #footer .wrapper .logo .logo-name {
-  color: #0fc65f; 
+  color: #40bfa2; 
   font-weight: 800;
   font-size: 25px;
   margin-left: -3px;
 }
 
 #footer .wrapper .logo .Group {
-  color: #0fc65f;
+  color: #40bfa2;
   font-weight: 600;
   font-size: 12px;
   align-items: center;
@@ -52,7 +52,7 @@
   bottom: 4px;
   height: 34px;
   left: -15px;
-  background-color: #0fc65f;
+  background-color: #40bfa2;
   transition: ease .3s;
   align-items: center;
   opacity: 75%;
@@ -91,14 +91,14 @@
   
 #footer .contact #email, #footer .contact #insta, #footer .contact #whatsapp {
   text-decoration: none; 
-  color: #0fc65f;
+  color: #40bfa2;
   background-color: transparent;
   font-size: 12px;
   font-weight: 600;
 }
 #footer .contact #email:hover, #footer .contact #insta:hover, #footer .contact #whatsapp:hover {
   cursor: pointer;
-  text-decoration: underline #0fc65f;
+  text-decoration: underline #40bfa2;
 }
 
 @media (max-width: 1030px){

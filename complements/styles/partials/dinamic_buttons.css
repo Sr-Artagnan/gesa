@@ -33,7 +33,7 @@
  .container_dinamic .dinamic_buttons .d_button:hover, 
  .container_dinamic .dinamic_buttons .d_button.active  {
   cursor: pointer;
-  border-top: solid 5px #43ED87;
+  border-top: solid 5px #40bfa2;
 }
 
  .container_dinamic .dinamic_content {

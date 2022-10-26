@@ -2,7 +2,7 @@
 .info .invite_img {
   height: 400px;
   width: 300px;
-  box-shadow: -15px 15px 0 #43ED87 ;
+  box-shadow: -15px 15px 0 #40bfa2 ;
   border-radius: 8px;
   flex-wrap: wrap;
   flex-direction: column;
@@ -29,13 +29,15 @@
 }
 .info .wrapper_invite #line_2{
   font-size: 50.5px;
-  color: #2DC670;
+  color: #40bfa2;
   line-height: 50.5px;
+  text-align: center;
+  justify-content: center;
 }
 
 .info .wrapper_invite #line_3 {
   font-size: 46.5px;
-  color: #2DC670;
+  color: #40bfa2;
   line-height: 46.5px;
 }
 
@@ -73,14 +75,14 @@
     display:block;
     margin-left: 0;
     margin-top: 40px;
-    color: #2DC670;
+    color: #40bfa2;
   }
 
   .info .invite_img {
    display:inline-block;
    height: 400px;
    width: 300px;
-   box-shadow: -15px 15px 0 #43ED87 ;
+   box-shadow: -15px 15px 0 #40bfa2 ;
    border-radius: 8px;
    flex-wrap: wrap;
    flex-direction: column;

@@ -1,5 +1,5 @@
 a {
-  color:#0C9F4C
+  color:#40bfa2
 }
 .schedule_master_wrapper {
   width: 100%;
@@ -14,7 +14,6 @@ a {
 
 .module_info {
   display: flex;
-  align-items: center;
   align-content: center;
   flex-direction: column;
   padding: 50px 0px 20px 0px;
@@ -50,7 +49,7 @@ a {
   align-content: center;
   font-size: 18px;
   color: #282a36;
-  background-color: #43ed87;
+  background-color: #40bfa2;
   padding: 10px;
   padding-left: 40px;
   margin-left: -30px;

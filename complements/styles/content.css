@@ -10,6 +10,19 @@ ul {
   margin-left: 10px;
 }
 
+#header .wrapper .menu #class_link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 22px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+#header .wrapper .menu #class_link{
+  font-weight: 600;
+}
 
 .cards_wrapper {
   width: 100%;
@@ -103,13 +116,13 @@ ul {
 .container_module_btns .buttons .module_btn.active_mod {
   pointer-events: all;
   cursor: pointer;
-  border: solid 2px #43ED87;
+  border: solid 2px #40bfa2;
   background:white;
   color: #282A36;
 }
 
 .module_btn.user {
-  background-color: #43ED87 !important;
+  background-color: #40bfa2 !important;
 }
 
 #module1_content, #module2_content, #module3_content, #module4_content, #module4_content, #module6_content  {
@@ -162,7 +175,7 @@ ul {
 }
 
 .isolated_img {
-  box-shadow: 15px 15px 0 #43ED87 ;
+  box-shadow: 15px 15px 0 #40bfa2 ;
   border-radius: 8px;
 }
 
@@ -180,7 +193,7 @@ ul {
   display: block;
   text-align: center;
   cursor: pointer;
-  background-color: #43ED87;
+  background-color: #40bfa2;
   color: #282A36;
   font-size: 15px;
   font-weight: 600;
@@ -202,8 +215,8 @@ ul {
 
 
 .wrapper_add_info {
-  border-left: solid 3px #43ED87;
-  border-right: solid 3px #43ED87;
+  border-left: solid 3px #40bfa2;
+  border-right: solid 3px #40bfa2;
   margin: 50px 0px;
 }
 
@@ -237,7 +250,7 @@ ul {
   border-radius: 8px;
   width: 560px;
   height: 315px;
-  box-shadow: 10px 10px 0 #43ED87;
+  box-shadow: 10px 10px 0 #40bfa2;
 }
 
 .box_info {
@@ -251,7 +264,7 @@ ul {
   margin: 20px;
   margin-right: 0;
   border-radius: 8px;
-  box-shadow: 10px 10px 0 #43ED87;
+  box-shadow: 10px 10px 0 #40bfa2;
 }
 
 .box_info .box_img_left {
@@ -259,7 +272,7 @@ ul {
   margin: 20px;
   border-radius: 8px;
   margin-left: 0;
-  box-shadow: -10px 10px 0 #43ED87;
+  box-shadow: -10px 10px 0 #40bfa2;
 }
 
 .icon_li {
@@ -281,7 +294,7 @@ ul {
 
 .arrow_to_top {
   font-size: 45px;
-  color: #43ED87;
+  color: #40bfa2;
   padding: 15px;
 }
 
@@ -331,7 +344,7 @@ ul {
     width: 100%;
     height: max-content;
     margin-top: 80px;
-    border-bottom: solid 3px #43ED87;
+    border-bottom: solid 3px #40bfa2;
   }
 
   .wrapper_short_info {
@@ -368,7 +381,7 @@ ul {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .wrapper_add_info .add_info {
     margin: 20px 10px;
     padding: 15px;
@@ -384,6 +397,11 @@ ul {
     margin-top:0;
     padding-bottom: 0;
   }
+
+.d_button {
+  hyphens: auto;
+}
+
   .isolated_img{
     width: 70vw;
   }
@@ -401,4 +419,8 @@ ul {
   .table_img {
     width: 100%;
   }
+  p, label, li{
+    text-align: justify;
+  }
 }
+

@@ -5,7 +5,7 @@
   text-align: justify;
   align-items: center;
   font-weight: 600;
-  text-decoration: underline #43ED87 3px;
+  text-decoration: underline #40bfa2 3px;
   position: relative;
   background-color: transparent;
 }
@@ -26,7 +26,7 @@
   position: absolute;
   z-index: 11;
   border-radius: 8px;
-  border: solid 3px #43ED87;
+  border: solid 3px #40bfa2;
   font-size: 15px;
 }
 

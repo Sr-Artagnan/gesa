@@ -1,3 +1,17 @@
+#header .wrapper .menu #cron _link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 22px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+#header .wrapper .menu #cron _link{
+  font-weight: 600;
+}
+
 
 p {
   font-size: 17px;
@@ -68,20 +82,20 @@ p {
     font-size: 38px;
     font-weight: 800;
     line-height: 40px;
-    color: #0C9F4C;
+    color: #40bfa2;
     text-align: left;
   }
   
   .warning_button {
-    color: #DD4A48;
+    color: #FFCC4D;
     font-size: 25px;
     position: relative;
   }
 
 .icon_info {
-  padding: 0px 50px 0px 50px;
+  padding: 0px 20px 0px 0px;
   font-size: 40px;
-  color: #2DC670;
+  color: #40bfa2;
 }
 
 .live_card {

@@ -25,7 +25,7 @@
 .option:hover,
 .option_selected {
   cursor: pointer;
-  color: #2DC670;
+  color: #40bfa2;
 }
 
 .feedback, .div_answer {
@@ -49,23 +49,23 @@
   position: relative;
   border-radius: 8px;
   padding: 10px;
-  border: solid 3px #2DC670;
+  border: solid 3px #40bfa2;
   margin-top: 20px;
 }
 
 .see_answer {
   border-radius: 8px;
   padding: 8px;
-  border: solid 2px #2DC670;
+  border: solid 2px #40bfa2;
 }
 
 .see_answer:hover{
   cursor: pointer;
-  background-color: #2DC670;
+  background-color: #40bfa2;
 }
 
 .feedback .correct_answer i, .feedback .correct_answer b{
-  color: #2DC670;
+  color: #40bfa2;
 }
 
 .feedback .correct_answer p,  .div_answer .answer{
@@ -109,9 +109,9 @@
 
 .form .send_answer:hover {
   cursor: pointer;
-  box-shadow: 5px 5px 10px #43ED87;
-  color: #2DC670;
-  border: solid 2px #43ED87;
+  box-shadow: 5px 5px 10px #40bfa2;
+  color: #40bfa2;
+  border: solid 2px #40bfa2;
 }
 
 .form_inative p{
@@ -130,8 +130,8 @@
 }
 
 .form_inative .option_selected {
-  text-decoration: underline 2px #2DC670;
-  color: #2DC670;
+  text-decoration: underline 2px #40bfa2;
+  color: #40bfa2;
 }
 
 .form_inative button {
@@ -152,9 +152,9 @@ display: none;
 
 .finish:hover {
   cursor: pointer;
-  box-shadow: 5px 5px 10px #43ED87;
-  color: #2DC670;
-  border: solid 2px #43ED87;
+  box-shadow: 5px 5px 10px #40bfa2;
+  color: #40bfa2;
+  border: solid 2px #40bfa2;
 }
 
 

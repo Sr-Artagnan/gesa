@@ -24,7 +24,7 @@
 width: 50%;
   text-align: center;
   padding: 10px;
-  border: solid 2px #43ED87;
+  border: solid 2px #40bfa2;
   background-color: #e3f7eb;
   border-radius: 8px;
   flex-direction: row;
@@ -43,7 +43,7 @@ width: 50%;
 
 .var_number {
   width: max-content
-  #43ED87;
+  #40bfa2;
   font-weight: 600;
 }
 
@@ -88,7 +88,7 @@ width: 50%;
 }
 
 .close_alert_congrat{
-  background-color: #43ED87;
+  background-color: #40bfa2;
 }
 
 .close_alert:hover{

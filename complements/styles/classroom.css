@@ -1,5 +1,18 @@
+#header .wrapper .menu #class_link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 22px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+#header .wrapper .menu #class_link{
+  font-weight: 600;
+}
 
- .video_description {
+.video_description {
   font-size: 19px;
   color: #282A36;
   text-align: left;
@@ -19,9 +32,9 @@
   position: relative;
   width: 70vw ;
   height: auto;
-  box-shadow: 15px 15px 5px #43ED87;
+  box-shadow: 15px 15px 5px #40bfa2;
   border-radius: 5px;
-  border: solid 2px #43ED87; 
+  border: solid 2px #40bfa2; 
 }
 
 .container_buttons_access {
@@ -39,7 +52,7 @@
 }
 
 .link_button:hover{
-  color: #43ED87
+  color: #40bfa2
 }
 
 @media (max-width: 500px) {
