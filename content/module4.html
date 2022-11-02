@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conteúdo</title>
+
+	<!-- STYLE -->
+	<link rel="stylesheet" href="../complements/styles/content.css">
+	<link rel="stylesheet" href="../complements/styles/partials/info.css">
+	<link rel="stylesheet" href="../complements/styles/partials/container_text.css">
+	<link rel="stylesheet" href="../complements/styles/partials/exercises.css">
+
+
+	<!-- main -->
+	<link rel="shortcut icon" href="../complements/images/logo.png">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="../complements/styles/partials/container.css">
+	<link rel="stylesheet" href="../complements/styles/partials/menu_mob.css">
+	<link rel="stylesheet" href="../complements/styles/partials/header.css">
+	<link rel="stylesheet" href="../complements/styles/partials/footer.css">
+	<link rel="stylesheet" href="../complements/styles/partials/alerts.css">
+	<link rel="stylesheet" href="../complements/styles/partials/link_word.css">
+
+
+	<!--SCRIPTS-->
+	<script type="text/javascript" src="../complements/scripts/menu_mob.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/content.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/complements_content.js" defer></script>
+
+
+	<!--BUTTONS-->
+	<link rel="stylesheet" href="../complements/styles/partials/dinamic_buttons.css">
+	<link rel="stylesheet" href="../complements/styles/partials/learn_more.css">
+</head>
+
+<body>
+
+	<header id="header">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="../complements/images/logo.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+
+
+			<nav class="menu">
+				<a href="../index.html" class="menu-link" id="home_link">Sobre</a>
+				<a href="#footer" title="No rodapé" id="cont_link" class="menu-link">Contato</a>
+				<a href="../subscription.html" id="cron_link" class="menu-link">Cronograma</a>
+				<a href="../classroom.html" class="menu-link" id="class_link">Sala de aula</a>
+			</nav>
+
+		</div>
+
+		<div
+			style="display: flex; align-items: center; align-content: center; justify-content: center; align-self: center; justify-self: center; height: 100%;">
+			<button id="menu_button"><i class="fas fa-bars" style="color: white; font-size: 18px;"></i>
+				<span class="menu_mobile hidden">
+					<span id="close_menu_mobile"><i class="fas fa-angle-up"></i></span>
+					<a href="../index.html" class="menu_mobile_option">Sobre</a>
+					<a href="#footer" class="menu_mobile_option">Contato</a>
+					<a href="../subscription.html" class="menu_mobile_option">Cronograma</a>
+					<a style="border-radius: 0px 0px 5px 5px" href="../classroom.html" class="menu_mobile_option">Sala de
+						aula</a>
+				</span>
+			</button>
+
+		</div>
+
+	</header>
+
+	<div class="alert_div">
+		<div class="wrapper danger hidden">
+			<p><b>Acertos insuficientes!</b> Refaça os exercícios do módulo para avançar. 
+			</p>
+			<button class="close_alert" onclick="location.reload()">OK</button>
+		</div>
+		<div class="wrapper congratulations hidden">
+			<p>Parabéns! O módulo seguinte será desbloqueado.<i id="unlock_icon" class="fas fa-unlock"></i> <br> Clique
+				no botão abaixo! </p><br>
+			<button class="close_alert close_alert_congrat" onclick="location.reload()">OK</button>
+		</div>
+	</div>
+
+	<div class="container_module_btns" id="container_module_btns">
+
+		<div class="buttons">
+			
+			<button class="module_btn mod1_btn" data-module="container_mod1" onclick="openModule(this)"
+				id="1" name="1" ><a href="./module1.html">Módulo 1</a></button>
+			<button class="module_btn mod2_btn" data-module="container_mod2" onclick="openModule(this)" id="2"
+				name="2"><a href="./module2.html">Módulo 2</a></button>
+			<button class="module_btn mod3_btn" data-module="container_mod3" onclick="openModule(this)" id="3"
+				name="3"><a href="./module3.html">Módulo 3</a></button>
+			<button class="module_btn user  mod4_btn" data-module="container_mod4" onclick="openModule(this)" id="4"
+				name="4"><a href="./module4.html">Módulo 4</a></button>
+			<button class="module_btn mod5_btn" data-module="container_mod5" onclick="openModule(this)" id="5"
+				name="5"><a href="./module5.html">Módulo 5</a></button>
+			<button class="module_btn mod6_btn" data-module="container_mod6" onclick="openModule(this)" id="6"
+				name="6"><a href="./module6.html">Conclusão</a></button>
+				<div class="line">
+					<span class="line_btn"></span>
+				</div>
+		</div>
+	</div>
+
+	   <!-- module_4 -->
+       <section id="container_mod4" class="container container_mod4 container_func">
+		<section>
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_introduction">Plantio de culturas anuais em áreas de ILPF</h1>
+
+					<p class="info_description"> Neste módulo iremos apresentar as opções de culturas anuais para o
+						sistema agrossilvipastoril. <br> No cerrado, apresentando sua importância no sistema, suas
+						vantagens e limitações, assim como seu manejo adequado para alta produtividade. </p>
+				</div>
+
+				<img class="info_img info_img_icon" id="icon_img" title="pngtree.com"
+					src="../complements/images/module3/img_1.png">
+
+			</section>
+
+			<a target="_blank" href="../books/module_3.pdf" class="download_button">Baixar apostila</a>
+		</section>
+
+		<section class="video_wrapper">
+			<p class="video_description">Acompanhe o vídeo que apresenta o conteúdo deste módulo:</p>
+			<iframe class="video_class" src="https://www.youtube.com/embed/LyEXGiL4uvo" title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</section>
+
+
+		<!-- topic 01 mod4 -->
+		<section class="container_text">
+
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">01</b>Introdução</h1>
+
+				<p> &nbsp &nbsp A estratégia iLPF, na prática, contempla quatro modalidades de sistemas integrados de
+					produção, as quais podem ser facilmente identificadas e, cada uma delas, é composta por um grande
+					número de arranjos e modelos derivados ajustados às diferentes condições econômicas, sociais e
+					culturais de quem as aplica. Assim, dentro do atual conceito de iLPF, estão contempladas: <br> <br>
+					&nbsp &nbsp I. Integração Lavoura-Pecuária (iLP ou agropastoril); <br>
+					&nbsp &nbsp II. Integração Pecuária-Floresta (iPF ou silvipastoril); <br>
+					&nbsp &nbsp III. Integração Lavoura-Floresta (iLF ou silviagrícola), e; <br>
+					&nbsp &nbsp IV. Integração Lavoura-Pecuária-Floresta (iLPF ou agrossilvipastoril). <br> <br>
+
+					Desta forma, a lavoura estará ausente apenas nos sistemas silvipastoril <a href="#ref_M3">[1]</a>.
+				</p>
+
+			</div>
+		</section>
+
+		<section class="container_text">
+
+			<div class="wrapper">
+				<h1 class="text_title">Benefícios da lavoura em ILPF:</h1>
+
+				<div class="isolated_img_div">
+					<img class="isolated_img" style="width: 60%; margin-bottom: 70px;"
+						src="../complements/images/module3/img_10.jpg" title="embrapa.com.br">
+				</div>
+
+				<p><i class="icon_li fas fa-check-circle"></i>Amortização total ou parcial do custo de implantação do
+					sistema; <br>
+					<i class="icon_li fas fa-check-circle"></i>Controle de plantas daninhas nos entre renques do
+					componente florestal pela lavoura; <br>
+					<i class="icon_li fas fa-check-circle"></i>Otimização no uso de fertilizantes; <br>
+					<i class="icon_li fas fa-check-circle"></i>Aumento na reciclagem de nutrientes pelo componente
+					florestal; <br>
+					<i class="icon_li fas fa-check-circle"></i>Possível fixação biológica de nitrogênio, quando
+					utilizadas espécies leguminosas no componente agrícola <br>
+					<i class="icon_li fas fa-check-circle"></i>Maior flexibilidade técnica e econômica dentro dos
+					sistemas iLPF; <br>
+					<i class="icon_li fas fa-check-circle"></i>Mitigação dos efeitos antrópicos indesejados; <br>
+					<i class="icon_li fas fa-check-circle"></i>Componente principal para correção, adubação e
+					dimensionamento dos sistemas ILPF; <br>
+					<i class="icon_li fas fa-check-circle"></i>Retorno econômico mais rápido; <br>
+					<i class="icon_li fas fa-check-circle"></i>Possibilidade de uma mesma espécie para diferentes
+					finalidades.
+				</p>
+
+			</div>
+		</section>
+
+		<!-- topic 02 mod4 -->
+
+		<section class="container_text" style="flex-direction: column;">
+
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">02</b>Principais Culturas Agrícolas Utilizadas em ILPF
+				</h1>
+
+				<p> &nbsp &nbsp Atualmente, as principais culturas agrícolas utilizadas dentro da iLPF nas regiões
+					Norte, Centro-oeste e Sudeste brasileiro são: arroz de terras altas, soja, milho, sorgo, milheto e
+					algumas alternativas promissoras tais como feijão-caupi, Crotalaria ochroleuca e nabo-forrageiro <a
+						href="#ref_M3">[1]</a>.
+					<br>
+					&nbsp &nbsp Será abordado abaixo algumas culturas e seus motivos que fazem com que estas culturas
+					sejam as mais utilizadas no sistema iLPF.<br>
+				</p> <br> <br>
+
+				<section class="learn_more">
+
+					<i class="fas fa-video"></i>
+
+					<button onclick="show_info(this)" data-lrn_mr="lrn_mr_7" class="button_visible">Saiba Mais</button>
+
+					<div id="lrn_mr_7" class="information hidden">
+						<section class="video_wrapper">
+							<iframe class="video_class" src="https://www.youtube.com/embed/fMzHnYuze7w"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</section>
+					</div>
+				</section>
+
+				<h1 class="text_title"><b class="subtopic_number">2.1</b>Milho ( <i>Zea mays</i>)</h1>
+
+				<div class="box_info">
+					<p> &nbsp &nbsp A produção de milho destaca-se no contexto da integração lavoura pecuária, devido a
+						inúmeras aplicações que esse grande produtor de grãos possui, na propriedade agrícola, sendo
+						utilizado na alimentação animal na forma de grãos, de forragem verde ou conservada, na forma de
+						rolão e silagem<a href="#ref_M3">[2]</a>. </p>
+
+					<img title="embrapa.com.br" class="box_img_right" src="../complements/images/module3/img_11.jpg">
+
+				</div> <br> <br>
+
+				<p>&nbsp &nbsp Uma das vantagens do milho em comparação com outras culturas, principalmente cereais,
+					consiste na sua qualidade na consorciação com capim. Vantagem observada pela competividade do
+					consorcio visto que o porte dessa planta, exerce depois de estabelecidas, grande supressão em
+					relação a demais espécies que crescem no local. A disponibilidade de herbicidas graminicidas
+					seletivos ao milho, possibilita obter resultados excelentes com a consorciação milho com planta
+					forrageira <a href="#ref_M3">[2]</a>. <br>
+					&nbsp &nbsp Vale destacar da cultura é que ela apresenta elevado potencial produtivo, com bom valor
+					de mercado na maioria dos anos agrícolas, com produtividade de grãos variando de <b>2.000 a mais de
+						m10.000 kg/ha</b>, tem uma excelente resposta a adubação, especialmente a nitrogenada, tem
+					capacidade de produz elevada quantidade de resíduos culturais, existe uma gama enorme de matérias
+					(híbridos simples, duplos, triplos e variedades) no mercado que podem ser selecionados para melhor
+					adequar ao clima e solo da área de implantação <a href="#ref_M3">[1]</a>. <br>
+					&nbsp &nbsp O controle de plantas daninhas, doenças e pragas é idêntico ao realizado no cultivo
+					tradicional, tendo atenção as pragas e <button class="word_link">patógenos polífagos<span
+							class="word_description">Patógenos que atacam um grande número de espécies vegetais.</span>
+					</button>, que são um dos grandes problemas de sistemas integrados <a href="#ref_M3">[1]</a>. <br>
+					&nbsp &nbsp Apresenta algumas exigências sendo os materiais de alta tecnologia exigentes quanto às
+					condições químicas do solo, notadamente em relação à disponibilidade de nitrogênio e potássio,
+					seguindo-se cálcio, magnésio e fósforo, apresenta exigência elevada quanto à radiação solar, podendo
+					tornar-se inviável para regiões sob alta incidência de nuvens na fase fisiológica do enchimento de
+					grãos, e é precedente desaconselhável para outras gramíneas agrícolas no sistema de rotação ou
+					sucessão de culturas, notadamente para o arroz de terras altas <a href="#ref_M3">[1]</a>. <br>
+					&nbsp &nbsp Na Figura abaixo pode-se observar a cultura do <b>milho em sistema integrado de produção
+						com o Pequi</b> (<i>Caryocar brasiliense</i>) sendo a espécie florestal do sistema no terceiro
+					ano após a implantação.
+					<br> <br>
+				</p>
+
+				<div class="isolated_img_div">
+					<img title="GESA IFTM" class="isolated_img" src="../complements/images/module3/img_12.jpg">
+				</div> <br> <br>
+			</div>
+
+
+			<!-- Sorghum-->
+			<div class="wrapper">
+				<h1 class="text_title"><b class="subtopic_number">2.2</b>Sorgo (<i>Sorghum bicolor,
+						Moench</i>)</h1>
+
+				<div class="box_info">
+					<p> &nbsp &nbsp Constitui uma opção viável, para atender a demanda dos produtores, devido as sua
+						composição química ser semelhante ao milho, possibilitando uma fermentação adequada,
+						consequentemente esse alimento tem a disponibilidade de conservação na forma de silagem, outro
+						fator interessante é a sua elevada taxa de proteína bruta em algumas variedades e maior
+						tolerância a seca <a href="#ref_M3">[3]</a>.</p>
+
+					<img title="embrapa.com.br" class="box_img_right" src="../complements/images/module3/img_13.jpg">
+
+				</div>
+
+				<p class="text_content" style="margin-top: 35px;">&nbsp &nbsp O sorgo consiste num tipo de planta típica
+					de clima quente, com características <button class="word_link">xerófilas <span
+							class="word_description">Plantas que estão adaptadas a ambientes secos e que sobrevivem com
+							quantidades de água reduzidas.</span> </button>, que além de apresentar uma relativa baixa
+					exigência em termos de fertilidade do solo, possui alta tolerância a estresses abióticos como:
+					deficiência hídrica, solos com alto teor de salinidade e encharcamento. Em relação à característica
+					de encharcamento, o sorgo se torna tolerante quando é plantado após a lavoura de arroz, em sistemas
+					de iLPF<a href="#ref_M3">[4]</a>. <br>
+					&nbsp &nbsp Outras vantagens apresentadas é o grande potencial produtivo de grãos, com
+					produtividades variando de <b>1.000 a mais de 7.000 Kg/ha</b>, elevado potencial produtivo de
+					forragem, tanto para pastejo quanto para corte, representa uma boa opção de safrinha com materiais
+					apropriados para qualquer fase da janela de semeadura, apresenta grande facilidade no consórcio com
+					forrageiras, facilitando e, no caso do sorgo granífero, custeando parcialmente a inserção da
+					forrageira dentro do sistema iLPF <a href="#ref_M3">[1]</a>. <br>
+					&nbsp &nbsp O sorgo possui algumas características culturais que precisam ser muito bem manejadas
+					para viabilizá-lo dentro dos sistemas iLPF pois, apresenta baixa tolerância ao Al3+, quando
+					comparado ao milheto, apresenta maiores exigências em relação à maioria dos atributos químicos e
+					físicos do solo não sendo, desta forma, recomendado para qualquer condição edafoclimática, apresenta
+					maior competição com forrageiras dentro dos consórcios e é um precedente desaconselhável para
+					algumas culturas, notadamente o arroz de terras altas. <a href="#ref_M3">[1]</a>. <br> <br> <br>
+				</p>
+
+				<div class="isolated_img_div">
+					<img title="GESA IFTM" class="isolated_img" src="../complements/images/module3/img_14.jpg" alt="">
+				</div> <br> <br>
+
+			</div>
+
+			<!-- Glycine max -->
+			<div class="wrapper">
+				<h1 class="text_title"><b class="subtopic_number">2.3</b>Soja (<i>Glycine max</i>)</h1>
+
+				<div class="box_info">
+					<p> &nbsp &nbsp A soja é a cultura agrícola mais utilizada na ILPF, pois apresenta uma série de
+						característica relevantes para o sistema: é uma leguminosa e, portanto, fixadora de nitrogênio,
+						prestando serviço ambiental ao reduzir a necessidade de entrada de nitrogênio mineral nos
+						sistemas iLPF; é a lavoura mais cultivada e de maior importância agro econômica no Brasil; é
+						classificada como <b>“commodity”</b> agrícola, tendo seu preço regulado pelo mercado
+						internacional que, por sua vez, está favorável nos últimos anos e assim deverá permanecer frente
+						à demanda crescente de alimentos no mundo, possui elevado potencial produtivo, atingindo
+						patamares de <b>6.000 kg/ha</b>; pode ser utilizada na renovação e/ou reforma de pastagens
+						degradadas; possui sistema radicular pivotante e razoavelmente agressivo; é uma ótima precedente
+						para a maioria das demais culturas agrícolas; é apropriada para ser cultivada no SPD sobre
+						outras forrageiras<a href="#ref_M3">[1]</a>.</p>
+
+					<img title="embrapa.com.br" class="box_img_right" src="../complements/images/module3/img_15.jpg">
+
+				</div> <br> <br>
+
+				<p>&nbsp &nbsp Apresenta desvantagens como: </p>
+				<ul>
+					<li> Produz pouca palhada residual e de degradação rápida; </li>
+					<li> Apresenta dificuldade para ser consorciada com forrageiras; essas duas características
+						anteriores somadas à questão legal do vazio sanitário inviabiliza seu cultivo de safrinha dentro
+						da maioria dos sistemas iLPF;
+					</li>
+					<li> Apresenta baixa tolerância ás condições químicas desfavoráveis do solo como elevada acidez e
+						alumínio trocável (Al3+) e baixa saturação por bases (V%); </li>
+					<li> Apresenta pouca adaptação ao ambiente de abertura de novas áreas; respeitar um intervalo mínimo
+						de 15 dias após a dessecação, exigindo um planejamento impecável do sistema, pois problemas de
+						fitotoxicidade na soja por exsudados da cobertura morta em decomposição (ácidos fracos e
+						glifosato) podem ocorrer<a href="#ref_M3">[1]</a>.</li> <br>
+				</ul>
+
+				<p> O <b>Manejo de plantas daninhas</b> consiste no maior desafio fitotécnico da soja dentro da iLPF,
+					notadamente quando integrado com o componente florestal. Neste caso, a estratégia de manejo vai
+					depender, principalmente, da idade e das espécies florestais, dos sistemas de cultivo e da
+					quantidade de palhada no solo. Na implantação do sistema iLPF com componente florestal e lavoura de
+					soja, uma das estratégias mais utilizadas é implantar o componente florestal na área só após a
+					aplicação dos herbicidas na soja. O manejo de doenças e pragas é realizado de forma idêntica ao
+					convencional, dando destaque para pragas e fitopatógenos polífagos do sistema como a <i>H.
+						armigera</i> e o <i>Pratylenchus brachiurus</i> <a href="#ref_M3">[1]</a>. <br> <br> <br> </p>
+
+				<div class="isolated_img_div">
+					<img title="silomax.com.br" class="isolated_img" src="../complements/images/module3/img_16.jpg">
+				</div> <br> <br>
+			</div>
+
+			<!-- milheto Pennisetum glaucum -->
+			<div class="wrapper">
+				<h1 class="text_title"><b class="subtopic_number">2.4</b>Milheto (<i>Pennisetum glaucum</i>)
+				</h1>
+
+				<div class="box_info">
+					<p> &nbsp &nbsp O milheto apresenta vantagens como: crescimento rápido e com rebrota, permitindo a
+						entrada de animais a partir dos 35 dias após sua implantação quando as <button
+							class="word_link">condições edafoclimáticas <span class="word_description">Características
+								definidas através de factores do meio, tais como o clima, o relevo, a litologia, a
+								temperatura, a humidade do ar, a radiação, o tipo de solo, o vento, a composição
+								atmosférica e a precipitação pluvial</span> </button> são favoráveis; apresenta uma
+						produtividade de grãos variando entre 500 a 1500 Kg ha-1 ainda, que, dificilmente será esta a
+						finalidade principal dentro dos sistemas ILPF; é muito menos exigente em relações às condições
+						edafoclimáticas quando comparado ao milho e ao sorgo sendo, por isso, recomendado para
+						fechamento da semeadura na safrinha; é um excelente precedente para a maioria das culturas;
+						apresenta materiais com fator de reprodução para nematoides extremamente baixos, notadamente
+						para o <i>Pratylenchus brachyurus</i>, sendo uma excelente alternativa de safrinha para áreas
+						com solos infestados por esse fitopatógeno; apresenta facilidade de ser consorciado com
+						forrageiras podendo, inclusive, ser semeado com as mesmas em uma única operação; baixo custo de
+						implantação quando utilizadas sementes produzidas na própria fazenda; apresenta grande
+						facilidade na dessecação e boa ciclagem de nutrientes<a href="#ref_M3">[1]</a>. </p>
+
+					<img title="embrapa.com.br" class="box_img_right" src="../complements/images/module3/img_17.jpg">
+
+				</div> <br><br>
+
+				<p>&nbsp &nbsp O milheto, por outro lado, possui algumas
+					características culturais que precisam ser muito bem manejadas para viabilizá-lo dentro dos sistemas
+					ILPF: apresenta baixa produção de palhada (que pode ser ampliada, se consorciado com forrageiras,
+					tal como a <i>B. ruziziensis</i>); apresenta degradação muito rápida da palhada <a
+						href="#ref_M3">[1]</a></p>
+			</div>
+
+			<!-- feijão-caupi -->
+			<div class="wrapper">
+				<h1 class="text_title"><b class="subtopic_number">2.5</b>Feijão-Caupi</h1> <br> <br>
+
+				<p>&nbsp &nbsp Apontado como uma das alternativas promissoras de leguminosa forrageira para solos de
+					textura média e argilosa, o feijão-caupi, cultivado na safrinha dentro da iLPF apresenta
+					características relevantes para o sistema, tais como:<a href="#ref_M3">[1]</a></p>
+
+				<ul>
+					<li>É uma leguminosa e, portanto, tem a capacidade de fixar nitrogênio do ar e aportar esse
+						macronutriente para o sistema; utilizado como forrageira principalmente, é uma excelente fonte
+						de proteínas de alta palatabilidade para os animais;</li>
+					<li>Apresenta um sistema radicular pivotante e muito agressivo, agindo na descompactação do solo e
+						melhorando as condições físicas do mesmo;</li>
+					<li>É muito menos exigente em relações às condições edafoclimáticas quando comparado ao milho,
+						sendo, por isso, recomendado para fechamento da semeadura na safrinha; é um excelente precedente
+						para a maioria das culturas, notadamente para o arroz de terras altas;</li>
+					<li>Quando utilizado como leguminosa forrageira, apresenta facilidade de ser consorciado com outras
+						forrageiras; apresenta grande facilidade na dessecação e boa ciclagem de nutrientes.</li>
+				</ul>
+
+				<p> &nbsp &nbsp Por outro lado, o feijão-caupi possui algumas características culturais que demandam ser
+					muito bem manejadas para viabilizá-lo dentro dos sistemas iLPF, são elas:<a href="#ref_M3">[1]</a>.
+				</p>
+
+				<ul>
+					<li>Quando utilizado solteiro para forragem, pode provocar timpanismo nos animais, além de deixar
+						baixa produção de palhada. Esses fatos exigem seu consórcio com forrageiras gramíneas, tais como
+						a B. ruziziensis ou <i>B. brizantha Cv Paiaguás</i>;</li>
+					<li>Quando utilizado para grãos, a tecnologia do consórcio com forrageiras gramíneas ainda não está
+						consolidada sendo, por isso, desaconselhável; </li>
+					<li>Pode se tornar uma “ponte verde” para nematóides dentro dos sistemas integrados, notadamente o
+						<i>Pratylenchus brachyurus</i>, sendo desaconselhável seu cultivo na safrinha em áreas com solos
+						infestados por esse fitopatógeno; elevado custo das sementes, fato que encarece sua implantação.
+						Esse fato pode ser contornando quando são utilizadas sementes produzidas na própria fazenda.
+					</li>
+				</ul> <br> <br>
+
+				<div class="isolated_img_div">
+					<img title="embrapa.com.br" class="isolated_img" src="../complements/images/module3/img_18.jpg">
+				</div> <br> <br>
+			</div>
+
+			<!-- crotalária -->
+			<div class="wrapper">
+				<h1 class="text_title"><b class="subtopic_number">2.6</b>Crotalária</h1>
+
+				<p class="text_content" style="margin-top: 35px;">&nbsp &nbsp A Crotalária <i>ochroleuca</i> também é
+					apontada como uma das alternativas promissoras de leguminosa forrageira para solos de textura média
+					e argilosa cultivada na safrinha dentro da iLPF por apresentar as seguintes características
+					relevantes para o sistema:</p>
+
+				<ul>
+					<li>É uma leguminosa e, portanto, tem a capacidade de fixar nitrogênio do ar e aportar esse macro
+						nutriente para o sistema; pode ser utilizada como forrageira (uso principal) e também produzir
+						grãos em mesmo cultivo, constituindo uma excelente fonte de proteínas de alta palatabilidade
+						para os animais;</li>
+					<li>Apresenta um sistema radicular pivotante e agressivo, agindo na descompactação do solo e
+						melhorando as condições físicas do mesmo;</li>
+					<li>É muito menos exigente em relações às condições edafoclimáticas quando comparada ao milho,
+						sendo, por isso, recomendada para fechamento da semeadura na safrinha; é um excelente precedente
+						para a maioria das culturas, notadamente para o arroz de terras altas; .</li>
+					<li>Quando utilizada como leguminosa forrageira, apresenta facilidade de ser consorciada com outras
+						forrageiras;</li>
+					<li>Apresenta grande facilidade na dessecação e boa ciclagem de nutrientes;</li>
+					<li>apresenta fator de reprodução para nematoides extremamente baixo, notadamente para o
+						<i>Pratylenchus brachyurus</i>, sendo uma excelente alternativa de safrinha para áreas com solos
+						infestados por esse fitopatógeno <a href="#ref_M3">[1]</a>
+					</li>
+				</ul> <br> <br>
+
+				<div class="isolated_img_div">
+					<img title="embrapa.com.br" style="width: 50vw" class="isolated_img"
+						src="../complements/images/module3/img_19.jpg">
+				</div> <br> <br>
+			</div>
+
+			<!-- EXERCISES MOD4-->
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_title">Exercícios</h1>
+					<p class="info_description">
+						Ao responder os exercícios, você deve acertar no mínimo 3 questões para avançar para o próximo
+						módulo, caso
+						contrário, a página será recarregada e você deverá tentar responder os exercícios novamente.
+					</p>
+				</div>
+
+			</section>
+
+		</section>
+
+
+		<!-- Question 1 mod4-->
+
+		<section class="master_form master_formM3" id="master_form">
+			<section id="3" data-question="Q1" class="form form1 form_from_M3">
+				<p class="question"><b>Questão 1:</b> São benefícios da lavoura para o Sistema ILPF, exceto:</p>
+
+				<input class=" false input_option" id="option1_q1_M3" hidden type="radio">
+				<label class="option" for="option1_q1_M3">a) Amortiza total ou parcialmente o custo de implantação do
+					sistema;</label>
+
+				<input class=" true input_option" id="option2_q1_M3" hidden type="radio">
+				<label class="option option_true" for="option2_q1_M3">b) Estimula o crescimento de plantas daninhas
+					entre os renques de árvores;</label>
+
+				<input class="false input_option" id="option3_q1_M3" hidden type="radio">
+				<label class="option" for="option3_q1_M3">c) Possível fixação biológica de nitrogênio quando utilizadas
+					espécies leguminosas;</label>
+
+				<input class=" false input_option" id="option4_q1_M3" hidden type="radio">
+				<label class="option" for="option4_q1_M3">d) Possibilidade de uma mesma espécie para diferentes
+					finalidades.</label>
+
+				<button id="Q1" type="button" class="send_answer send_answer1">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ1">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> O sombreamento realizado pela cultura anual e pelas árvores
+							dificulta o crescimento de plantas daninhas.
+						</p>
+					</div>
+
+					<div class="hidden wrong_answer wrong_answerQ1">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+					</div>
+				</div>
+			</section>
+
+			<div id="3" class=" div_answer hidden">
+				<button class="see_answer" id="ans_Q1_M3">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q1_M3">Resposta: letra (b) <br>
+					O sombreamento realizado pela cultura anual e pelas árvores dificulta o crescimento de plantas
+					daninhas.</p>
+			</div>
+
+			<!-- Question 2 mod4-->
+
+			<section id="3" data-question="Q2" class="form form2 form_from_M3">
+				<p class="question"><b>Questão 2:</b> Dentre as culturas listadas abaixo, qual não é comumente utilizada
+					em sistemas ILPF nas regiões Norte, Centro-oeste e Sudeste brasileiro?</p>
+
+				<input class=" true input_option" id="option1_q2_M3" hidden type="radio">
+				<label class="option option_true" for="option1_q2_M3">a) Arroz irrigado</label>
+
+				<input class=" false input_option" id="option2_q2_M3" hidden type="radio">
+				<label class="option" for="option2_q2_M3">b) Soja</label>
+
+				<input class=" false input_option" id="option3_q2_M3" hidden type="radio">
+				<label class="option" for="option3_q2_M3">c) Milho</label>
+
+				<input class=" false input_option" id="option4_q2_M3" hidden type="radio">
+				<label class="option" for="option4_q2_M3">d) Sorgo</label>
+
+				<button id="Q2" type="button" class="send_answer send_answer2">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ2">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> Atualmente, as principais culturas agrícolas utilizadas dentro da
+							iLPF nas regiões Norte, Centro-oeste e Sudeste brasileiro são: arroz de terras altas, soja,
+							milho, sorgo, milheto e algumas alternativas promissoras tais como feijão-caupi, Crotalaria
+							e nabo-forrageiro.
+						</p>
+					</div>
+
+					<div class="hidden wrong_answer wrong_answerQ2">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="3" class="div_answer hidden">
+				<button class="see_answer" id="ans_Q2_M3">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q2_M3">Resposta: letra (a)<br>
+					Atualmente, as principais culturas agrícolas utilizadas dentro da iLPF nas regiões Norte,
+					Centro-oeste e Sudeste brasileiro são: arroz de terras altas, soja, milho, sorgo, milheto e algumas
+					alternativas promissoras tais como feijão-caupi, Crotalaria e nabo-forrageiro.
+				</p>
+			</div>
+
+			<!-- Question 3 mod4 -->
+			<section id="3" data-question="Q3" class="form form3 form_from_M3">
+				<p class="question"><b>Questão 3:</b> Qual dessas culturas pode ser utilizada na alimentação animal na
+					forma de grãos, de forragem verde ou conservada, na forma de rolão e silagem? </p>
+
+				<input class=" false input_option" id="option1_q3_M3" hidden type="radio">
+				<label class="option" for="option1_q3_M3">a) Arroz de sequeiro</label>
+
+				<input class="false input_option" id="option2_q3_M3" hidden type="radio">
+				<label class="option" for="option2_q3_M3">b) Feijão-caupi</label>
+
+				<input class="true input_option" id="option3_q3_M3" hidden type="radio">
+				<label class="option  option_true" for="option3_q3_M3">c) Milho</label>
+
+				<input class="false input_option" id="option4_q3_M3" hidden type="radio">
+				<label class="option" for="option4_q3_M3">d) Crotalária</label>
+
+				<button type="button" id="Q3" class="send_answer send_answer3">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ3">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!!</b> <br>
+							<b>Resposta Correta.</b> A produção de milho destaca-se no contexto da integração lavoura
+							pecuária, devido a inúmeras aplicações que os grãos possuem na propriedade agrícola, sendo
+							utilizado na alimentação animal na forma de grãos, de forragem verde ou conservada, na forma
+							de rolão e silagem.
+						</p>
+					</div>
+
+					<div class="hidden wrong_answer wrong_answerQ3">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="3" class="div_answer hidden">
+				<button class="see_answer" id="ans_Q3_M3">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q3_M3">Resposta: letra (c)<br>
+					A produção de milho destaca-se no contexto da integração lavoura pecuária, devido a inúmeras
+					aplicações que os grãos possuem na propriedade agrícola, sendo utilizado na alimentação animal na
+					forma de grãos, de forragem verde ou conservada, na forma de rolão e silagem.</p>
+			</div>
+
+			<!-- Question 4 mod4-->
+
+			<section data-question="Q4" id="3" class="form form4 form_from_M3">
+				<p class="question"><b>Questão 4:</b> Qual dessas culturas é uma excelente alternativa de safrinha para
+					áreas com solos infestados por nematóides <i>Pratylenchus brachyurus?</i></p>
+
+				<input class=" false input_option" id="option1_q4_M3" hidden type="radio">
+				<label class="option" for="option1_q4_M3">a) Milheto</label>
+
+				<input class="false input_option" id="option2_q4_M3" hidden type="radio">
+				<label class="option" for="option2_q4_M3">b) Soja</label>
+
+				<input class=" false input_option" id="option3_q4_M3" hidden type="radio">
+				<label class="option" for="option3_q4_M3">c) Nabo forrageiro</label>
+
+				<input class=" true input_option" id="option4_q4_M3" hidden type="radio">
+				<label class="option option_true" for="option4_q4_M3">d) Crotalária</label>
+
+				<button id="Q4" type="button" class="send_answer send_answer4">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ4">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> A <i>Crotalária ochroleuca</i> apresenta fator de
+							reprodução para nematoides extremamente baixo, notadamente para o <i>Pratylenchus
+								brachyurus</i>, sendo uma excelente alternativa de safrinha para áreas com solos
+							infestados por esse fitopatógeno.
+						</p>
+
+					</div>
+					<div class="hidden wrong_answer wrong_answerQ4">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="3" class="div_answer hidden">
+				<button class="see_answer" id="ans_Q3_M3">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q3_M3">Resposta: letra (d)<br>
+					A <i>Crotalária ochroleuca</i> apresenta fator de
+					reprodução para nematoides extremamente baixo, notadamente para o <i>Pratylenchus brachyurus</i>,
+					sendo uma excelente alternativa de safrinha para áreas com solos infestados por esse fitopatógeno.
+				</p>
+			</div>
+
+			<div class="form" id="3">
+				<button class="finish" id="send_answer_finish" onclick="checkAll()">Próximo módulo</button>
+			</div>
+		</section>
+
+		<!-- References mod4 -->
+		<section class="container_text" id="ref_M3">
+			<div class="wrapper references">
+				<h1 class="text_title">REFERÊNCIAS:</h1>
+
+				<p>[1] WRUCK, F, J; BEHLING, M; LANGE, A. Produção da lavoura em sistemas de ILPF. In: BUNGENSTAB, D.
+					J.; ALMEIDA, R. G. de; LAURA, V. A.; BALBINO, L. C.; FERREIRA, A. D. (Ed.). ILPF: inovação com
+					integração de lavoura, pecuária e floresta. Brasília, DF: Embrapa, 2019. Cap. 21, p. 319-345.<br>
+					[2] ALVARENGA, R. C.; NETO, M.M.G; RAMALHO, J. H.; GARCIA, J.C.; VIANA, M.C.; CASTRO, A.A.D.N.
+					Sistema e Integração Lavoura- Pecuária: O Modelo implantado na Embrapa Milho e Sorgo. Sete Lagoas:
+					Embrapa Milho e Sorgo, 2006. 9p. (Circular Técnica, 93). <br>
+					[3] ALVARENGA, R.C.; RODRIGUES, J.A.S.; SANTOS, F.C.; GONTIJO NETO, M.M.; VIANA, M.C.M. A cultura do
+					sorgo em sistemas integrados lavoura-pecuária ou lavourapecuária floresta. Sete Lagoas: Embrapa
+					Milho e Sorgo, 2011. 14p. (Circular Técnica, 172).<br>
+					[4] SOUZA, J.W.T; SOUZA, B.M.L; SILVA, C.M. SISTEMA DE INTEGRAÇÃO LAVOURA-PECUÁRIA-FLORESTA (ILPF).
+					Ciência Animal, v.30, n.3, p.71-84, 2020. 71</p>
+
+			</div>
+		</section>
+	</section>
+
+
+	<div class="iftm_logo">
+		<a href="https://iftm.edu.br/"><img style="height: 20vh;" src="../complements/images/iftm.jpeg" alt=""></a>
+		<div class="wrapper_arrow">
+			<a href="#container_module_btns"><i class="arrow_to_top fas fa-arrow-alt-circle-up"></i></a>
+		</div>
+	</div>
+
+	<footer id="footer">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="../complements/images/logo_normal.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+		</div>
+
+		<div class="contact">
+			<div class="contact_card">
+				<a href="mailto: gesaiftm@gmail.com" id="email"><i id="mail_icon" class="far fa-envelope"
+						style="font-weight: 300"></i>
+					<br>
+					<p id="email">gesaiftm@gmail.com</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://chat.whatsapp.com/LCHVQ9RcYoa8yTDaPfpsZE" id="whatsapp"> <i id="whatsapp_icon"
+						class="fab fa-whatsapp" style="font-weight: 300"></i> <br>
+					<p id="whatsapp" class="cont">Grupo GESA</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://www.instagram.com/gesa_iftm/" id="insta"><i id="insta_icon" class="fab fa-instagram"
+						style="font-weight: 300"></i> <br>
+					<p id="insta" class="cont">Gesa_IFTM</p>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
+    
+ 

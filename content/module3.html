@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conteúdo</title>
+
+	<!-- STYLE -->
+	<link rel="stylesheet" href="../complements/styles/content.css">
+	<link rel="stylesheet" href="../complements/styles/partials/info.css">
+	<link rel="stylesheet" href="../complements/styles/partials/container_text.css">
+	<link rel="stylesheet" href="../complements/styles/partials/exercises.css">
+
+
+	<!-- main -->
+	<link rel="shortcut icon" href="../complements/images/logo.png">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="../complements/styles/partials/container.css">
+	<link rel="stylesheet" href="../complements/styles/partials/menu_mob.css">
+	<link rel="stylesheet" href="../complements/styles/partials/header.css">
+	<link rel="stylesheet" href="../complements/styles/partials/footer.css">
+	<link rel="stylesheet" href="../complements/styles/partials/alerts.css">
+	<link rel="stylesheet" href="../complements/styles/partials/link_word.css">
+
+
+	<!--SCRIPTS-->
+	<script type="text/javascript" src="../complements/scripts/menu_mob.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/content.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/complements_content.js" defer></script>
+
+
+	<!--BUTTONS-->
+	<link rel="stylesheet" href="../complements/styles/partials/dinamic_buttons.css">
+	<link rel="stylesheet" href="../complements/styles/partials/learn_more.css">
+</head>
+
+<body>
+
+	<header id="header">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="../complements/images/logo.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+
+
+			<nav class="menu">
+				<a href="../index.html" class="menu-link" id="home_link">Sobre</a>
+				<a href="#footer" title="No rodapé" id="cont_link" class="menu-link">Contato</a>
+				<a href="../subscription.html" id="cron_link" class="menu-link">Cronograma</a>
+				<a href="../classroom.html" class="menu-link" id="class_link">Sala de aula</a>
+			</nav>
+
+		</div>
+
+		<div
+			style="display: flex; align-items: center; align-content: center; justify-content: center; align-self: center; justify-self: center; height: 100%;">
+			<button id="menu_button"><i class="fas fa-bars" style="color: white; font-size: 18px;"></i>
+				<span class="menu_mobile hidden">
+					<span id="close_menu_mobile"><i class="fas fa-angle-up"></i></span>
+					<a href="../index.html" class="menu_mobile_option">Sobre</a>
+					<a href="#footer" class="menu_mobile_option">Contato</a>
+					<a href="../subscription.html" class="menu_mobile_option">Cronograma</a>
+					<a style="border-radius: 0px 0px 5px 5px" href="../classroom.html" class="menu_mobile_option">Sala de
+						aula</a>
+				</span>
+			</button>
+
+		</div>
+
+	</header>
+
+	<div class="alert_div">
+		<div class="wrapper danger hidden">
+			<p><b>Acertos insuficientes!</b> Refaça os exercícios do módulo para avançar. 
+			</p>
+			<button class="close_alert" onclick="location.reload()">OK</button>
+		</div>
+		<div class="wrapper congratulations hidden">
+			<p>Parabéns! O módulo seguinte será desbloqueado.<i id="unlock_icon" class="fas fa-unlock"></i> <br> Clique
+				no botão abaixo! </p><br>
+			<button class="close_alert close_alert_congrat" onclick="location.reload()">OK</button>
+		</div>
+	</div>
+
+	<div class="container_module_btns" id="container_module_btns">
+
+		<div class="buttons">
+			
+			<button class="module_btn mod1_btn" data-module="container_mod1" onclick="openModule(this)"
+				id="1" name="1" ><a href="./module1.html">Módulo 1</a></button>
+			<button class="module_btn mod2_btn" data-module="container_mod2" onclick="openModule(this)" id="2"
+				name="2"><a href="./module2.html">Módulo 2</a></button>
+			<button class="module_btn user mod3_btn" data-module="container_mod3" onclick="openModule(this)" id="3"
+				name="3"><a href="./module3.html">Módulo 3</a></button>
+			<button class="module_btn mod4_btn" data-module="container_mod4" onclick="openModule(this)" id="4"
+				name="4"><a href="./module4.html">Módulo 4</a></button>
+			<button class="module_btn mod5_btn" data-module="container_mod5" onclick="openModule(this)" id="5"
+				name="5"><a href="./module5.html">Módulo 5</a></button>
+			<button class="module_btn mod6_btn" data-module="container_mod6" onclick="openModule(this)" id="6"
+				name="6"><a href="./module6.html">Conclusão</a></button>
+				<div class="line">
+					<span class="line_btn"></span>
+				</div>
+		</div>
+	</div>
+
+    <section id="container_mod3" class="container container_mod3 container_func">
+		<section>
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_introduction">Escolha da forrageira para área de ILPF</h1>
+					<p class="info_description">
+						Neste módulo vamos conhecer as principais espécies de gramíneas utilizadas em ILPF e os
+						benefícios que esse elemento traz para esse tipo de integração.
+					</p>
+				</div>
+				<img class="info_img info_img_icon" id="icon_img" title="pngtree.com"
+					src="../complements/images/module4/img_1.jpg" alt="">
+
+			</section>
+
+			<a target="_blank" href="../books/module_4.pdf" class="download_button">Baixar apostila</a>
+		</section>
+
+		<section class="video_wrapper">
+			<p class="video_description">Acompanhe o vídeo introdutório: Escolha da Espécie Forrageira - Parte 1</p>
+			<iframe class="video_class" src="https://www.youtube.com/embed/Vj5B5PG1rgA" title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</section>
+
+		<!-- topic 01 mod4 -->
+
+		<section class="container_text">
+
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">01</b>Introdução</h1><br><br>
+
+				<p>&nbsp &nbsp Benefícios da pastagem para o sistema iLPF:</p>
+				<br> <br>
+
+				<p><i class="icon_li fas fa-check-circle"></i>Melhoria dos atributos químicos, físicos e biológicos do
+					solo, em função do incremento da matéria orgânica; <br>
+					<i class="icon_li fas fa-check-circle"></i>Maior desenvolvimento do sistema radicular, tornando a
+					planta menos suscetível ao déficit hídrico; <br>
+					<i class="icon_li fas fa-check-circle"></i>Controle mais eficiente de pragas, doenças e plantas
+					daninhas; <br>
+					<i class="icon_li fas fa-check-circle"></i>Maior ciclagem de nutrientes; <br>
+					<i class="icon_li fas fa-check-circle"></i>Aumento da capacidade de suporte das pastagens; <br>
+					<i class="icon_li fas fa-check-circle"></i>Aumento do valor nutritivo das forrageiras <a
+						href="#ref_M4">[1]</a>.
+					<br> <br>
+
+				<p>&nbsp &nbsp O estabelecimento de gramíneas a partir do primeiro ano do plantio das árvores tende a
+					ser mais efetivo do que em sistemas com árvores já desenvolvidas e com maior sombreamento. O manejo
+					de forrageiras em iLPF deve ser mais criterioso, evitando-se manter a altura de pastejo abaixo do
+					recomendado, para permitir maior acúmulo de reservas e favorecer a rebrotação <a
+						href="#ref_M4">[2]</a>.</p> <br> <br>
+
+				<div class="box_info">
+
+					<img title="embrapa.com.br" class="box_img_left" src="../complements/images/module4/img_3.jpg"> <br>
+					<br>
+
+					<p> &nbsp &nbsp A produção por animal tende a ser maior em sistemas de iLPF, pelo melhor valor
+						nutritivo da forrageira e pelo maior conforto térmico dos animais em pastejo proporcionados pelo
+						sombreamento. Com isso, espera-se melhor desempenho relativo com animais de maior exigência e
+						produtividade, desde que atendidas as demandas por água e minerais, com adequado manejo
+						sanitário e do pasto. Nesse sentido, o produtor pode contar com animais terminados em menor
+						tempo e com melhor qualidade de carne<a href="#ref_M4">[3]</a>.</p>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- topic 02 mod4 -->
+
+		<section class="container_text">
+
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">02</b>Espécies de Gramíneas mais
+					Utilizadas em ILPF</h1>
+
+				<section class="cards_wrapper">
+					<div class="card_info_edit">
+						<p><i>Brachiaria brizantha cv Marandu</i> <br> <br> O gênero Brachiaria é a gramínea mais
+							plantada no Brasil, sendo utilizada em todas as fases de cria, recria e engorda, tendo em
+							vista o manejo adequado. A cultivar Marandu constitui um capim de alta produção de matéria
+							seca, boa adaptabilidade e bom valor nutritivo <a href="#ref_M4">[4]</a>. Gramínea de
+							crescimento cespitoso, possui rizomas muito curtos, intenso afilhamento nos nós superiores
+							ao colmo. Em relação a sementes, são ligeiramente maiores a outros cultivares de braquiárias
+							<a href="">[5]</a>.
+						</p>
+
+						<img class="img_card" title="mfrural.com.br" src="../complements/images/module4/img_4.jpg">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Brachiaria brizantha cv Xaraés</i> <br> <br>
+							Planta forrageira cespitosa, tendo uma característica importante que é enraizar nos nós
+							basais e apresentar altura média de 1,5 m. o capim xaraes é indicado em solos de média
+							fertilidade, bem drenados e de textura média <a href="#ref_M4">[5]</a>. Embora seu
+							desempenho seja inferior ao capim Marandu, o capim Xaraés com maior velocidade de rebrota e
+							maior produção de forragem, garante alta capacidade de suporte e maior produtividade por
+							área<a href="#ref_M4">[5]</a>. </p>
+
+						<img class="img_card" title="pastotech.com.br" src="../complements/images/module4/img_5.jpg">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Brachiaria brizantha cv Xaraés</i> <br> <br>
+							Ocupa aproximadamente 55% das pastagens, fato comprovado pelo mercado de sementes,
+							movimentando cerca de 115 milhões de dólares. Esta alta produção é justificada,
+							principalmente pela sua adaptabilidade a diversos sistemas de produção e a diversas
+							condições edafoclimáticas <a href="#ref_M4">[5]</a>. </p>
+
+						<img class="img_card" title="sementesalvorada.com.br"
+							src="../complements/images/module4/img_6.jpg">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Panicum maximum cv. Mombaça</i> <br> <br>
+							Originalmente africana, essa gramínea forrageira apresenta crescimento cespitoso, perene,
+							possuindo de <b>12 a 18 % de proteína bruta</b> na matéria seca, sendo bastante utilizada no
+							pastoreio e silagem. A fertilidade do solo desempena importante papel no desenvolvimento do
+							Mombaça, na sua produtividade e concentração de nutrientes nas folhas<a
+								href="#ref_M4">[7]</a>. </p>
+
+						<img class="img_card" title="sementesgermine.com.br"
+							src="../complements/images/module4/img_7.jpg">
+
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<section class="learn_more">
+
+			<i class="fas fa-video"></i>
+
+			<button onclick="show_info(this)" data-lrn_mr="lrn_mr_8" class="button_visible">Saiba sobre a escolha da
+				espécie</button>
+
+			<div id="lrn_mr_8" class="information hidden">
+				<section class="video_wrapper">
+					<p>Escolha da espécie Forrageira</p>
+					<iframe class="video_class" src="https://www.youtube.com/embed/dHrfoTMq-Po"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</section>
+			</div>
+		</section>
+
+		<!-- topic 03 -->
+		<h1 class="text_title"><b class="topic_number">03</b>Modalidades de Plantio</h1>
+
+		<p>As modalidades de plantio em iLPF são baseadas nas da integração Lavoura-Pecuária (iLP), que são variadas e
+			diversas. Por isso, é importante conhecê-las para escolher aquela que melhor se adequa à propriedade <a
+				href="#ref_M4">[8]</a> </p>
+
+		<section class="container_dinamic">
+
+			<section class="dinamic_buttons">
+				<button class="d_button active dinamic-btn" data-target="content-4">
+					Sistema Barreirão </button>
+
+				<button class="d_button dinamic-btn" data-target="content-5">
+					Sistema Santa Fé </button>
+
+				<button class="d_button dinamic-btn" data-target="content-6">
+					Sistema Santa Brígida </button>
+
+			</section>
+			<section class="dinamic_content">
+
+				<div class="p_content content-4 box_info">
+					<p>&nbsp &nbsp O Sistema Barreirão (SB) trata-se de uma tecnologia de recuperação/renovação de
+						pastagens que utiliza o cultivo de culturas anuais (arroz de terras altas, milho, sorgo e
+						milheto) consorciado com gramíneas forrageiras, principalmente as braquiárias, o andropogon e os
+						panicuns<a href="#ref_M4">[8]</a>. </p>
+
+					<img title="embrapa.com.br" class="box_img_right" src="../complements/images/module4/img_8.jpg">
+				</div>
+
+				<div class="hidden p_content content-5 box_info">
+					<p>&nbsp &nbsp O Sistema Santa Fé (SSF) fundamenta-se na produção consorciada de lavouras de grãos,
+						especialmente milho, sorgo, milheto, arroz e soja, com forrageiras, principalmente as
+						braquiárias, em áreas de lavoura com solo parcial, ou devidamente corrigido. Os principais
+						objetivos desse sistema são a produção de forrageiras para a entressafra, além de palhada em
+						quantidade e qualidade para o Sistema Plantio Direto (SPD)<a href="#ref_M4">[8]</a>. </p>
+
+					<img title="embrapa.com.br" class="box_img_right" src="../complements/images/module4/img_9.jpg"
+						alt="solo">
+				</div>
+
+				<div class="hidden p_content content-6 box_info">
+					<p>&nbsp &nbsp O Sistema Santa Brígida (SSB) consiste no consórcio de gramíneas (milho ou sorgo e
+						forrageiras) com leguminosas (feijão guandu-anão e crotalária), proporcionando um aumento do
+						aporte de nitrogênio ao sistema, via fixação biológica do nitrogênio atmosférico. Podem-se citar
+						como vantagens desse sistema a diversificação das palhadas para o SPD, a melhoria na qualidade
+						das pastagens e o enriquecimento da silagem com proteína verdadeira<a href="#ref_M4">[8]</a>.
+					</p>
+
+					<img title="codevasf.gov.br" class="box_img_right" src="../complements/images/module4/img_10.jpg"
+						alt="solo">
+
+				</div>
+			</section>
+		</section>
+
+		<!-- topic 04 -->
+		<section class="container_text">
+
+			<div class="wrapper">
+
+				<h1 class="text_title"><b class="topic_number">04</b>Formas de semeadura</h1>
+
+				<div class="box_info">
+
+					<p> <b>Pré-semeadura à lanço</b> <br>
+						&nbsp &nbsp As sementes da forrageira são distribuídas a lanço, geralmente via tratorizada ou
+						aérea, imediatamente antes da semeadura da cultura de grãos. A incorporação das sementes é
+						parcial e ocorre em função da movimentação de solo provocada pela ação dos mecanismos de
+						sulcagem e cobertura das sementes das semeadoras<a href="#ref_M4">[8]</a>. </p>
+
+					<img title="Fonte: USP" class="box_img_right" src="../complements/images/module4/img_11.jpg" alt="">
+					<br> <br>
+				</div> <br> <br>
+
+				<div class="box_info">
+
+					<p> <b>Pré-semeadura na linha</b> <br>
+						&nbsp &nbsp Consiste na semeadura da forrageira imediatamente antes da semeadura da cultura de
+						grãos por meio da utilização de uma semeadora de forrageiras. Essa modalidade é mais utilizada
+						em solos férteis para formação de pastagens com panicuns, por apresentarem sementes muito
+						pequenas e que devem ser semeadas a profundidades entre dois e quatro centímetros<a
+							href="#ref_M4">[8]</a>. </p>
+
+					<img title="Fonte: USP" class="box_img_right" src="../complements/images/module4/img_12.jpg"> <br>
+					<br>
+
+				</div> <br> <br>
+
+				<div class="box_info">
+
+					<p> <b>Semeadura simultânea</b> <br>
+						&nbsp &nbsp As sementes da forrageira são semeadas no mesmo instante da cultura de grãos por
+						meio da mistura das sementes da forrageira no adubo de plantio da cultura de grãos, ou do uso da
+						terceira caixa (caixa-reservatório para sementes pequenas) nas semeadoras mais modernas e/ou da
+						adaptação das caixas de distribuição de sementes de soja (discos com perfurações adaptadas para
+						as sementes da forrageira), mantendo-se a caixa de distribuição de sementes de soja entre as
+						duas caixas de semente de milho<a href="#ref_M4">[8]</a>. </p>
+
+					<img title="Fonte: USP" class="box_img_right" src="../complements/images/module4/img_13.jpg" alt="">
+					<br> <br>
+				</div> <br> <br>
+
+				<div class="box_info">
+
+					<p> <b>Semeadura defasada</b> <br>
+						&nbsp &nbsp Consiste na implantação da forrageira após o período crítico de competição com a
+						cultura de grãos. Geralmente, as sementes da forrageira são misturadas ao fertilizante
+						nitrogenado (predominantemente a
+						ureia), o qual é incorporado superficialmente ao solo <a href="#ref_M4">[8]</a>. <br>
+						&nbsp &nbsp Outra possibilidade de defasagem é a utilização da sobressemeadura da forrageira na
+						cultura de grãos. Essa modalidade tem sido utilizada para implantação de braquiárias na cultura
+						do milho e da soja e, mais recentemente, de panicuns na soja, em regiões do Cerrado com melhor
+						distribuição do regime de chuvas (Sudoeste de Goiás e Norte do Mato Grosso), onde se cultivam
+						variedades precoces<a href="#ref_M4">[8]</a>. </a>. </p>
+
+					<img title="Fonte: USP" class="box_img_right" src="../complements/images/module4/img_14.jpg" alt="">
+					<br> <br>
+				</div> <br> <br>
+
+				<div class="box_info">
+
+					<p> <b>Semeadura em sucessão</b> <br>
+						&nbsp &nbsp A forrageira é semeada imediatamente após a colheita da cultura de grãos implantada
+						no verão, buscando-se aproveitar a umidade residual do solo e as chuvas do outono, visando à
+						produção de forragem para pastejo, fenação, silagem ou produção de palhada para o SPD,
+						evitando-se, assim, o pousio da área, o que pode ocasionar a proliferação de plantas daninhas,
+						pragas e doenças<a href="#ref_M4">[8]</a>. </p>
+
+					<img title="Fonte: USP" class="box_img_right" src="../complements/images/module4/img_16.jpg"> <br>
+					<br>
+
+				</div> <br> <br>
+			</div>
+		</section>
+
+		<section class="learn_more">
+
+			<i class="fas fa-video"></i>
+
+			<button onclick="show_info(this)" data-lrn_mr="lrn_mr_9" class="button_visible">Saiba Mais</button>
+
+			<div id="lrn_mr_9" class="information hidden">
+				<section class="video_wrapper">
+					<p>Parte 2: Escolha da espécie forrageira - Formas de semeadura</p>
+					<iframe class="video_class" src="https://www.youtube.com/embed/wikYfUxmMD0"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</section>
+			</div>
+		</section>
+
+		<!-- EXERCISES MOD3 -->
+		<section class="info">
+
+			<div class="wrapper">
+				<h1 class="info_title" style="font-weight: 800; color: #282A36;">Exercícios</h1>
+				<p class="info_description">
+					Ao responder os exercícios, você deve acertar no mínimo 3 questões para avançar para o próximo
+					módulo, caso contrário, a página será recarregada e você deverá tentar responder os exercícios
+					novamente. </p>
+
+			</div>
+		</section>
+
+
+		<!-- Question 1 mod3-->
+
+		<section class="master_form master_formM5" id="master_form">
+			<section data-question="Q1" id="4" class="form form1 form_from_M4">
+
+				<p class="question"><b>Questão 1:</b> Entre as opções abaixo, qual delas não está relacionada aos
+					benefícios da pastagem para o sistema ILPF?</p>
+
+				<input class=" false input_option" id="option1_q1" hidden type="radio">
+				<label class="option" for="option1_q1">a) Maior desenvolvimento do sistema radicular;</label>
+
+				<input class=" false input_option" id="option2_q1" hidden type="radio">
+				<label class="option" for="option2_q1">b) Controle de plantas daninhas;</label>
+
+				<input class=" true input_option" id="option3_q1" hidden type="radio">
+				<label class="option option_true" for="option3_q1">c) Alta fixação de Nitrogênio;</label>
+
+				<input class=" false input_option" id="option4_q1" hidden type="radio">
+				<label class="option" for="option4_q1">d) Aumento da capacidade de suporte das pastagens.</label>
+
+				<button id='Q1' type="button" class="send_answer send_answer1">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ1">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> A fixação de Nitrogênio é mais eficaz em culturas
+							leguminosas, nas gramíneas/pastagens a reposição desse nutriente é realizada com adubação
+							nitrogenada.
+						</p>
+					</div>
+
+					<div class="hidden wrong_answer wrong_answerQ1">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="4" class=" div_answer hidden">
+				<button class="see_answer" id="ans_Q1_M4">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q1_M4">Resposta: letra (c)<br>
+					A fixação de Nitrogênio é mais eficaz em culturas
+					leguminosas, nas gramíneas/pastagens a reposição desse nutriente é realizada com adubação
+					nitrogenada.
+				</p>
+			</div>
+
+			<!-- Question 2 -->
+			<section id="4" data-question="Q2" class="form form2 form_from_M4">
+				<p class="question"><b>Questão 2:</b> Das espécies mencionadas abaixo, qual não é muito utilizada em
+					sistema ILPF?</p>
+
+				<input class=" true input_option" id="option1_q2" hidden type="radio">
+				<label class="option option_true" for="option1_q2">a) Arachis pintoi cv. BRA 031496</label>
+
+				<input class=" false input_option" id="option2_q2" hidden type="radio">
+				<label class="option" for="option2_q2">b) Brachiaria brizantha cv. Marandu</label>
+
+				<input class=" false input_option" id="option3_q2" hidden type="radio">
+				<label class="option" for="option3_q2">c) Brachiaria decumbens cv. Basilisk</label>
+
+				<input class=" false input_option" id="option4_q2" hidden type="radio">
+				<label class="option" for="option4_q2">d) Panicum maximum cv. Mombaça</label>
+
+				<button id="Q2" type="button" class="send_answer send_answer2">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ2">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> Apesar de ser uma forrageira leguminosa muito rica, apresenta
+							limitações quanto à tolerância ao sombreamento. Enquanto as demais toleram até 75%, o
+							amendoim forrageiro (<i>Arachis pintoi cv. BRA 031496</i>) não tolera mais que 50%.
+						</p>
+					</div>
+
+					<div class="hidden wrong_answer wrong_answerQ2">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="4" class=" div_answer hidden">
+				<button class="see_answer" id="ans_Q2_M4">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q2_M4">Resposta: letra(a)<br>
+					Apesar de ser uma forrageira leguminosa muito rica, apresenta limitações quanto à tolerância ao
+					sombreamento. Enquanto as demais toleram até 75%, o amendoim forrageiro (<i>Arachis pintoi cv. BRA
+						031496</i>) não tolera mais que 50%.
+				</p>
+			</div>
+
+			<!-- Question 3 mod3 -->
+			<section id="4" data-question="Q3" class="form form3 form_from_M4">
+				<p class="question"><b>Questão 3:</b> Qual das formas de semeadura é mais indicada para alguém que quer
+					minimizar a competição da forrageira com a cultura de grãos? </p>
+
+				<input class=" false input_option" id="option1_q3" hidden type="radio">
+				<label class="option" for="option1_q3">a) Pré-semeadura à lanço;</label>
+
+				<input class="false input_option" id="option2_q3" hidden type="radio">
+				<label class="option" for="option2_q3">b) Pré-semeadura na linha;</label>
+
+				<input class="false input_option" id="option3_q3" hidden type="radio">
+				<label class="option" for="option3_q3">c) Semeadura simultânea;</label>
+
+				<input class=" true input_option" id="option4_q3" hidden type="radio">
+				<label class="option option_true" for="option4_q3">d) Semeadura defasada.</label>
+
+				<button id="Q3" type="button" class="send_answer send_answer3">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ3">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!!</b> <br>
+							<b>Resposta Correta.</b> A competição entre a forrageira e a cultura de grãos é minimizada
+							porque a implantação da forrageira se dá após o período crítico de competição.
+						</p>
+					</div>
+
+					<div class="hidden wrong_answer wrong_answerQ3">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="4" class=" div_answer hidden">
+				<button class="see_answer" id="ans_Q3_M4">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q3_M4">Resposta: letra (d) <br>
+					A competição entre a forrageira e a cultura de grãos é minimizada porque a implantação da forrageira
+					se dá após o período crítico de competição.
+				</p>
+			</div>
+
+			<!-- Question 4 mod3-->
+			<section id="4" data-question="Q4" class="form form4 form_from_M4">
+				<p class="question"><b>Questão 4:</b> Quais são as características da Semeadura de Sucessão?</p>
+
+				<input class=" false input_option" id="option1_q4_M4" hidden type="radio">
+				<label class="option" for="option1_q4_M5">a) A forrageira é distribuída a lanço, antes da semeadura da
+					cultura de grãos;</label>
+
+				<input class=" true input_option" id="option2_q4_M4" hidden type="radio">
+				<label class="option option_true" for="option2_q4_M4">b) A forrageira é semeada imediatamente após a
+					colheita da cultura de grãos do verão;</label>
+
+				<input class=" false input_option" id="option3_q4_M4" hidden type="radio">
+				<label class="option" for="option3_q4_M5">c) A forrageira é semeada antes da semeadura da cultura de
+					grãos;</label>
+
+				<input class=" false input_option" id="option4_q4_M4" hidden type="radio">
+				<label class="option" for="option4_q4_M5">d) A forrageira é semeada no mesmo instante da cultura de
+					grãos.</label>
+
+				<button id="Q4" type="button" class="send_answer send_answer4">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ4">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> Esse tipo de semeadura aproveita a umidade residual do solo e as
+							chuvas do outono, produz forragem para pastejo, fenação, silagem ou produz palhada para o
+							Sistema de Plantio Direto (SPD).
+						</p>
+					</div>
+
+					<div class="hidden wrong_answer wrong_answerQ4">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div class="form" id="4">
+				<button class="finish" id="send_answer_finish" onclick="checkAll()">Próximo módulo</button>
+			</div>
+		</section>
+
+		<div id='4' class=" div_answer hidden">
+			<button class="see_answer" id="ans_Q4_M4">
+				Ver resposta</button>
+			<p class="hidden answer ans_Q4_M4">Resposta: letra (b)<br>
+				Esse tipo de semeadura aproveita a umidade residual do solo e as chuvas do outono, produz forragem para
+				pastejo, fenação, silagem ou produz palhada para o Sistema de Plantio Direto (SPD).
+			</p>
+		</div>
+
+
+		<!-- References mod3 -->
+		<section class="container_text" id="ref_M4">
+			<div class="wrapper references">
+				<h1 class="text_title">REFERÊNCIAS:</h1>
+
+				<p>[1] KICHEL, A. N. COSTA, J. A. A. da ALMEIDA, R. G. de PAULINO, V. T. Sistemas de Integração
+					lavoura-pecuária-floresta (iLPF)- Experiências no BRASIL. Boletim de Indústria Animal, Nova Odessa,
+					v. 71, n. 1, p. 94-105, 2014. <br>
+					[2] EMBRAPA Gado de Corte, 2012. Uso de forrageiras em sistemas de integração
+					Lavoura-Pecuária-Floresta (iLPF). Disponível em:
+					https://www.embrapa.br/en/busca-de-solucoes-tecnologicas/-/produto-servico/3822/uso-de-forrageiras-em-sistemas-de-integracao-lavoura-pecuaria-floresta-ilpf.
+					Acesso em 09 de setembro de 2021 <br>
+					[3] ALMEIDA, R. G. O planejamento e a gestão do sistema iLPF. Disponível em:
+					https://www.researchgate.net/profile/Roberto-Almeida-4/publication/282671341_O_planejamento_e_a_gestao_do_sistema_ILPF/links/5617e3d008ae044edbacf495/O-planejamento-e-a-gestao-do-sistema-ILPF.pdf.
+					Acesso em 09 de setembro de 2021. <br>
+					[4] COSTA, K.A.P.; ROSA, B.; OLIVEIRA, I.P.; CUSTÓDIO, D.P.; SILVA, D.C. Efeito da Estacionalidade
+					na Produção de Matéria Seca e Composição Bromatológica da Brachiaria brizantha cv. Marandu. Ciência
+					Animal Brasileira, v.6, n.3, p.187-193, 2005. <br>
+					[5] MARTUSCELLO, J.A.; JANK, L.; NETO, M. M. G.; LAURA, V.A.; CUNHA, D.N.F.V. Produção de gramíneas
+					do gênero Brachiaria sob níveis de sombreamento. Revista Brasileira de Zootecnia, v.38, n.7,
+					p.1183-1190, 2009. <br>
+					[6] EUCLIDES, V.P.B.; MACEDO, M.C.M.; ZIMMER, A.H.; JANK, L.; OLIVEIRA, M.P. de. Avaliação dos
+					capins Mombaça e Massai sob pastejo. Revista Brasileira de Zootecnia, v.37, n.1, pp.18-26, 2008 <br>
+					[7] BRAZ, A.J.B.P.; SILVEIRA, P.M.; KLIEMANN, H.J.; ZIMMERMANN, J.P. Acumulação de Nutrientes em
+					folhas de Milhetos e dos Capins Braquiárias e Mombaça. Pesquisa de Agropecuária Tropical, v.34,
+					p.83-87, 2004. <br>
+					[8] USP. Módulo 2 – Implantação do Sistema ILP. Disponível em:
+					https://edisciplinas.usp.br/pluginfile.php/5782801/mod_resource/content/1/Modulo2_ILP.pdf. Acesso em
+					09 de setembro de 2021.</p>
+
+			</div>
+		</section>
+	</section>
+
+
+	<div class="iftm_logo">
+		<a href="https://iftm.edu.br/"><img style="height: 20vh;" src="../complements/images/iftm.jpeg" alt=""></a>
+		<div class="wrapper_arrow">
+			<a href="#container_module_btns"><i class="arrow_to_top fas fa-arrow-alt-circle-up"></i></a>
+		</div>
+	</div>
+
+	<footer id="footer">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="../complements/images/logo_normal.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+		</div>
+
+		<div class="contact">
+			<div class="contact_card">
+				<a href="mailto: gesaiftm@gmail.com" id="email"><i id="mail_icon" class="far fa-envelope"
+						style="font-weight: 300"></i>
+					<br>
+					<p id="email">gesaiftm@gmail.com</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://chat.whatsapp.com/LCHVQ9RcYoa8yTDaPfpsZE" id="whatsapp"> <i id="whatsapp_icon"
+						class="fab fa-whatsapp" style="font-weight: 300"></i> <br>
+					<p id="whatsapp" class="cont">Grupo GESA</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://www.instagram.com/gesa_iftm/" id="insta"><i id="insta_icon" class="fab fa-instagram"
+						style="font-weight: 300"></i> <br>
+					<p id="insta" class="cont">Gesa_IFTM</p>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

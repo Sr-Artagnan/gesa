@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conteúdo</title>
+
+	<!-- STYLE -->
+	<link rel="stylesheet" href="../complements/styles/content.css">
+	<link rel="stylesheet" href="../complements/styles/partials/info.css">
+	<link rel="stylesheet" href="../complements/styles/partials/container_text.css">
+	<link rel="stylesheet" href="../complements/styles/partials/exercises.css">
+
+
+	<!-- main -->
+	<link rel="shortcut icon" href="../complements/images/logo.png">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="../complements/styles/partials/container.css">
+	<link rel="stylesheet" href="../complements/styles/partials/menu_mob.css">
+	<link rel="stylesheet" href="../complements/styles/partials/header.css">
+	<link rel="stylesheet" href="../complements/styles/partials/footer.css">
+	<link rel="stylesheet" href="../complements/styles/partials/alerts.css">
+	<link rel="stylesheet" href="../complements/styles/partials/link_word.css">
+
+
+	<!--SCRIPTS-->
+	<script type="text/javascript" src="../complements/scripts/menu_mob.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/content.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/complements_content.js" defer></script>
+
+
+	<!--BUTTONS-->
+	<link rel="stylesheet" href="../complements/styles/partials/dinamic_buttons.css">
+	<link rel="stylesheet" href="../complements/styles/partials/learn_more.css">
+</head>
+
+<body>
+
+	<header id="header">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="../complements/images/logo.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+
+
+			<nav class="menu">
+				<a href="../index.html" class="menu-link" id="home_link">Sobre</a>
+				<a href="#footer" title="No rodapé" id="cont_link" class="menu-link">Contato</a>
+				<a href="../subscription.html" id="cron_link" class="menu-link">Cronograma</a>
+				<a href="../classroom.html" class="menu-link" id="class_link">Sala de aula</a>
+			</nav>
+
+		</div>
+
+		<div
+			style="display: flex; align-items: center; align-content: center; justify-content: center; align-self: center; justify-self: center; height: 100%;">
+			<button id="menu_button"><i class="fas fa-bars" style="color: white; font-size: 18px;"></i>
+				<span class="menu_mobile hidden">
+					<span id="close_menu_mobile"><i class="fas fa-angle-up"></i></span>
+					<a href="../index.html" class="menu_mobile_option">Sobre</a>
+					<a href="#footer" class="menu_mobile_option">Contato</a>
+					<a href="../subscription.html" class="menu_mobile_option">Cronograma</a>
+					<a style="border-radius: 0px 0px 5px 5px" href="../classroom.html" class="menu_mobile_option">Sala de
+						aula</a>
+				</span>
+			</button>
+
+		</div>
+
+	</header>
+
+	<div class="alert_div">
+		<div class="wrapper danger hidden">
+			<p><b>Acertos insuficientes!</b> Refaça os exercícios do módulo para avançar. 
+			</p>
+			<button class="close_alert" onclick="location.reload()">OK</button>
+		</div>
+		<div class="wrapper congratulations hidden">
+			<p>Parabéns! O módulo seguinte será desbloqueado.<i id="unlock_icon" class="fas fa-unlock"></i> <br> Clique
+				no botão abaixo! </p><br>
+			<button class="close_alert close_alert_congrat" onclick="location.reload()">OK</button>
+		</div>
+	</div>
+
+	<div class="container_module_btns" id="container_module_btns">
+
+		<div class="buttons">
+			
+			<button class="module_btn mod1_btn" data-module="container_mod1" onclick="openModule(this)"
+				id="1" name="1" ><a href="./module1.html">Módulo 1</a></button>
+			<button class="module_btn mod2_btn" data-module="container_mod2" onclick="openModule(this)" id="2"
+				name="2"><a href="./module2.html">Módulo 2</a></button>
+			<button class="module_btn mod3_btn" data-module="container_mod3" onclick="openModule(this)" id="3"
+				name="3"><a href="./module3.html">Módulo 3</a></button>
+			<button class="module_btn mod4_btn" data-module="container_mod4" onclick="openModule(this)" id="4"
+				name="4"><a href="./module4.html">Módulo 4</a></button>
+			<button class="module_btn mod5_btn" data-module="container_mod5" onclick="openModule(this)" id="5"
+				name="5"><a href="./module5.html">Módulo 5</a></button>
+			<button class="module_btn user  mod6_btn" data-module="container_mod6" onclick="openModule(this)" id="6"
+				name="6"><a href="./module6.html">Conclusão</a></button>
+				<div class="line">
+					<span class="line_btn"></span>
+				</div>
+		</div>
+	</div>
+
+		<!-- module_6 -->
+        <section id="container_mod6" class="container container_mod6 container_func">
+            <section>
+    
+                <section class="info">
+    
+                    <div class="wrapper">
+                        <h1 class="info_introduction">Aspectos Econômicos</h1>
+                        <p class="info_description"> Neste módulo abordaremos as características econômicas e análises
+                            financeiras do sistema de integração Lavoura-Pecuária-Floresta. Serão analisados os custos,
+                            lucratividade e viabilidade econômica do sistema. </p>
+    
+                    </div>
+                    <img class="info_img info_img_icon" id="icon_img" title="pt.vecteezy.com"
+                        src="../complements/images/module6/img_1.png">
+                </section>
+    
+                <a target="_blank" href="../books/module_6.pdf" class="download_button">Baixar apostila</a>
+            </section>
+    
+            <!-- topic 01 -->
+            <section class="container_text">
+                <div class="wrapper">
+                    <h1 class="text_title"><b class="topic_number">01</b>Introdução</h1>
+    
+                    <p class="text_content">
+                        Várias vantagens podem ser citadas em favor dos sistemas de integração lavoura-pecuária (ILP),
+                        pecuária-floresta (IPF) e lavoura-pecuária-floresta (ILPF). Muitas delas têm um caráter social,
+                        extrapolando a porteira da fazenda, outras se restringem ao estabelecimento rural. Os principais
+                        benefícios econômicos diretos para o produtor são:<br> <br>
+                    </p>
+    
+                    <p><i class="icon_li fas fa-check-circle"></i>Aumento do produto total; <br>
+    
+                        <i class="icon_li fas fa-check-circle"></i>Melhor aproveitamento da mão-de-obra; <br>
+                        <i class="icon_li fas fa-check-circle"></i>Redução do custo unitário dos produtos; <br>
+                        <i class="icon_li fas fa-check-circle"></i>Aumento do lucro, como resultado da maior produção e
+                        menor custo; <br>
+                        <i class="icon_li fas fa-check-circle"></i>Melhor distribuição e diversificação das receitas ao
+                        longo do ano, gerando um fluxo de caixa mais equilibrado; <br>
+                        <i class="icon_li fas fa-check-circle"></i>Redução dos riscos na produção e nos preços, devido à
+                        diversificação de atividades <a href="#ref_M6">[1]</a>; <br>
+                        <i class="icon_li fas fa-check-circle"></i>Redução no uso de insumos e recursos não renováveis
+                        (fertilizantes minerais e combustíveis fosseis).
+                    </p>
+    
+                    <!-- topic 02 -->
+                    <h1 class="text_title"><b class="topic_number">02</b>Características Econômicas da iLPF</h1>
+    
+                    <p>
+                        Listam-se a seguir as principais características desse tipo de exploração: <br> <br>
+                        • Grande número de alternativas de produção disponíveis, possibilitando inúmeras combinações de
+                        atividades. Salienta-se a complexidade dessa escolha, decorrente da dinâmica dos sistemas em
+                        sucessão, onde as variáveis espaço e tempo são fundamentais; <br>
+                        • Numerosas possibilidades de combinação dos fatores de produção (terra, capital e trabalho e seus
+                        desdobramentos). Tal característica é ainda mais visível na pecuária, onde os sistemas de produção
+                        são extremamente flexíveis quanto ao emprego de tecnologias e ao nível de uso de insumos; <br>
+                        • Caracterização de um processo de mudança a partir de um sistema já existente, seja ele de produção
+                        vegetal ou animal, salientando-se a dificuldade na definição das espécies vegetais, especialmente do
+                        componente arbóreo, ideais para cada condição; <br>
+                        • Planos de produção que envolvem investimentos cujos efeitos se prolongam por um longo horizonte de
+                        tempo; <br>
+                        • Efeitos defasados do uso de determinados insumos. Por exemplo, a adubação da lavoura pode
+                        beneficiar a pastagem que a sucede durante vários anos; <br>
+                        • Em busca da produtividade e da sustentabilidade, os objetivos dos produtores tendem a ser
+                        múltiplos, ao invés de se restringirem à simples maximização do lucro; <br>
+                        • Na composição dos benefícios dos sistemas de integração, há diversos “produtos” de difícil
+                        valoração monetária, por falta de valor de mercado, como por exemplo, os efeitos positivos na
+                        microflora e microfauna do solo, na redução da erosão, no microclima e no bem-estar animal <a
+                            href="#ref_M6">[1]</a>. </p>
+    
+                    <div class="isolated_img_div" style="margin-bottom: 70px;">
+                        <img title="grnews.com.br" class="isolated_img" src="../complements/images/module6/img_2.jpg">
+                    </div>
+    
+                    <!-- topic 03 -->
+                    <h1 class="text_title"><b class="topic_number">03</b> Principais aspectos que as
+                        análises financeiras de sistemas de integração têm demonstrado</h1>
+    
+                    <p>É possível observar, por meio da análise dos resultados, os seguintes aspectos: <br> <br>
+                        &nbsp • Os custos de implantação dos sistemas de produção diluem-se nos <b> primeiros 3 a 5
+                            anos</b>, e tendem a estabilizar-se à medida que as relações biofísicas entre os diferentes
+                        componentes também se estabilizam. <br>
+                        &nbsp • As receitas tendem a superar os custos, gerando fluxo de caixa positivo, nesse mesmo
+                        período, entre 3 e 5 anos da implantação. <br>
+                        &nbsp • Considerando-se a utilização de espécies que podem demandar manejo pontual para a obtenção
+                        da produção, como espécies madeireiras, por exemplo, podem ocorrer picos de custos, seguidos
+                        igualmente por picos de receita, mantendo o sistema <b>financeiramente estável.</b> <br> <br> </p>
+    
+    
+                    <div class="box_info">
+                        <p>&nbsp • A mão de obra tem se mostrado como um importante componente do custo de produção desses
+                            sistemas de produção. Esse aspecto é ainda mais destacado quando se considera a remuneração da
+                            mão de obra familiar utilizada nas mesmas condições de remuneração daquela contratada. <br>
+                            &nbsp • Sistemas em que há maior emprego de mão de obra familiar, a despeito das mesmas
+                            condições de remuneração, mostram-se mais lucrativos. <br>
+                            &nbsp • A diversificação da produção promove, de forma geral, estabilização na receita, uma vez
+                            que variações negativas nos preços de um produto podem ser compensadas por variações positivas
+                            nos preços de outro. <br>
+                            &nbsp • Sistemas extremamente diversos (mais de dez espécies) apresentam alto grau de
+                            dificuldade para planejamento e condução, o que resulta em baixa produtividade e altos custos <a
+                                href="#ref_M6">[2]</a>. </p>
+    
+                        <img title="deere.com.br" class="box_img_right" src="../complements/images/module6/img_3.jpg"> <br>
+                        <br>
+                    </div>
+    
+                    <h1 class="text_title"><b class="topic_number">04</b> Análise de viabilidade econômica da implantação do
+                        sistema ILPF em Brotas-SP</h1>
+    
+                    <p>&nbsp &nbsp O estudo de caso realizado por GODOY (2020) foi realizado considerando uma área de 120
+                        ha, sendo 45 ha de agricultura, 8 ha de atividade florestal e 67 ha de pecuária. As atividades
+                        produtivas foram milho (safra), recria de pecuária de corte com compra de bezerro desmamado (7,5
+                        arrobas) para venda de boi magro (cerca de 12 arrobas) e madeira de eucalipto com uma razão de 111
+                        árvores em pé/ha.</p> <br> <br>
+    
+                    <div class="tables">
+                        <h1 class="text_title"><b class="subtopic_number">4.1</b>Custo Operacional Total (COT)</h1>
+                        <img class="table_img" src="../complements/images//module6/img_4.jpg" alt="">
+                    </div> <br> <br>
+    
+                    <p> &nbsp &nbsp O centro de custo da Pecuária, contribuiu com o maior valor em termos de custo, com a
+                        necessidade de aquisição de R$ 369.619,20 em bezerros desmamados. Sendo assim a distribuição do
+                        custo efetivo foi de <b>24,88%</b> para lavoura, <b>69,84%</b> para pecuária e <b>5,28%</b> para
+                        floresta. <br>
+                        &nbsp &nbsp Adicionando ao COT o custo de oportunidade do capital de giro (R$ 40.300,36) o custo de
+                        oportunidade de capital investido de benfeitoria e infraestrutura (R$ 6.385,85), máquinas e
+                        equipamentos (18.912,44) e culturas perenes (R$ 4.944,49), chega-se em um custo total (CT) de R$
+                        870.405,92 na implantação do sistema.
+                    </p> <br> <br>
+    
+                    <div class="tables">
+                        <h1 class="text_title"><b class="subtopic_number">4.2</b>Receita Bruta Projetada</h1>
+                        <p> &nbsp &nbsp Estimou-se a produção de milho com produtividade média de 140 sacas/ha, a pecuária
+                            com ganho de 4 arrobas em 1 ano com taxa de lotação de 2,3 UA/ha e 1% de taxa de mortalidade e
+                            para o entro florestal um ganho de 0,08 m3/árvore/ano</p>
+    
+                        <img class="table_img" src="../complements/images//module6/img_5.jpg" alt="">
+                    </div><br> <br>
+    
+                    <div class="tables">
+                        <h1 class="text_title"><b class="subtopic_number">4.3</b>Lucro Total da ILPF</h1>
+    
+                        <img class="table_img" src="../complements/images//module6/img_6.jpg" alt="">
+    
+                        <p> <br> <br> &nbsp &nbsp Portanto o lucro total da ILPF totalizou <b>R$ 79.198,97</b>, sendo R$
+                            44.890,37 para Lavoura; R$ 9.663,09 para a Pecuária e R$ 24.645,51 para Floresta. Nota-se que:
+                            &nbsp &nbsp • A pecuária é uma disponibilidade de capital de curto prazo, sendo sustentadora da
+                            capacidade de geração do caixa do sistema;
+                            &nbsp &nbsp • Na margem de lucro a Lavoura assume o melhor resultado operacional, sendo
+                            responsável por proporcionar a oportunidade de novos investimentos e autofinanciamento do
+                            sistema;
+                            &nbsp &nbsp • A área florestal representa uma reserva de caixa que pode ser acionada quando
+                            necessário. </p>
+    
+                        <section class="wrapper_add_info">
+                            <p class="add_info">Os custos unitários computados para cada produto foram de R$ 30,77/saca de
+                                milho; R$ 2.857,75/Boi magro vendido e de R$ 36,00/m3 de madeira de eucalipto.</p>
+    
+                        </section>
+                    </div>
+    
+                    <section class="learn_more">
+    
+                        <i class="fas fa-video"></i>
+    
+                        <button onclick="show_info(this)" data-lrn_mr="lrn_mr_11" class="button_visible">Conheça algumas
+                            fazendas de sucesso no uso de ILPF</button>
+    
+                        <div id="lrn_mr_11" class="information hidden">
+                            <section class="video_wrapper">
+                                <iframe class="video_class" src="https://www.youtube.com/embed/YecqpLvn2L8"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </section> <br> <br> <br> <br>
+                            <section class="video_wrapper">
+                                <iframe class="video_class" src="https://www.youtube.com/embed/trUhXXAR9As"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </section>
+                        </div>
+                    </section>
+    
+                    <h1 class="text_title"><b class="topic_number">05</b>Considerações</h1>
+    
+                    <p>&nbsp &nbsp Portando, pode se observar que o sistema ILPF traz vantagens para o meio ambiente por ser
+                        um método de produção que otimiza toda a produção da área, alcançando uma sinergia entre os
+                        componentes gerando lucro razoável com a produção de diversos produtos na mesma área. <br> <br>
+                        &nbsp &nbsp Acesse a <b>apostila complementar</b> abaixo, onde contém resultados de diferentes
+                        pesquisas sobre ILPF realizadas no IFTM - Campus Uberlândia.
+                    </p>
+    
+                    <a target="_blank" href="../complements/books/module_7.pdf" class="download_button complement">Baixar
+                        material complementar</a>
+    
+                </div>
+            </section>
+    
+            <!-- EXERCISES MOD6-->
+            <section class="info">
+    
+                <div class="wrapper">
+                    <h1 class="info_title" style="font-weight: 800; color: #282A36;">Exercícios</h1>
+                    <p class="info_description"> Ao responder os exercícios, você deve acertar no mínimo 3 questões para
+                        avançar para o próximo módulo, caso contrário, a página será recarregada e você deverá tentar
+                        responder os exercícios novamente. </p>
+    
+                </div>
+            </section>
+    
+            <!-- Question 1 mod6-->
+            <section class="master_form master_formM6" id="master_form">
+                <section data-question="Q1" id="6" class="form form1 form_from_M6">
+                    <p class="question"><b>Questão 1:</b> São vantagens do Sistema ILPF, exceto:</p>
+    
+                    <input class=" true input_option" id="option1_q1_M6" hidden type="radio">
+                    <label class="option option_true" for="option1_q1_M6">a) Dispensa mão-de-obra terceirizada;</label>
+    
+                    <input class=" false input_option" id="option2_q1_M6" hidden type="radio">
+                    <label class="option" for="option2_q1_M6">b) Melhor distribuição e diversificação das receitas ao longo
+                        do ano;.</label>
+    
+                    <input class=" false input_option" id="option3_q1_M6" hidden type="radio">
+                    <label class="option" for="option3_q1_M6">c) Redução no uso de insumos e recursos não renováveis;
+                    </label>
+    
+                    <input class=" false input_option" id="option4_q1_M6" hidden type="radio">
+                    <label class="option" for="option4_q1_M6">d) Redução do custo unitário dos produtos.</label>
+    
+                    <button id="Q1" type="button" class="send_answer send_answer1">Responder</button>
+    
+                    <div class="feedback">
+                        <div class="hidden correct_answer correct_answerQ1">
+                            <p>
+                                <i class="fas fa-check-circle"></i>
+                                <b>PARABÉNS!</b> <br>
+                                <b>Resposta Correta.</b> A mão-de-obra, terceirizada ou fixa, se faz necessária e pode ser
+                                bem aproveitada por ter sempre algo a ser feito no sistema ILPF.
+                            </p>
+    
+                        </div>
+                        <div class="hidden wrong_answer wrong_answerQ1">
+                            <p><i class="fas fa-times-circle"></i>
+                                <b>RESPOSTA INCORRETA!</b>
+    
+                        </div>
+                    </div>
+                </section>
+    
+                <div id="6" class=" div_answer hidden">
+                    <button class="see_answer" id="ans_Q1_M6">
+                        Ver resposta</button>
+                    <p class="hidden answer ans_Q1_M6">Resposta: letra (a)<br>
+                        A mão-de-obra, terceirizada ou fixa, se faz necessária e pode ser bem aproveitada por ter sempre
+                        algo a ser feito no sistema ILPF.
+                    </p>
+                </div>
+    
+                <!-- Question 2 mod6-->
+    
+                <section id="6" data-question="Q2" class="form form2 form_from_M6">
+                    <p class="question"><b>Questão 2:</b> Qual das características abaixo não se enquadra no Sistema ILPF?
+                    </p>
+    
+                    <input class=" false input_option" id="option1_q2_M6" hidden type="radio">
+                    <label class="option" for="option1_q2_M6">a) Grande número de alternativas de produção, possibilitando
+                        inúmeras combinações de atividades;</label>
+    
+                    <input class=" false input_option" id="option2_q2_M6" hidden type="radio">
+                    <label class="option" for="option2_q2_M6">b) Em busca da produtividade e da sustentabilidade, os
+                        objetivos dos produtores tendem a ser múltiplos;</label>
+    
+                    <input class=" true input_option" id="option3_q2_M6" hidden type="radio">
+                    <label class="option  option_true" for="option3_q2_M6">c) Efeitos pontuais no uso de determinados
+                        insumos agrícolas como fertilizantes;</label>
+    
+                    <input class=" false input_option" id="option4_q2_M6" hidden type="radio">
+                    <label class="option" for="option4_q2_M6">d) Na pecuária, os sistemas de produção são extremamente
+                        flexíveis quanto ao emprego de tecnologias e ao nível de uso de insumos.</label>
+    
+                    <button id="Q2" type="button" class="send_answer send_answer2">Responder</button>
+    
+                    <div class="feedback">
+                        <div class="hidden correct_answer correct_answerQ2">
+                            <p>
+                                <i class="fas fa-check-circle"></i>
+                                <b>PARABÉNS!</b> <br>
+                                <b>Resposta Correta.</b> Efeitos defasados no uso de determinados insumos, por exemplo, a
+                                adubação da lavoura pode beneficiar a pastagem que a sucede durante vários anos.
+                            </p>
+    
+                        </div>
+                        <div class="hidden wrong_answer wrong_answerQ2">
+                            <p><i class="fas fa-times-circle"></i>
+                                <b>RESPOSTA INCORRETA!</b>
+    
+                        </div>
+                    </div>
+                </section>
+    
+                <div id="6" class=" div_answer hidden">
+                    <button class="see_answer" id="ans_Q2_M6">
+                        Ver resposta</button>
+                    <p class="hidden answer ans_Q2_M6">Resposta: letra (c)<br>
+                        Efeitos defasados no uso de determinados insumos, por exemplo, a adubação da lavoura pode beneficiar
+                        a pastagem que a sucede durante vários anos.
+                    </p>
+                </div>
+    
+                <!-- Question 3 mod6-->
+                <section id="6" data-question="Q3" class="form form3 form_from_M6">
+                    <p class="question"><b>Questão 3:</b> Entre os aspectos citados abaixo qual não reflete a realidade em
+                        Sistemas Integrados de Produção? </p>
+    
+                    <input class=" false input_option" id="option1_q3_M6" hidden type="radio">
+                    <label class="option" for="option1_q3_M6">a) Os custos de implantação diluem-se nos primeiros 3 a 5
+                        anos;</label>
+    
+                    <input class="false input_option" id="option2_q3_M6" hidden type="radio">
+                    <label class="option" for="option2_q3_M6">b) Sistemas com mais de 10 espécies apresentam alto grau de
+                        dificuldade para planejamento e condução;</label>
+    
+                    <input class="false input_option" id="option3_q3_M6" hidden type="radio">
+                    <label class="option" for="option3_q3_M6">c) Sistemas em que há maior emprego de mão-de-obra familiar
+                        mostraram-se mais lucrativos;</label>
+    
+                    <input class=" true input_option" id="option4_q3_M6" hidden type="radio">
+                    <label class="option option_true" for="option4_q3_M6">d) A diversificação na produção não promove
+                        estabilização na receita.</label>
+    
+                    <button id="Q3" type="button" class="send_answer send_answer3">Responder</button>
+    
+                    <div class="feedback">
+                        <div class="hidden correct_answer correct_answerQ3">
+                            <p>
+                                <i class="fas fa-check-circle"></i>
+                                <b>PARABÉNS!!</b> <br>
+                                <b>Resposta Correta.</b> A diversificação da produção promove estabilização na receita, uma
+                                vez que, variações negativas nos preços de um produto podem ser compensadas por variações
+                                positivas nos preços de outro.
+                            </p>
+    
+                        </div>
+                        <div class="hidden wrong_answer wrong_answerQ3">
+                            <p><i class="fas fa-times-circle"></i>
+                                <b>RESPOSTA INCORRETA!</b>
+    
+                        </div>
+                    </div>
+                </section>
+    
+                <div id="6" class=" div_answer hidden">
+                    <button class="see_answer" id="ans_Q3_M6">
+                        Ver resposta</button>
+                    <p class="hidden answer ans_Q3_M6">Resposta: letra (d)<br>
+                        A diversificação da produção promove estabilização na receita, uma vez que, variações negativas nos
+                        preços de um produto podem ser compensadas por variações positivas nos preços de outro.
+                    </p>
+                </div>
+    
+                <div class="form" id="6" style="display: flex; align-items: center">
+                    <p style="color: #dd4a48"><i class="warning_button fas fa-exclamation-triangle"></i>&nbsp Se você
+                        acertar às questões, ao clicar no botão abaixo, será aberto um formulário onde você precisa inserir
+                        seus dados e fazer a avaliação do curso, a fim de obter o certificado</b></p>
+                    <button class="finish" target="_blank" id="send_answer_finish" onclick="to_certify()">Finalizar o
+                        curso</button>
+                </div>
+            </section>
+    
+    
+            <!-- References mod6-->
+            <section class="container_text" id="ref_M6">
+                <div class="wrapper references">
+                    <h1 class="text_title">REFERÊNCIAS:</h1>
+    
+                    <p>[1] COSTA, F. P.; CEZAR, I. M.; FILHO, G. A. de M.; BUNGENSTAB, D. J. Custo-benefício dos sistemas de
+                        produção em integração. In: BUNGENSTAB, D. J.; ALMEIDA, R. G. de; LAURA, V. A.; BALBINO, L. C.;
+                        FERREIRA, A. D. (Ed.). ILPF: inovação com integração de lavoura, pecuária e floresta. Brasília, DF:
+                        Embrapa, 2019. Cap. 9, p. 131-138. <br>
+                        [2] UNEB. Aspectos econômicos e ambientais da integração lavoura pecuária floresta. Disponível em:
+                        http://www.neppa.uneb.br/wp-content/uploads/2018/06/ILPF-Aspectos-econ%C3%B4micos-e-ambientais.pdf.
+                        Acesso em 14 de setembro de 2021. <br>
+                        [3] GODOY, D. O. Análise econômica de um sistema de Integração Lavoura, Pecuária e Floresta (ILPF)
+                        no município de Brotas-SP: Um estudo de caso com economia de escopo. Dissertação (Mestrado –
+                        Programa de Pós-Graduação em Mestrado Profissional Gestão e Inovação na Industria Animal), Faculdade
+                        de Zootecnia e Engenharia de Alimentos, Universidade de São Paulo, Pirassununga, 2020</p>
+    
+                </div>
+            </section>
+        </section>
+        </section>
+
+
+	<div class="iftm_logo">
+		<a href="https://iftm.edu.br/"><img style="height: 20vh;" src="../complements/images/iftm.jpeg" alt=""></a>
+		<div class="wrapper_arrow">
+			<a href="#container_module_btns"><i class="arrow_to_top fas fa-arrow-alt-circle-up"></i></a>
+		</div>
+	</div>
+
+	<footer id="footer">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="../complements/images/logo_normal.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+		</div>
+
+		<div class="contact">
+			<div class="contact_card">
+				<a href="mailto: gesaiftm@gmail.com" id="email"><i id="mail_icon" class="far fa-envelope"
+						style="font-weight: 300"></i>
+					<br>
+					<p id="email">gesaiftm@gmail.com</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://chat.whatsapp.com/LCHVQ9RcYoa8yTDaPfpsZE" id="whatsapp"> <i id="whatsapp_icon"
+						class="fab fa-whatsapp" style="font-weight: 300"></i> <br>
+					<p id="whatsapp" class="cont">Grupo GESA</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://www.instagram.com/gesa_iftm/" id="insta"><i id="insta_icon" class="fab fa-instagram"
+						style="font-weight: 300"></i> <br>
+					<p id="insta" class="cont">Gesa_IFTM</p>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

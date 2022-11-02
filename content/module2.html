@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conteúdo</title>
+
+	<!-- STYLE -->
+	<link rel="stylesheet" href="../complements/styles/content.css">
+	<link rel="stylesheet" href="../complements/styles/partials/info.css">
+	<link rel="stylesheet" href="../complements/styles/partials/container_text.css">
+	<link rel="stylesheet" href="../complements/styles/partials/exercises.css">
+
+
+	<!-- main -->
+	<link rel="shortcut icon" href="../complements/images/logo.png">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="../complements/styles/partials/container.css">
+	<link rel="stylesheet" href="../complements/styles/partials/menu_mob.css">
+	<link rel="stylesheet" href="../complements/styles/partials/header.css">
+	<link rel="stylesheet" href="../complements/styles/partials/footer.css">
+	<link rel="stylesheet" href="../complements/styles/partials/alerts.css">
+	<link rel="stylesheet" href="../complements/styles/partials/link_word.css">
+
+
+	<!--SCRIPTS-->
+	<script type="text/javascript" src="../complements/scripts/menu_mob.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/content.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/complements_content.js" defer></script>
+
+
+	<!--BUTTONS-->
+	<link rel="stylesheet" href="../complements/styles/partials/dinamic_buttons.css">
+	<link rel="stylesheet" href="../complements/styles/partials/learn_more.css">
+</head>
+
+<body>
+
+	<header id="header">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="../complements/images/logo.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+
+
+			<nav class="menu">
+				<a href="../index.html" class="menu-link" id="home_link">Sobre</a>
+				<a href="#footer" title="No rodapé" id="cont_link" class="menu-link">Contato</a>
+				<a href="../subscription.html" id="cron_link" class="menu-link">Cronograma</a>
+				<a href="../classroom.html" class="menu-link" id="class_link">Sala de aula</a>
+			</nav>
+
+		</div>
+
+		<div
+			style="display: flex; align-items: center; align-content: center; justify-content: center; align-self: center; justify-self: center; height: 100%;">
+			<button id="menu_button"><i class="fas fa-bars" style="color: white; font-size: 18px;"></i>
+				<span class="menu_mobile hidden">
+					<span id="close_menu_mobile"><i class="fas fa-angle-up"></i></span>
+					<a href="../index.html" class="menu_mobile_option">Sobre</a>
+					<a href="#footer" class="menu_mobile_option">Contato</a>
+					<a href="../subscription.html" class="menu_mobile_option">Cronograma</a>
+					<a style="border-radius: 0px 0px 5px 5px" href="../classroom.html" class="menu_mobile_option">Sala de
+						aula</a>
+				</span>
+			</button>
+
+		</div>
+
+	</header>
+
+	<div class="alert_div">
+		<div class="wrapper danger hidden">
+			<p><b>Acertos insuficientes!</b> Refaça os exercícios do módulo para avançar. 
+			</p>
+			<button class="close_alert" onclick="location.reload()">OK</button>
+		</div>
+		<div class="wrapper congratulations hidden">
+			<p>Parabéns! O módulo seguinte será desbloqueado.<i id="unlock_icon" class="fas fa-unlock"></i> <br> Clique
+				no botão abaixo! </p><br>
+			<button class="close_alert close_alert_congrat" onclick="location.reload()">OK</button>
+		</div>
+	</div>
+
+	<div class="container_module_btns" id="container_module_btns">
+
+		<div class="buttons">
+			
+			<button class="module_btn mod1_btn" data-module="container_mod1" onclick="openModule(this)"
+				id="1" name="1" ><a href="./module1.html">Módulo 1</a></button>
+			<button class="module_btn user mod2_btn" data-module="container_mod2" onclick="openModule(this)" id="2"
+				name="2"><a href="./module2.html">Módulo 2</a></button>
+			<button class="module_btn mod3_btn" data-module="container_mod3" onclick="openModule(this)" id="3"
+				name="3"><a href="./module3.html">Módulo 3</a></button>
+			<button class="module_btn mod4_btn" data-module="container_mod4" onclick="openModule(this)" id="4"
+				name="4"><a href="./module4.html">Módulo 4</a></button>
+			<button class="module_btn mod5_btn" data-module="container_mod5" onclick="openModule(this)" id="5"
+				name="5"><a href="./module5.html">Módulo 5</a></button>
+			<button class="module_btn mod6_btn" data-module="container_mod6" onclick="openModule(this)" id="6"
+				name="6"><a href="./module6.html">Conclusão</a></button>
+				<div class="line">
+					<span class="line_btn"></span>
+				</div>
+		</div>
+	</div>
+
+	<!-- module_2 -->
+	<section id="container_mod2" class="container container_mod2 container_func">
+		<section id="module2_content">
+
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_introduction">Manejo da Fertilidade<br>do Solo em áreas de SASP</h1>
+
+					<p class="info_description"> Neste módulo serão apresentados os fatores que afetam a disponibilidade
+						dos nutrientes para as plantas e como estes devem ser manejados, iniciando-se com a correta
+						análise química e física do solo, além de uma adequada correção da acidez, adubação e manejo dos
+						resíduos orgânicos. Será demonstrado como a fertilidade do solo é essencial ao sucesso do
+						sistema.</p>
+
+				</div>
+
+				<img class="info_img info_img_icon" id="icon_img" title="vecteezy.com"
+					src="../complements/images/module2/img_1.jpg">
+
+			</section>
+
+			<a target="_blank" href="../books/module_2.pdf" class="download_button">Baixar apostila</a>
+
+			<section class="video_wrapper">
+				<p class="video_description">Acompanhe o vídeo introdutório:</p>
+				<iframe class="video_class"  width="560" height="315" src="https://www.youtube.com/embed/x-ViRIoSq84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe class="video_class" src="https://www.youtube.com/embed/C9xamr4nnuQ"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+			</section>
+
+			<!-- topic 01 mod2 -->
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">01</b>Introdução</h1>
+
+					<p> &nbsp &nbsp No Brasil, grande parte das áreas utilizadas pela agropecuária encontram-se
+						degradadas. No cerrado, cerca de 80% (de 45 a 50 milhões de hectares) possuem certo estágio de
+						degradação. A degradação
+						está intimamente ligada com problemas de fertilidade do solo, principalmente a falta
+						de nitrogênio, e uma das principais soluções para este problema é o sistema
+						agrossilvipastoril. <br>
+						&nbsp &nbsp Primeiramente, para corrigir o problema relacionado a degradação deve-se
+						definir a área a ser instituída com o sistema agrossilvipastoril para que seja possível
+						realizar a amostragem de solo de maneira correta, o que evita prejuízo econômico e
+						danos ao meio ambiente. <br>
+						&nbsp &nbsp Para uma análise mais precisa, a área amostrada deve ser
+						homogênea e subdivida em talhões, além de considerar fatores como o tipo de
+						vegetação, a topografia, cor e textura do solo, drenagem, histórico da área,
+						produtividade, e uso de fertilizantes e corretivos. É recomendado que cada talhão
+						tenha 10 ha e que seja coletada de 20 a 30 amostras por talhão (amostras simples),
+						que devem ser colhidas por caminhamento em ziguezague, na profundidade de
+						0-20 cm ou 20-40 cm, além de conter o mesmo volume. Dependendo da cultura, a
+						profundidade deve ser baseada onde se concentra o maior quantidade de raízes. Após
+						coletar as amostras, deve-se misturá-las até se obter uma amostra composta, retirar
+						de 200g a 250g dessa amostra e mandar para análise laboratorial.</p>
+
+				</div>
+
+			</section>
+
+
+			<!-- topic 02 mod2 -->
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">02</b>Amostragem de Solo</h1>
+
+					<p> &nbsp &nbsp
+						No Sistema Agrosilvipastoril recomenda-se a produção de grãos ou forrageiras, com o uso do pasto
+						no período da seca e o uso de palha para o sistema de plantio direto (SPD), mas também pode ser
+						empregado o plantio convencional. <br>
+
+					</p>
+
+					<div class="box_info">
+						
+						<p>&nbsp &nbsp Com a adoção do SPD não há o revolvimento do solo, o que causa acúmulo de adubos e
+						corretivos na superfície, formando gradientes de fertilidade em profundidade e maior
+						variabilidade no sentido horizontal comparando com o sistema convencional. É de suma importância
+						realizar a amostragem de maneira correta, pois no decorrer dos anos a variabilidade horizontal
+						da fertilidade vai tender a diminuir, se equiparando com a do sistema convencional, além disso,
+						existe o risco de se obter uma amostra composta não representativa da área.</p>
+
+						<img title="Fonte: rehagro.com.br" class="box_img_right"
+							src="../complements/images/module2/img_3.jpg">
+
+					</div>
+
+					<div class="box_info">
+
+						<img title="Fonte: blog.sensix.ag" class="box_img_left"
+							src="../complements/images/module2/img_4.jpg">
+
+						<p> &nbsp &nbsp Para áreas manejadas com o Sistema de plantio direto, é recomendado que a
+							amostragem seja realizada com pá de corte, transversalmente às linhas de plantio e no espaço
+							compreendido entre os pontos médios entre elas, entre os três primeiros anos é recomendado
+							amostrar camadas de 0-10 cm e de 10-20 cm, nos anos seguintes é recomendado amostrar camadas
+							de 0-5 cm, 5-10 cm, e de 10-15 cm, para produzir uma amostra composta deve-se recolher de 10
+							a 15 amostras simples por talhão. <br></p>
+
+					</div>
+				</div>
+			</section>
+			<!-- topic 03 mod2 -->
+
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">03</b>Calagem</h1>
+
+					<section class="learn_more">
+
+						<i class="fas fa-video"></i>
+		
+						<button onclick="show_info(this)" data-lrn_mr="lrn_mr_3" class="button_visible">Ver vídeo</button>
+		
+						<div id="lrn_mr_3" class="information hidden">
+							<section class="video_wrapper">
+								<iframe class="video_class" width="560" height="315" src="https://www.youtube.com/embed/ckKtKtQGQ30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</section>
+						</div>
+					</section>
+
+					<p style="padding-top: 70px;"> &nbsp &nbsp No Brasil, o tipo de solo que mais predomina são os solos do cerrado, cujas
+						características químicas são limitantes para o desenvolvimento produtivo da agricultura. As
+						principais restrições desse tipo de solo são: a elevada acidez, o excesso de alumínio trocável,
+						e a falta de nutrientes como fósforo, cálcio e magnésio. Um método utilizado para controle da
+						acidez é o cultivo de diversas culturas com diferentes resistências à acidez, por exemplo, o
+						<b>cultivo de forrageiras tropicais</b> ou eucaliptos juntamente com milho, sorgo, entre outras
+						espécies. A recomendação de calagem deve priorizar a espécie mais exigente.
+						&nbsp &nbsp No Sistema Agrosilvipastoril, é preconizado adotar o SPD usando o Sistema Santa Fé
+						(conteúdo do próximo módulo). Logo, a recomendação de calagem deve ser ajustada tendo em vista
+						as características desse sistema de cultivo, ou seja, sem revolvimento do solo, com rotação e/ou
+						sucessão de culturas e cobertura do solo com culturas voltadas para a formação de palhada. Ao
+						adotar o SPD deve-se corrigir os impactos negativos da acidez superficial e subsuperficial, o
+						que possibilita maior desenvolvimento radicular das plantas e aumento da absorção de nutrientes
+						e de água pelas culturas.
+						<br> <br> <br>
+					<div class="img_isolated_div" style="display: flex; justify-content: center">
+						<img style="margin-bottom: 70px; width: 80%;" title="embrapa.com.br" class="isolated_img"
+							src="../complements/images/module2/img_5.jpg">
+					</div>
+					<p>
+					&nbsp &nbsp Quanto ao tipo de calcário sugere-se, ainda, dar preferência para um calcário mais
+					grosso com reatividade entre 50% e 60%, de modo que se consiga um efeito residual maior e que a
+					calagem seja feita anualmente, além de que esta pode ser reduzida a 1/2 ou a 1/4 do total, após o
+					terceiro ou o quarto ano de sua implantação<a href="#ref_M2">[3]</a>.</p>
+
+					</p>
+				</div>
+			</section>
+
+			<!-- topic 04 mod2 -->
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">04</b>Gessagem</h1>
+
+
+					<p> &nbsp &nbsp Na região de solos do cerrado, a deficiência de Ca na subsuperfície pode estar
+						relacionada à toxicidade por alumínio, o que afeta o crescimento radicular e a absorção de água
+						e nutrientes pelas plantas.
+						<br>
+						&nbsp &nbsp O gesso agrícola é um dos principais meios para solucionar o problema relacionado à
+						toxicidade por alumínio, já que por se tratar de um sal relativamente solúvel, e prontamente
+						lixiviado, é possível elevar os teores de cálcio e reduzir os teores de alumínio nas camadas
+						subsuperficiais, além de que, pela sua mobilidade no solo, não é preciso realizar sua
+						incorporação.
+						<br>
+						&nbsp &nbsp Um dos "malefícios" do gesso agrícola é a lixiviação do magnésio, portanto, uma das
+						recomendações da aplicação do gesso agrícola é aplicá-lo após a calagem (recomendado mais o
+						calcário dolomítico), já que a calagem vai aumentar os teores de magnésio presentes no solo.
+						<br>
+						&nbsp &nbsp Para recomendação do gesso agrícola, as camadas de 20-40 ou de 30-60 cm deverão
+						apresentar teor de Ca menor ou igual a 0,4 cmolc/dm^-3 e/ou teor de Al maior que 0,5 cmolc/dm^-3
+						e/ou saturação por AI superior a 30%<a href="#ref_M2">[2]</a>.
+						<br>
+
+						<br> <br>
+
+					</p>
+				</div>
+			</section>
+
+			<section class="learn_more">
+
+				<button onclick="show_info(this)" data-lrn_mr="lrn_mr_4" class="button_visible"><b>Como Calcular a Necessidade de Gessagem?</b></button>
+
+				<div id="lrn_mr_4" style="padding: 0px; width: 100%;" class="information hidden">
+					<section class="container_dinamic">
+
+						<section class="dinamic_buttons">
+							<button class="d_button active dinamic-btn" data-target="content-4">
+								Pela Textura do Solo</button>
+			
+							<button class="d_button dinamic-btn" data-target="content-5">
+								Pelo Fósforo Remanescente</button>
+			
+							<button class="d_button dinamic-btn" data-target="content-6">
+								Pela Necessidade de Calagem</button>
+			
+						</section>
+					<section class="dinamic_content">
+
+						<div class="p_content content-4 box_info">
+							<div style="display: flex; flex-direction: column;">
+								<p>&nbsp &nbsp Para as camadas subsuperficiais de 20 cm de espessura, as doses de gesso podem ser estimadas de acordo com o teor de argila dessas camadas<a href="#ref_M2">[1]</a>. </p>
+								<br>
+								<p style="background-color:#acffce; border-radius: 8px; padding: 10px;"><b>Dose de Gesso</b>(kg/ha) = 50 x teor de argila (%)</p>
+							</div>
+																		
+							<img class="box_img_right" src="../complements/images/module2/quadro_1.png">
+						</div>
+
+						<div class="hidden p_content content-5 box_info">
+							<p>&nbsp &nbsp O fósforo remanescente pode ser usado em substituição ao teor de argila do solo no cálculo para recomendar a Gessagem.<a href="#ref_M2">[1]</a>. </p>
+		
+							<img class="box_img_right" src="../complements/images/module2/quadro_2.png"
+								>
+						</div>
+		
+						<div class="hidden p_content content-6 box_info" style="flex-direction: column;">
+							<p>&nbsp &nbsp Pode ser efetuada pela incorporação do gesso na camada arável, na dose de 25% da Necessidade de Calagem (NC) da camada subsuperficial ou pela espessura da camada (EC) e a superfície do terreno (SC) a serem corrigidas por sua aplicação<a href="#ref_M2">[1]</a>.
+							</p>
+								<p style="background-color:#acffce; border-radius: 8px; padding: 10px;"><b>NG</b> = 0,25NC</p>
+								<br>
+								<p style="background-color:#acffce; border-radius: 8px; padding: 10px;"><b>QG</b>(kg/ha) = NG x SC/100 x EC/20</p>
+
+		
+						</div>
+					</section>
+				</section>
+				</div>
+			</section>
+
+
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">05</b>Níveis de Fertilidade do Solo:</h1>
+
+					<section class="learn_more">
+
+						<i class="fas fa-video"></i>
+		
+						<button onclick="show_info(this)" data-lrn_mr="lrn_mr_5" class="button_visible">Ver vídeo</button>
+		
+						<div id="lrn_mr_5" class="information hidden">
+							<section class="video_wrapper">
+								<iframe class="video_class" width="560" height="315" src="https://www.youtube.com/embed/LCE_U6zHCF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</section>
+						</div>
+					</section>
+
+					<p style="padding-top: 70px"> &nbsp &nbsp Altas produtividades são mais frequentes em solos com fertilidade classificadas em altas e médias, solos com fertilidade classificada em baixa e muita baixa tem uma produtividade muito baixa nos primeiros anos. Logo, quando se tratar de áreas cultivadas com lavouras e que já passaram pelo processo de recuperação da fertilidade do solo, a opção pelo Sistema Agrosilvipastoril é facilitada e as culturas de milho e de sorgo podem apresentar melhores resultados do que em áreas onde a fertilidade do solo necessita ser construída. Isso se deve à maior exigência destas espécies por um ambiente de solo favorável, sem problemas de acidez e com teores adequados de P e K<a href="#ref_M2">[1]</a>. <br>
+					
+						<br><br>
+					</p>
+
+					<div class="img_isolated_div" style="display: flex; justify-content: center">
+						<img style="margin-bottom: 70px;" class="isolated_img"
+							src="../complements/images/module2/quadro_5.png">
+					</div>
+
+					<br><br>
+
+					<div class="img_isolated_div" style="display: flex; justify-content: center">
+						<img style="margin-bottom: 70px;" class="isolated_img"
+							src="../complements/images/module2/quadro_3.png">
+					</div>
+					<br> <br>
+					<div class="img_isolated_div" style="display: flex; justify-content: center">
+						<img style="margin-bottom: 70px;" class="isolated_img"
+							src="../complements/images/module2/quadro_4.png">
+					</div>
+
+				</div>
+			</section>
+
+			<div class="wrapper">
+				<h1 class="text_title"><b class="subtopic_number">5.1</b>Manejo da Adubação</h1>
+
+				<p> - No manejo de adubação desse sistema é possível realizar a aplicação a lanço, incorporada ou na superfície do solo, aplicação no sulco de semeadura de uma das culturas e aplicação em sulcos de ambas culturas consorciadas.</p><br>
+					<p>- Para definir o modo de aplicação deve-se levar em consideração diversos fatores como o nível de fertilidade do solo e as exigências nutricionais das culturas, os quais definem as doses a serem aplicadas, o efeito salino dos fertilizantes no caso do cloreto de potássio, a disponibilidade de equipamentos, a capacidade de investimento do produtor e as relações de trocas com base nos preços dos fertilizantes e dos produtos a serem produzidos<a href="#ref_M2">[1]</a>.</p>
+			</div>
+
+			<section class="learn_more">
+
+				<i class="fas fa-video"></i>
+
+				<button onclick="show_info(this)" data-lrn_mr="lrn_mr_6" class="button_visible">Ver vídeo</button>
+
+				<div id="lrn_mr_6" class="information hidden">
+					<section class="video_wrapper">
+						<iframe class="video_class" width="560" height="315" src="https://www.youtube.com/embed/RUVJnt_M4ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</section>
+				</div>
+			</section>
+		</section>
+
+
+			<!-- topic 06 mod2-->
+
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">06</b>Atributos Biológicos do Solo</h1>
+
+					<p> &nbsp &nbsp Os benefícios do SASP sobre os atributos biológicos do solo têm sido mostrados em
+						vários estudos: </p><br>
+					<ul>
+						<li>A deposição de biomassa das árvores e das gramíneas na superfície do solo consiste num meio
+							importante de ciclagem de nutrientes.</li>
+						<li>A disponibilidade de grande quantidade de resíduos orgânicos, em constante renovação pelas
+							árvores e pela pastagem, aumenta os teores de carbono e melhora as condições de agregação e
+							porosidade do solo <a href="#ref_M2">[9]</a>.</li>
+						<li>Após a colheita da lavoura, as forrageiras podem aproveitar os nutrientes residuais da
+							lavoura. </li>
+						<li>Uma das características importantes para o melhoramento da qualidade física e biológica do
+							solo é justamente a quantidade de palhada deixada sobre o solo e raízes no perfil do solo.
+						</li>
+						<li>A decomposição das raízes forma uma rede de canalículos no solo, influenciando diretamente
+							nas trocas gasosas e infiltração da água <a href="#ref_M2">[10]</a></li>
+					</ul>
+
+					<div class="box_info">
+						<ul>
+							<li>Além disso, estima-se que tanto a biomassa quanto os produtos de madeira podem reter
+								muito carbono. A potencialidade de sequestro de carbono do componente florestal e a
+								viabilidade econômica do sistema iLPF são determinados, de acordo com os estoques de
+								carbono presentes no solo, nas raízes e na parte aérea das árvores, demonstrando que a
+								comercialização dos créditos de carbono pode trazer retorno econômico ao produtor no
+								período de implantação do sistema <a href="#ref_M2">[11]</a></li>(SPD).
+						</ul>
+
+						<img title="embrapa.com.br" class="box_img_right" src="../complements/images/module2/img_9.jpg">
+
+					</div>
+					<br>
+
+				</div>
+			</section>
+
+			<section class="container_text">
+
+
+			<!-- topic 07 mod2 -->
+
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">07</b>Considerações</h1>
+
+					<p> - O manejo adequado da fertilidade do sistema ajuda a obter melhores produtividades das
+						lavouras, da forragem e mais produção de madeira em um menor período de tempo, além de diminuir
+						os riscos por erosão. <br>
+						- Nesse contexto, o uso do sistema de plantio direto (SPD) passou a ser uma das melhores e mais
+						usadas práticas de manejo da fertilidade em áreas de SASP, visando a melhoria dos atributos
+						físicos, químicos e biológicos do solo, com suas técnicas que visam diminuir a compactação do
+						solo, a manutenção de resíduos culturais na superfície do solo e diversificação de espécies com
+						uso de rotação, sucessão e/ou consorciação de culturas <a href="#ref_M2">[12]</a>.</p>
+
+				</div>
+			</section>
+		</section>
+			<!-- EXERCISES MOD2 -->
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_title">Exercícios</h1>
+					<p class="info_description"> Ao responder os exercícios, você deve acertar no mínimo 3 questões para
+						avançar para o próximo módulo, caso contrário, a página será recarregada e você deverá tentar
+						responder os exercícios novamente. </p>
+
+				</div>
+			</section>
+
+
+			<!-- Question 1 mod2 -->
+
+			<section class="master_form master_formM2" id="master_form">
+				<section id="2" data-question="Q1" class="form form1 form_from_M2">
+					<p class="question"><b>Questão 1:</b> No sistema agrossilvipastoril recomenda-se a produção de grãos
+						ou forrageiras, com o uso do pasto no período da seca e o uso de palha para o
+						sistema de plantio direto, quais as principais características da amostragem no
+						sistema de plantio direto?</p>
+
+					<input class=" false input_option" hidden id="option1_q1_M2" type="radio">
+					<label class="option" for="option1_q1_M2">a) Aração e a gradagem são as operações mais comuns e devem ser
+						cuidadosamente realizadas para se evitar processos erosivos,
+						principalmente em condições de relevo acidentado.</label>
+
+					<input class=" true input_option" hidden id="option2_q1_M2" type="radio">
+					<label class="option option_true" for="option2_q1_M2">b) Amostragem realizada com pá de corte, transversalmente às linhas de
+						plantio e no espaço compreendido entre os pontos médios entre elas.</label>
+
+					<input class=" false input_option" hidden id="option3_q1_M2" type="radio">
+					<label class="option" for="option3_q1_M2">c) No sistema de plantio direto a área deve ser dessecada e o plantio das
+						espécies agrícolas e forrageiras realizado com revolvimento do solo.</label>
+
+					<input class=" false input_option" hidden id="option4_q1_M2" type="radio">
+					<label class="option" for="option4_q1_M2">d) Amostragem realizada com pá de corte, paralelamente às linhas de
+						plantio e no espaço compreendido entre os pontos médios entre elas.</label>
+
+					<button type="button" id="Q1" class="send_answer send_answer1">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ1">
+
+							<p>
+								<i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!</b> <br>
+								<b>Resposta Correta.</b> Para áreas manejadas com o Sistema de plantio direto, é recomendado que a
+								amostragem seja realizada com pá de corte, <b>transversalmente</b> às linhas de plantio e no espaço
+								compreendido entre os pontos médios entre elas. Nos três primeiros anos é recomendado
+								amostrar camadas de 0-10 cm e de 10-20 cm.
+							</p>
+
+						</div>
+
+						<div class="hidden wrong_answer wrong_answerQ1">
+							<p>
+								<i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<div id="2" class=" div_answer hidden">
+					<button class="see_answer" id="ans_Q1_M2">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q1_M2">Resposta: Letra (b)<br>
+						Para áreas manejadas com o Sistema de plantio direto, é recomendado que a
+								amostragem seja realizada com pá de corte, <b>transversalmente</b> às linhas de plantio e no espaço
+								compreendido entre os pontos médios entre elas.
+					</p>
+				</div>
+
+				<!-- Question 2 mod2-->
+
+				<section id="2" data-question="Q2" class="form form2 form_from_M2">
+					<p class="question"><b>Questão 2:</b> Dentre os indicadores da fertilidade do solo quais das opções não
+						apresenta indicadores de fertilidade.</p>
+
+					<input class=" false input_option" id="option1_q2_M2" hidden type="radio">
+					<label class="option" for="option1_q2_M2">a) Teor de nutrientes, teor de argila, teor de matéria orgânica.</label>
+
+					<input class=" false input_option" id="option2_q2_M2" hidden type="radio">
+					<label class="option" for="option2_q2_M2">b) Relação de equilíbrio, nível de macronutrientes, nível de micronutrientes.</label>
+
+					<input class=" false input_option" id="option3_q2_M2" hidden type="radio">
+					<label class="option" for="option3_q2_M2">c) Alumínio tóxico, acidez do solo, nível crítico de nutrientes.</label>
+
+					<input class=" true input_option" id="option4_q2_M2" hidden type="radio">
+					<label class="option  option_true" for="option4_q2_M2">d) Quantidade de plantas invasoras, desenvolvimento de culturas arbóreas,
+						disponibilidade de máquinas e implemento.</label>
+
+					<button type="button" id="Q2" class="send_answer send_answer2">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ2">
+
+							<p>
+								<i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!</b> <br>
+								<b>Resposta Correta.</b> Disponibilidade de máquinas e implementos não tem nenhuma relação com indicadores de fertilidade do solo.
+							</p>
+
+						</div>
+						<div class="hidden wrong_answer wrong_answerQ2">
+							<p><i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+
+						</div>
+					</div>
+				</section>
+
+				<div id="2" class="div_answer hidden">
+					<button class="see_answer" id="ans_Q2_M2">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q2_M2">Resposta: letrra (d) <br>
+						Disponibilidade de máquinas e implementos não tem nenhuma relação com indicadores de fertilidade do solo.
+					</p>
+				</div>
+
+				<!-- Question 3 mod2-->
+				<section id="2" data-question="Q3" class="form form3 form_from_M2">
+					<p class="question"><b>Questão 3:</b>Em relação ao requerimento nutricional das culturas de grãos e
+						forrageiras assinale a alternativa correta.
+					</p>
+
+					<input class=" false input_option" id="option1_q3_M2" hidden type="radio">
+					<label class="option" for="option1_q3_M2">a) O sorgo necessita de uma maior quantidade de nitrogênio em Kg/t de
+						grãos em relação ao milho.</label>
+
+					<input class=" false input_option" id="option2_q3_M2" hidden type="radio">
+					<label class="option" for="option2_q3_M2">b) O milho é a cultura que mais requer NPK em Kg/t de grãos comparando
+						com arroz, sorgo e soja.</label>
+
+					<input class="true input_option" id="option3_q3_M2" hidden type="radio">
+					<label class="option option_true" for="option3_q3_M2">c) O capim Mombaça requer mais potássio em Kg/t de matéria seca em relação
+						ao nitrogênio.</label>
+
+					<input class=" false input_option" id="option4_q3_M2" hidden type="radio">
+					<label class="option" for="option4_q3_M2">d) O Braquiarão, a Tanzânia e o capim Mombaça requerem mais fosforo em Kg/t
+						de matéria seca em relação ao potássio e ao nitrogênio.</label>
+
+					<button type="button" id="Q3" class="send_answer send_answer3">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ3">
+
+							<p><i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!!</b> <br>
+								<b>Resposta Correta.</b> Segundo a primeira tabela do tópico 5, também apresentada no vídeo, o capim Mombaça exporta mais nutrientes que as demais forrageiras, portanto, também é mais exigente nutricionalmente.
+							</p>
+
+						</div>
+
+						<div class="hidden wrong_answer wrong_answerQ3">
+							<p><i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+						</div>
+					</div>
+				</section>
+
+				<div id="2" class="div_answer hidden">
+					<button class="see_answer" id="ans_Q3_M2">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q3_M2">Resposta: letra (c) <br>
+						Segundo a primeira tabela do tópico 5, também apresentada no vídeo, o capim Mombaça exporta mais nutrientes que as demais forrageiras, portanto, também é mais exigente nutricionalmente.
+					</p>
+				</div>
+
+				<!-- Question 4 mod2-->
+
+				<section id="2" data-question="Q4" class="form form4 form_from_M2">
+					<p class="question"><b>Questão 4:</b> Na região de solos do cerrado, a deficiência de Ca na
+						subsuperfície pode estar relacionada à toxicidade por alumínio, o que afeta o
+						crescimento radicular e a absorção de água e nutrientes pelas plantas. O gesso
+						agrícola é um dos principais meios para solucionar o problema relacionado à
+						toxicidade por alumínio. Sobre o gesso agrícola é possível afirmar:</p>
+
+					<input class="true input_option" id="option1_q4_M2" hidden type="radio">
+					<label class="option option_true" for="option1_q4_M2">a) Um dos &quot;malefícios&quot; do gesso agrícola é a lixiviação do magnésio.</label>
+
+					<input class="false input_option" id="option2_q4_M2" hidden type="radio">
+					<label class="option" for="option2_q4_M2">b)Possui baixa mobilidade no solo.</label>
+
+					<input class=" false input_option" id="option3_q4_M2" hidden type="radio">
+					<label class="option" for="option3_q4_M2">c) Uma das recomendações do gesso agrícola é aplica-lo antes de realizar
+						a calagem, já que a calagem não afeta os teores de magnésio presentes
+						no solo.</label>
+
+					<input class=" false input_option" id="option4_q4_M2" hidden type="radio">
+					<label class="option" for="option4_q4_M2">d) A quantidade de gesso agrícola a ser aplicada pode ser calculada
+						exclusivamente pelo método de fósforo remanescente.</label>
+
+					<button type="button" id="Q4" class="send_answer send_answer4">Responder</button>
+
+					<div class="feedback">
+						<div class="hidden correct_answer correct_answerQ4">
+							<p>
+								<i class="fas fa-check-circle"></i>
+								<b>PARABÉNS!</b> <br>
+								<b>Resposta Correta.</b> O gesso tem a capacidade de translocar os íons de magnésio em profundidade no perfil do solo, acarretando em perdas desse nutriente.
+							</p>
+						</div>
+
+						<div class="hidden wrong_answer wrong_answerQ4">
+							<p><i class="fas fa-times-circle"></i>
+								<b>RESPOSTA INCORRETA!</b>
+
+						</div>
+					</div>
+				</section>
+
+				<div id="2" class="div_answer hidden">
+					<button class="see_answer" id="ans_Q4_M2">
+						Ver resposta</button>
+					<p class="hidden answer ans_Q4_M2">Resposta: letra (a) <br>
+						O gesso tem a capacidade de translocar os íons de magnésio em profundidade no perfil do solo, acarretando em perdas desse nutriente.</p>
+				</div>
+
+				<div class="form" id="2">
+					<button class="finish" id="send_answer_finish" onclick="checkAll()">Próximo módulo</button>
+				</div>
+			</section>
+
+
+			<!-- References mod2-->
+			<section class="container_text" id="ref_M2">
+				<div class="wrapper references">
+					<h1 class="text_title">REFERÊNCIAS:</h1>
+
+					<p>[1] FREIRE, Francisco Motel et al. Manejo da fertilidade do solo no Sistema Integração Lavoura-Pecuária-Floresta. 2010.<br>
+						[2] ZAMBROSI, Fernando César Bachiega; ALLEONI, Luís Reynaldo Ferracciú; CAIRES, Eduardo Fávero. Teores de alumínio trocável e não trocável após calagem e gessagem em Latossolo sob plantio direto. Bragantia, v. 66, p. 487-495, 2007.<br>
+						[3] MARCHAO, R. L. et al. Integração lavoura-pecuária-floresta: o produtor pergunta, a Embrapa Responde. 2015.<br>
+						[4] KLUTHCOUSKI, João et al. Sistema Santa Fé-Tecnologia Embrapa: integração lavoura-pecuária pelo consórcio de culturas anuais com forrageiras, em áreas de lavoura, nos sistemas direto e convencional. 2000.
+				</div>
+			</section>
+		</section>
+	</section>
+
+
+	<div class="iftm_logo">
+		<a href="https://iftm.edu.br/"><img style="height: 20vh;" src="../complements/images/iftm.jpeg" alt=""></a>
+		<div class="wrapper_arrow">
+			<a href="#container_module_btns"><i class="arrow_to_top fas fa-arrow-alt-circle-up"></i></a>
+		</div>
+	</div>
+
+	<footer id="footer">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="../complements/images/logo_normal.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+		</div>
+
+		<div class="contact">
+			<div class="contact_card">
+				<a href="mailto: gesaiftm@gmail.com" id="email"><i id="mail_icon" class="far fa-envelope"
+						style="font-weight: 300"></i>
+					<br>
+					<p id="email">gesaiftm@gmail.com</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://chat.whatsapp.com/LCHVQ9RcYoa8yTDaPfpsZE" id="whatsapp"> <i id="whatsapp_icon"
+						class="fab fa-whatsapp" style="font-weight: 300"></i> <br>
+					<p id="whatsapp" class="cont">Grupo GESA</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://www.instagram.com/gesa_iftm/" id="insta"><i id="insta_icon" class="fab fa-instagram"
+						style="font-weight: 300"></i> <br>
+					<p id="insta" class="cont">Gesa_IFTM</p>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conteúdo</title>
+
+	<!-- STYLE -->
+	<link rel="stylesheet" href="../complements/styles/content.css">
+	<link rel="stylesheet" href="../complements/styles/partials/info.css">
+	<link rel="stylesheet" href="../complements/styles/partials/container_text.css">
+	<link rel="stylesheet" href="../complements/styles/partials/exercises.css">
+
+
+	<!-- main -->
+	<link rel="shortcut icon" href="../complements/images/logo.png">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="../complements/styles/partials/container.css">
+	<link rel="stylesheet" href="../complements/styles/partials/menu_mob.css">
+	<link rel="stylesheet" href="../complements/styles/partials/header.css">
+	<link rel="stylesheet" href="../complements/styles/partials/footer.css">
+	<link rel="stylesheet" href="../complements/styles/partials/alerts.css">
+	<link rel="stylesheet" href="../complements/styles/partials/link_word.css">
+
+
+	<!--SCRIPTS-->
+	<script type="text/javascript" src="../complements/scripts/menu_mob.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/content.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/complements_content.js" defer></script>
+
+
+	<!--BUTTONS-->
+	<link rel="stylesheet" href="../complements/styles/partials/dinamic_buttons.css">
+	<link rel="stylesheet" href="../complements/styles/partials/learn_more.css">
+</head>
+
+<body>
+
+	<header id="header">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="../complements/images/logo.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+
+
+			<nav class="menu">
+				<a href="../index.html" class="menu-link" id="home_link">Sobre</a>
+				<a href="#footer" title="No rodapé" id="cont_link" class="menu-link">Contato</a>
+				<a href="../subscription.html" id="cron_link" class="menu-link">Cronograma</a>
+				<a href="../classroom.html" class="menu-link" id="class_link">Sala de aula</a>
+			</nav>
+
+		</div>
+
+		<div
+			style="display: flex; align-items: center; align-content: center; justify-content: center; align-self: center; justify-self: center; height: 100%;">
+			<button id="menu_button"><i class="fas fa-bars" style="color: white; font-size: 18px;"></i>
+				<span class="menu_mobile hidden">
+					<span id="close_menu_mobile"><i class="fas fa-angle-up"></i></span>
+					<a href="../index.html" class="menu_mobile_option">Sobre</a>
+					<a href="#footer" class="menu_mobile_option">Contato</a>
+					<a href="../subscription.html" class="menu_mobile_option">Cronograma</a>
+					<a style="border-radius: 0px 0px 5px 5px" href="../classroom.html" class="menu_mobile_option">Sala de
+						aula</a>
+				</span>
+			</button>
+
+		</div>
+
+	</header>
+
+	<div class="alert_div">
+		<div class="wrapper danger hidden">
+			<p><b>Acertos insuficientes!</b> Refaça os exercícios do módulo para avançar. 
+			</p>
+			<button class="close_alert" onclick="location.reload()">OK</button>
+		</div>
+		<div class="wrapper congratulations hidden">
+			<p>Parabéns! O módulo seguinte será desbloqueado.<i id="unlock_icon" class="fas fa-unlock"></i> <br> Clique
+				no botão abaixo! </p><br>
+			<button class="close_alert close_alert_congrat" onclick="location.reload()">OK</button>
+		</div>
+	</div>
+
+	<div class="container_module_btns" id="container_module_btns">
+
+		<div class="buttons">
+			
+			<button class="module_btn mod1_btn" data-module="container_mod1" onclick="openModule(this)"
+				id="1" name="1" ><a href="./module1.html">Módulo 1</a></button>
+			<button class="module_btn mod2_btn" data-module="container_mod2" onclick="openModule(this)" id="2"
+				name="2"><a href="./module2.html">Módulo 2</a></button>
+			<button class="module_btn mod3_btn" data-module="container_mod3" onclick="openModule(this)" id="3"
+				name="3"><a href="./module3.html">Módulo 3</a></button>
+			<button class="module_btn mod4_btn" data-module="container_mod4" onclick="openModule(this)" id="4"
+				name="4"><a href="./module4.html">Módulo 4</a></button>
+			<button class="module_btn user mod5_btn" data-module="container_mod5" onclick="openModule(this)" id="5"
+				name="5"><a href="./module5.html">Módulo 5</a></button>
+			<button class="module_btn mod6_btn" data-module="container_mod6" onclick="openModule(this)" id="6"
+				name="6"><a href="./module6.html">Conclusão</a></button>
+				<div class="line">
+					<span class="line_btn"></span>
+				</div>
+		</div>
+	</div>
+
+	<!-- module_5 -->
+	<section id="container_mod5" class="container container_mod5 container_func">
+
+		<section class="info">
+
+			<div class="wrapper">
+				<h1 class="info_introduction">Arranjo Florestal e Escolha da Espécie</h1>
+				<p class="info_description">
+					Neste módulo vamos conhecer as principais espécies de gramíneas utilizadas em ILPF e os benefícios
+					que esse elemento traz para esse tipo de integração. </p>
+
+			</div>
+			<img style="box-shadow: none;" class="info_img icon_img_icon" id="icon_img" title="pt.vecteezy.com"
+				src="../complements/images/module5/img_1.jpg">
+		</section>
+
+		<a target="_blank" href="../books/module_5.pdf" class="download_button">Baixar apostila</a>
+
+		<section class="video_wrapper">
+			<p class="video_description">Acompanhe o vídeo introdutório: Arranjo florestal e escolha da espécie arbórea
+			</p>
+			<iframe class="video_class" src="https://www.youtube.com/embed/mPwyDy-hUr8" title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</section>
+
+		<!-- topic 01 -->
+		<section class="container_text">
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">01</b>Introdução</h1> <br> <br>
+
+				<p class="text_content">&nbsp &nbsp Dentro do contexto do sistema de iLPF, o
+					componente florestal pode trazer vários benefícios econômicos e ambientais, que podem ser citados:
+				</p> <br>
+				<br>
+
+				<p><i class="icon_li fas fa-check-circle"></i>As espécies florestais proporcionam a mitigação dos gases
+					do efeito estufa, resultante da maior capacidade de sequestro de carbono; <br>
+					<i class="icon_li fas fa-check-circle"></i>Fornecem produtos florestais, como: madeira, para
+					diversas finalidades, frutos, essências, folhas e até as cascas de algumas espécies podem ser
+					usadas; <br>
+					<i class="icon_li fas fa-check-circle"></i>Redução dos riscos por erosão; <br>
+					<i class="icon_li fas fa-check-circle"></i>Melhoria da recarga e da qualidade da água; <br>
+					<i class="icon_li fas fa-check-circle"></i>Maior ciclagem de nutrientes; <br>
+					<i class="icon_li fas fa-check-circle"></i>Fonte de renda extra após alguns anos de implantação;
+					<br>
+					<i class="icon_li fas fa-check-circle"></i>Podem ser usadas para cadastro em programas
+					governamentais de fomento e crédito rural, além de possibilitar a venda de créditos de carbono<a
+						href="#ref_M5">[1]</a>.
+				</p>
+				<br> <br>
+
+				<div style="display: flex; justify-content: center;">
+					<img style="width: 50vw; margin-bottom: 70px;" title="Fonte: Autor" class="isolated_img"
+						src="../complements/images/module5/img_2.jpg">
+
+				</div>
+			</div>
+		</section>
+
+		<!-- topic 02 -->
+		<section class="container_text">
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">02</b>Arranjo Florestal</h1>
+
+				<p>Um dos principais pontos a serem considerados durante o planejamento da implantação de um sistema de
+					iLPF, é a finalidade de utilização dos produtos florestais, sendo que o mais comum é a madeira, e o
+					manejo das árvores. </p>
+
+				<section class="wrapper_add_info">
+					<p class="add_info">A qualidade da madeira é influenciada por vários fatores, sendo os principais:
+						espécie arbórea, espaçamento e manejo silvicultural (Podas, controle de plantas daninhas e
+						adubações de plantio e cobertura)<a href="#ref_M5">[2]</a>.</p>
+				</section>
+
+				<p>A ilPF pode ser facilitada pela adequada distribuição espacial das árvores no terreno, visando
+					práticas de conservação do solo e água, favorecimento do trânsito de máquinas e a observância de
+					aspectos comportamentais dos animais e sombreamento das culturas anuais. Para tanto, o arranjo
+					espacial mais simples e eficaz é o de <b>renques</b>, em que as árvores são plantadas em faixas
+					(linhas simples ou múltiplas), com espaçamentos amplos. Os produtores que desejam privilegiar a
+					produção de madeira podem utilizar renques mais estreitos ou maior número de linhas em cada faixa
+					(maior número de árvores por hectare); enquanto os que preferem a atividade agrícola e/ou pecuária
+					podem utilizar espaçamentos maiores, ou seja, renques mais largos (menos linhas em cada faixa) <a
+						href="#ref_M5">[3]</a> </p>
+
+			</div>
+		</section> <br> <br> <br>
+
+		<div class="isolated_img_div">
+			<img style="width: 50vw; margin-bottom: 70px;" title="Fonte: PORFÍRIO-DA-SILVA, et. al, (2019)"
+				class="isolated_img" src="../complements/images/module5/img_3.jpg">
+
+			<p>A: Linhas Simples; <br>
+				B: Linhas Duplas;<br>
+				C: Linhas Triplas</p> <br> <br>
+		</div>
+
+		<div class="box_info">
+			<p> &nbsp &nbsp Com base nessas informações, os estudos tem se voltado mais para esses três tipos de
+				arranjos, visando a produção de madeira. O critério para a distância entre os renques baseia-se que uma
+				faixa de árvores não pode distanciar mais do que 10 vezes a sua altura. Nesse caso, as estratégias de
+				manejo a serem tomadas vão depender da distância entre os renques e o objetivo da produção: <br> <br>
+				- Plantios em espaçamentos menores, tanto no renque de plantio das árvores quanto entre os renques, terá
+				um maior volume de madeira por hectare. Necessita de desbastes precoces, se comparado com espaçamentos
+				mais amplos, podendo ser uma alternativa para produção de madeira para uso múltiplo, como lenha, carvão,
+				postes para cercas.
+				<br> - Plantios em espaçamentos maiores produzem toras de maior diâmetro já no primeiro desbaste, que
+				poderão ser feitos mais tardiamente do que quando as árvores são plantadas em espaçamentos menores.
+				Sendo mais usados para produção de madeira para serraria. <br>
+				- Entre os renques, para possibilitar o trânsito de máquinas e equipamentos agrícolas, uma boa opção é
+				utilizar distâncias iguais ao tamanho desses equipamentos acrescidas de dois metros <a
+					href="#ref_M5">[3]</a>.
+			</p> <br>
+
+			<img title="Fonte: PORFÍRIO-DA-SILVA, et. al, (2019)" class="box_img_right"
+				src="../complements/images/module5/img_4.jpg"> <br> <br>
+		</div>
+
+		<!-- topic 03 -->
+		<section class="container_text">
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">03</b>Escolha da Espécie</h1>
+
+				<p>&nbsp &nbsp A escolha da espécie florestal para o sistema deve se basear pela região e
+					características da área e pela finalidade do mesmo. Sendo assim, a escolha da espécie florestal
+					depende também das condições do local de plantio (clima, tipo de solo, relevo); existência de
+					conhecimentos e assistência técnica sobre aquela espécie; produtividade e rentabilidade do plantio e
+					disponibilidade de sementes melhoradas ou mudas <a href="#ref_M5">[4]</a>. <br> <br>
+					&nbsp &nbsp Algumas características devem ser atendidas para que uma espécie florestal possa ser
+					utilizada no sistema de iLPF: </p>
+
+				<p><i class="icon_li fas fa-check-circle"></i>Adaptação às condições climáticas e aos solos da
+					propriedade rural; <br>
+					<i class="icon_li fas fa-check-circle"></i>Troncos altos, copa pouco densa, raízes profundas e sem
+					sapopemas (raízes laterais tabulares); <br>
+					<i class="icon_li fas fa-check-circle"></i>Resistência aos ventos, pragas e doenças; <br>
+					<i class="icon_li fas fa-check-circle"></i>Forma, tamanho e densidade da copa não impedir a
+					transmissão da luz; <br>
+					<i class="icon_li fas fa-check-circle"></i>Ter boa velocidade de crescimento e sobrevivência; <br>
+					<i class="icon_li fas fa-check-circle"></i>Ter valor econômico ou ambiental <a
+						href="#ref_M5">[4]</a>.
+				</p>
+
+			</div>
+		</section>
+
+		<!-- topic 04 -->
+		<section class="container_text">
+			<div class="wrapper">
+				<h1 class="text_title"><b class="topic_number">04</b>Principais Espécies Utilizadas no Bioma Cerrado
+				</h1>
+
+				<p>Com base nas informações sobre a escolha da espécie, de acordo com as condições do local e a
+					finalidade do plantio, seguem as principais espécies usadas em iLPF no bioma Cerrado e algumas com
+					potencial de uso:</p>
+
+				<section class="cards_wrapper" style="margin-bottom: 70px;">
+					<div class="card_info_edit" style="height: 900px;">
+						<p><i>Eucalipto (Eucalyptus spp.)</i> <br> <br> Nativa da Austrália, essa espécie é a <b>mais
+								plantada no Brasil</b>, e a mais usada em sistemas de iLPF. Diversas espécies desse
+							gênero são plantadas, cabendo ao produtor e ao técnico responsável a escolha do melhor clone
+							ou variedade, de acordo com a disponibilidade local. <br>
+							Possui diversas finalidades, como: Madeira para serraria, mourões e lascas tratadas, escoras
+							para construção civil, lenha e carvão. <br>
+							Por ser a espécie mais estudada em sistemas de iLPF, esta possui uma grande diversidade de
+							materiais, boa disponibilidade de tecnologias e insumos, além de ótimas características para
+							adequação ao sistema, como tronco reto e alto, sistema radicular profundo e sem <button
+								class="word_link">sapopemas <span class="word_description">Sapopema é o nome tupi dado
+									para a raiz grande que se desenvolve junto com o tronco de várias árvores das
+									florestas pluviais.</span> </button>. Possui também rápido crescimento, baixa
+							mortalidade, elevada produção, boa tolerância a ventos, a pragas e doenças . <a
+								href="#ref_M5">[4]</a>. </p>
+
+						<img class="img_card" title="sementesoesp.com.br" src="../complements/images/module5/img_5.png">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Teca (Tectona grandis)</i> <br> <br>
+							Originária do sudeste da Ásia, essa espécie tem sido bem difundida em plantios sob iLPF,
+							principalmente no estado de Mato Grosso. Já possui clones melhorados e adaptados ao Cerrado.
+							Sua madeira, de alto valor agregado, é muito utilizada para serraria e exportação. Durante
+							seu manejo, o material das podas pode servir como mourões e lascas tratadas e para lenha.
+							Possuem boa disponibilidade de tecnologias e insumos, tronco alto e sistema radicular sem
+							sapopemas, crescimento médio, baixa mortalidade e boa produção. Além de boa tolerância a
+							ventos, pragas e doenças<a href="#ref_M5">[4]</a>. </p>
+
+						<img class="img_card" title="embrapa.br" src="../complements/images/module5/img_6.jpg">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Mogno Africano (Khaya ivorensis; Khaya senegalensis; Khaya anthoteca)</i> <br> <br>
+							De origem africana, essas três espécies são as que melhor se adaptaram às condições de
+							produção no Brasil e no Cerrado. São plantas de madeira nobre, ciclo de crescimento médio,
+							boa desrama natural (reduzindo custos), e ótima conformação de tronco, raíz e entrada de
+							luz. Uma dificuldade no uso dessa espécie é o fato do seu crescimento ser um pouco lento e
+							suas folhas serem muito atrativas para o consumo de bovinos. Possui boa tolerância a ventos,
+							pragas e doenças<a href="#ref_M5">[4]</a>. </p>
+
+						<img class="img_card" title="Fonte: AUTOR" src="../complements/images/module5/img_7.jpg">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Acácia (Acacia mangium)</i> <br> <br>
+							É uma espécie nativa da parte noroeste da Austrália, de Papua Nova-Guiné e do oeste da
+							Indonésia, tem uma elevada produção de biomassa e é indicada para solos mais arenosos e
+							consórcios. É pouco usada em áreas com iLPF por ter pouca viabilidade econômica (sua madeira
+							é barata e usada para lenha e carvão). Possui algumas dificuldades para ser usada em
+							sistemas de iLPF por ter uma conformação de copa desfavorável, falta de tecnologias para
+							produção no cerrado, pouca tolerância a doenças fúngicas depois de podadas e alta
+							mortalidade de mudas<a href="#ref_M5">[4]</a>. </p>
+
+						<img class="img_card" title="celuloseonline.com.br" src="../complements/images/module5/img_8.jpg"
+							alt="">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Mogno Brasileiro (Swietenia macrophylla)</i> <br> <br>
+							Essa espécie é nativa da Amazônia, possui todas as qualidades que o Mogno Africano
+							apresenta, além de ser uma madeira nobre e altamente valorizada no mercado nacional e
+							internacional. Mas seu cultivo tem sido inviabilizado no Cerrado devido a <b>broca do
+								ponteiro (<i>Hypsypyla grandella</i>)</b>, que faz com que haja a perda do tronco reto e
+							apresente nós na madeira, inviabilizando sua venda para o mercado de serraria, e muitas
+							vezes até matando as mudas<a href="#ref_M5">[4]</a>. </p>
+
+						<img class="img_card" title="Fonte: AUTOR" src="../complements/images/module5/img_9.jpg" alt="">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Cedro Australiano (Toona ciliata)</i> <br> <br> Uma das principais vantagens do cultivo do
+							cedro australiano em iLPF é sua resistência aos ataques da broca da gema apical
+							(<i>Hypsipyla grandella</i>), que causa grandes danos ao Mogno brasileiro. Outra
+							característica relevante do cedro-australiano é a tolerância à sombra na fase jovem, ponto
+							importante par ser observado em plantios consorciados. É uma espécie que apresenta boa
+							conformação de copa, crescimento rápido, boa resistência a ventos, pragas e doenças, além de
+							ter uma madeira de bom preço de mercado para serraria<a href="#ref_M5">[5]</a>. </p>
+
+						<img class="img_card" title="sementesarbocenter.com.br"
+							src="../complements/images/module5/img_10.jpg">
+					</div>
+
+					<div class="card_info_edit">
+						<p>Pequi <i>(Caryocar brasiliense)</i> <br> <br>
+							O pequizeiro é uma espécie nativa do Cerrado, atinge entre 8 e 12 metros de altura e seu
+							tronco possui circunferência média de 2,5 metros. Por ser uma espécie de copa muito aberta,
+							recomenda-se o plantio com maiores distâncias entre as plantas. Há poucos estudos com essa
+							espécie em sistemas de iLPF, mas seu cultivo é bastante promissor, devido aos vários
+							produtos que podem ser obtidos, como os frutos, óleos das sementes, uso da casca e até de
+							sua madeira<a href="#ref_M5">[6]</a>. </p>
+
+						<img class="img_card" title="ppmac.org" src="../complements/images/module5/img_11.png">
+					</div>
+
+					<div class="card_info_edit">
+						<p><i>Baru (Dipteryx alata)</i> <br> <br>
+							O baru é uma espécie disseminada no Bioma Cerrado e uma das espécies mais promissoras para
+							cultivo, devido a seu uso múltiplo, alta taxa de germinação de sementes e de estabelecimento
+							de mudas. A madeira é de alta densidade, durável e utilizada para cercas, produção de lenha
+							e serraria. Tanto a polpa quanto a semente são comestíveis e ricas em calorias e sais
+							minerais. Sua altura média é de 15 metros e sua copa pode ser alongada ou larga, de 6 a 11 m
+							de diâmetro. Assim como o pequizeiro, ainda há poucos estudos com essa espécie em sistemas
+							de iLPF, mas que a mesma se demonstra muito promissora para plantios consorciados, já que
+							possui grande resistência a pragas e doenças, além de disponibilizar vários produtos além da
+							madeira<a href="#ref_M5">[7]</a>. </p>
+
+						<img class="img_card" title="researchgate.net" src="../complements/images/module5/img_12.png">
+
+					</div>
+				</section>
+
+				<section class="learn_more">
+
+					<i class="fas fa-video"></i>
+
+					<button onclick="show_info(this)" data-lrn_mr="lrn_mr_10" class="button_visible">Saiba Mais</button>
+
+					<div id="lrn_mr_10" class="information hidden">
+						<section class="video_wrapper">
+							<p>Desempenho de Plantas Arbóreas em ILPF - Roraima</p>
+							<iframe class="video_class" src="https://www.youtube.com/embed/BQf43OCb0dc"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen></iframe>
+						</section>
+					</div>
+				</section>
+
+				<h1 class="text_title"><b class="topic_number">05</b>Considerações</h1>
+				<p>De acordo com as características da propriedade e da finalidade do sistema de iLPF, o produtor pode
+					optar por diferentes espécies como componente florestal, e organizar o arranjo do plantio de acordo
+					com seus objetivos. <br>
+					Existem estudos com outras espécies sendo desenvolvidos em diferentes partes do Bioma Cerrado, onde
+					cabe destacar a importância da assistência técnica local para a escolha da melhor opção para o
+					incremento da renda, da produtividade e dos benefícios ambientais que cada espécie irá trazer ao
+					sistema. </p>
+
+			</div>
+		</section>
+
+		<!-- EXERCISES MOD5-->
+		<section class="info">
+			<div class="wrapper">
+
+				<h1 class="info_title" style="font-weight: 800; color: #282A36;">Exercícios</h1>
+				<p class="info_description"> Ao responder os exercícios, você deve acertar no mínimo 3 questões para
+					avançar para o próximo módulo, caso contrário, a página será recarregada e você deverá tentar
+					responder os exercícios novamente. </p>
+			</div>
+
+		</section>
+
+		<!-- Question 1 mod5-->
+		<section class="master_form master_formM4" id="master_form">
+			<section id="5" data-question="Q1" class="form form1 form_from_M5">
+				<p class="question"><b>Questão 1:</b> Dentre os benefícios econômicos e ambientais que o componente
+					florestal pode trazer, marque a alternativa incorreta:</p>
+
+				<input class=" false input_option" id="option1_q1_M5" hidden type="radio">
+				<label class="option" for="option1_q1_M5">a) Fornecem produtos florestais, como: madeira, para diversas
+					finalidades, frutos, essências, folhas e até as cascas de algumas espécies podem ser usadas.</label>
+
+				<input class=" false input_option" id="option2_q1_M5" hidden type="radio">
+				<label class="option" for="option2_q1_M5">b) As espécies florestais proporcionam a mitigação dos gases
+					do efeito estufa, resultante da maior capacidade de sequestro de carbono.</label>
+
+				<input class=" false input_option" id="option3_q1_M5" hidden type="radio">
+				<label class="option" for="option3_q1_M5">c) Melhoria da recarga e da qualidade da água</label>
+
+				<input class=" true input_option" id="option4_q1_M5" hidden type="radio">
+				<label class="option option_true" for="option4_q1_M5">d) Aumento dos riscos por erosão.</label>
+
+				<button id="Q1" type="button" class="send_answer send_answer1">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ1">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> O plantio de espécies arbóreas reduz o risco de erosão devido às
+							raízes das árvores serem profundas e criarem uma malha que segura o solo, evitando que este
+							seja levado pela água das chuvas.
+						</p>
+
+					</div>
+					<div class="hidden wrong_answer wrong_answerQ1">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+					</div>
+				</div>
+			</section>
+
+			<div id="5" class=" div_answer hidden">
+				<button class="see_answer" id="ans_Q1_M5">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q1_M5">Resposta: letra (d) <br>
+					O plantio de espécies arbóreas reduz o risco de erosão devido às raízes das árvores serem profundas
+					e criarem uma malha que segura o solo, evitando que este seja levado pela água das chuvas.
+				</p>
+			</div>
+
+			<!-- Question 2 mod5-->
+			<section id="5" data-question="Q2" class="form form2 form_from_M5">
+				<p class="question"><b>Questão 2:</b> Quanto ao arranjo florestal em sistemas de iLPF, é incorreto
+					afirmar:</p>
+
+				<input class=" false input_option" id="option1_q2_M5" hidden type="radio">
+				<label class="option" for="option1_q2_M5">a) A qualidade da madeira é influenciada por vários fatores,
+					sendo os principais: espécie arbórea, espaçamento e manejo silvicultural (podas, controle de plantas
+					daninhas e adubações de plantio e cobertura).</label>
+
+				<input class=" true  input_option" id="option2_q2_M5" hidden type="radio">
+				<label class="option option_true" for="option2_q2_M5">b) Plantios em espaçamentos menores, tanto no
+					renque de plantio das árvores quanto entre os renques, terá um menor volume de madeira por hectare.
+				</label>
+
+				<input class=" false input_option" id="option3_q2_M5" hidden type="radio">
+				<label class="option" for="option3_q2_M5">c) Plantios em espaçamentos maiores produzem toras de maior
+					diâmetro já no primeiro desbaste, que poderão ser feitos mais tardiamente do que quando as árvores
+					são plantadas em espaçamentos menores.</label>
+
+				<input class=" false input_option" id="option4_q2_M5" hidden type="radio">
+				<label class="option" for="option4_q2_M5">d) Entre os renques, para possibilitar o trânsito de máquinas
+					e equipamentos agrícolas, uma boa opção é utilizar distâncias iguais ao tamanho desses equipamentos
+					acrescidas de dois metros.</label>
+
+				<button id="Q2" type="button" class="send_answer send_answer2">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ2">
+						<p><i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> Plantios em espaçamentos menores, tanto no renque de plantio das
+							árvores quanto entre os renques, terá um maior volume de madeira por hectare, mas necessita
+							de mais tratos culturais e manejos de podas e desbastes mais precoces. É uma boa alternativa
+							para produção de madeira para biomassa e carvão.
+						</p>
+					</div>
+					<div class="hidden wrong_answer wrong_answerQ2">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+					</div>
+				</div>
+			</section>
+
+			<div id="5" class="div_answer hidden">
+				<button class="see_answer" id="ans_Q2_M5">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q2_M5">Resposta: letra (a) <br>
+					Plantios em espaçamentos menores, tanto no renque de plantio das árvores quanto entre os renques,
+					terá um maior volume de madeira por hectare, mas necessita de mais tratos culturais e manejos de
+					podas e desbastes mais precoces. É uma boa alternativa para produção de madeira para biomassa e
+					carvão.
+				</p>
+			</div>
+
+			<!-- Question 3 mod5 -->
+			<section id="5" data-question="Q3" class="form form3 form_from_M5">
+				<p class="question"><b>Questão 3:</b> 3. Marque a alternativa incorreta para características que devem
+					ser atendidas para que uma espécie florestal possa ser utilizada no sistema de iLPF:
+				</p>
+
+				<input class=" true input_option" id="option1_q3_M5" hidden type="radio">
+				<label class="option  option_true" for="option1_q3_M5">a) Pouca adaptação às condições climáticas e aos
+					solos da propriedade rural, já que espécies florestais são mais resistentes que culturas
+					anuais.</label>
+
+				<input class="false input_option" id="option2_q3_M5" hidden type="radio">
+				<label class="option" for="option2_q3_M5">b) Resistência aos ventos, pragas e doenças.</label>
+
+				<input class="false input_option" id="option3_q3_M5" hidden type="radio">
+				<label class="option" for="option3_q3_M5">c) Forma, tamanho e densidade da copa não impedir a
+					transmissão da luz.</label>
+
+				<input class=" false input_option" id="option4_q3_M5" hidden type="radio">
+				<label class="option" for="option4_q3_M5">d) Ter valor econômico ou ambiental.</label>
+
+				<button id="Q3" type="button" class="send_answer send_answer3">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ3">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!!</b> <br>
+							<b>Resposta Correta.</b> É necessário que a espécie arbórea seja bem adaptada às condições
+							climáticas e do solo da propriedade, visando uma menor incidência de pragas e doenças,
+							crescimento mais rápido, e menor chance de prejuízos econômicos por morte de mudas mal
+							adaptadas.
+						</p>
+					</div>
+
+					<div class="hidden wrong_answer wrong_answerQ3">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="5" class=" div_answer hidden">
+				<button class="see_answer" id="ans_Q3_M5">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q3_M5">Resposta: letra (a)<br>
+					É necessário que a espécie arbórea seja bem adaptada às condições climáticas e do solo da
+					propriedade, visando uma menor incidência de pragas e doenças, crescimento mais rápido, e menor
+					chance de prejuízos econômicos por morte de mudas mal adaptadas.
+				</p>
+			</div>
+
+			<!-- Question 4 mod5-->
+			<section id="5" data-question="Q4" class="form form4 form_from_M5">
+				<p class="question"><b>Questão 4:</b> Dentre as espécies florestais que vinham sendo usadas em iLPF no
+					Cerrado, qual se tornou inviável devido à uma praga?</p>
+
+				<input class=" false input_option " id="option1_q4_M5" hidden type="radio">
+				<label class="option" for="option1_q4_M5">a) Acácia</label>
+
+				<input class=" false input_option" id="option2_q4_M5" hidden type="radio">
+				<label class="option " for="option2_q4_M5">b) Mogno Africano</label>
+
+				<input class=" true input_option " id="option3_q4_M5" hidden type="radio">
+				<label class="option option_true" for="option3_q4_M5">c) Mogno Brasileiro</label>
+
+				<input class=" input_option " id="option4_q4_M5" hidden type="radio">
+				<label class="option" for="option4_q4_M5">d) Cedro Australiano</label>
+
+				<button id="Q4" type="button" class="send_answer send_answer4">Responder</button>
+
+				<div class="feedback">
+					<div class="hidden correct_answer correct_answerQ4">
+						<p>
+							<i class="fas fa-check-circle"></i>
+							<b>PARABÉNS!</b> <br>
+							<b>Resposta Correta.</b> O cultivo de Mogno Brasileiro tem sido inviabilizado no cerrado
+							devido a broca do ponteiro (Hypsypyla grandella), que faz com que haja a perda da dominância
+							apical (tronco reto) e apareçam nós na madeira, inviabilizando sua venda para o mercado de
+							serraria. Tal praga pode aparecer em níveis de infestação tão elevados que, em muitos
+							plantios pode haver morte de quase todas as árvores.
+						</p>
+
+					</div>
+					<div class="hidden wrong_answer wrong_answerQ4">
+						<p><i class="fas fa-times-circle"></i>
+							<b>RESPOSTA INCORRETA!</b>
+
+					</div>
+				</div>
+			</section>
+
+			<div id="5" class=" div_answer hidden">
+				<button class="see_answer" id="ans_Q4_M5">
+					Ver resposta</button>
+				<p class="hidden answer ans_Q4_M5">Resposta: letra (c)<br>
+					O cultivo de Mogno Brasileiro tem sido inviabilizado no cerrado devido a broca do ponteiro
+					(Hypsypyla grandella), que faz com que haja a perda da dominância apical (tronco reto) e apareçam
+					nós na madeira, inviabilizando sua venda para o mercado de serraria. Tal praga pode aparecer em
+					níveis de infestação tão elevados que, em muitos plantios pode haver morte de quase todas as
+					árvores.
+				</p>
+			</div>
+
+			<div class="form" id="5">
+				<button class="finish" id="send_answer_finish" onclick="checkAll()">Próximo módulo</button>
+			</div>
+		</section>
+
+
+		<!-- References mod5 -->
+		<section class="container_text" id="ref_M5">
+			<div class="wrapper references">
+				<h1 class="text_title">REFERÊNCIAS:</h1>
+
+				<p>[1] BALBINO, L.C.; BARCELLOS, A.O.; STONE, L.F. Marco referencial: Integração Lavoura-Pecuária-
+					Floresta (iLPF). 1ª ed., Brasília: Embrapa, 2011. 130p. <br>
+					[2] FERREIRA, A. D.; SERRA, A. P.; MELOTTO, A. M.; BUNGENSTAB, D. J., & Laura, V. A. (2019). Manejo
+					das árvores e propriedades da madeira em sistema de ILPF com eucalipto. Embrapa Café-Capítulo em
+					livro científico (ALICE). <br>
+					[3] PORFÍRIO-DA-SILVA, V.; MORAeS A.; MeDRADO, M. J. S. Planejamento do número de árvores na
+					composição de sistemas de Integração Lavoura-Pecuária-Floresta (iLPF). colombo: embrapa Florestas,
+					2008. 4 p. (embrapa Florestas. comunicado técnico, 219). <br>
+					[4] WRUCK, F.J. Sistemas de iLPF no bioma Cerrado. 2017. Disponível em:
+					http://ead.senar.org.br/wpcontent/uploads/capacitacoes_conteudos/ilpf/CURSO_6/Aula3_-_Principais_Estrtg_Esp_Florestais_iLPF_Bioma_Cerrado.pdf.
+					Acesso em: 09 de outubro de 2021 <br>
+				<p>[5] NAVROSKI, M. C., de OLIVEIRA PEREIRA, M., BORSOI, G. A., KALIL FILHO, A. N., NASCIMENTO, B., & da
+					ROSA, D. P. (2017). Tolerância ao frio e características silviculturais do cedro-australiano no sul
+					do Brasil. Pesquisa Florestal Brasileira, 37(89), 47-54. <br>
+					[6] SANTOS, F. S.; FERREIRA SANTOS, R.; PEREIRA DIAS, P.; ZANÃO JR, L. A.; TOMASSONI, F. A CULTURA
+					DO PEQUI (Caryocar brasiliense Camb.). Acta Iguazu, [S. l.], v. 2, n. 3, p. 46–57, 2000. DOI:
+					10.48075/actaiguaz.v2i3.8620.Disponível em:
+					https://e-revista.unioeste.br/index.php/actaiguazu/article/view/8620. Acesso em: 14 out. 2021 <br>
+					[7] SANO, S. M.; RIBEIRO, J. F.; DE BRITO, M. A. Baru: biologia e uso. Embrapa Cerrados-Documentos
+					(INFOTECA-E), 2004.</p>
+
+			</div>
+		</section>
+	</section>
+
+
+	<div class="iftm_logo">
+		<a href="https://iftm.edu.br/"><img style="height: 20vh;" src="../complements/images/iftm.jpeg" alt=""></a>
+		<div class="wrapper_arrow">
+			<a href="#container_module_btns"><i class="arrow_to_top fas fa-arrow-alt-circle-up"></i></a>
+		</div>
+	</div>
+
+	<footer id="footer">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="../complements/images/logo_normal.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+		</div>
+
+		<div class="contact">
+			<div class="contact_card">
+				<a href="mailto: gesaiftm@gmail.com" id="email"><i id="mail_icon" class="far fa-envelope"
+						style="font-weight: 300"></i>
+					<br>
+					<p id="email">gesaiftm@gmail.com</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://chat.whatsapp.com/LCHVQ9RcYoa8yTDaPfpsZE" id="whatsapp"> <i id="whatsapp_icon"
+						class="fab fa-whatsapp" style="font-weight: 300"></i> <br>
+					<p id="whatsapp" class="cont">Grupo GESA</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://www.instagram.com/gesa_iftm/" id="insta"><i id="insta_icon" class="fab fa-instagram"
+						style="font-weight: 300"></i> <br>
+					<p id="insta" class="cont">Gesa_IFTM</p>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

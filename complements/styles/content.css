@@ -87,17 +87,39 @@ ul {
   align-content: center;
   justify-content: space-between;
   background: transparent;
+  z-index: 2;
 }
 
 .container_module_btns .buttons .module_btn {
+  display: flex;
   font-size: 15px;
   font-weight: 600;
-  padding: 18px;
   color: #44475A;
   background-color: #d4d4d4;
   width: max-content;
   border-radius: 8px;
   pointer-events: none;
+  z-index: 2;
+}
+
+.container_module_btns .buttons .module_btn a{
+  font-size: 15px;
+  font-weight: 600;
+  padding: 18px;
+  color: #44475A;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_module_btns .line{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
 }
 
 .container_module_btns .line .line_btn{
@@ -107,10 +129,8 @@ ul {
   background-color: #a1a1a1;;
   height: 2px;
   position: absolute;
-  width: 65vw;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
+  z-index: 0;
+
 }
 
 .container_module_btns .buttons .module_btn.active_mod {

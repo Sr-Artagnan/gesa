@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Conteúdo</title>
+
+	<!-- STYLE -->
+	<link rel="stylesheet" href="../complements/styles/content.css">
+	<link rel="stylesheet" href="../complements/styles/partials/info.css">
+	<link rel="stylesheet" href="../complements/styles/partials/container_text.css">
+	<link rel="stylesheet" href="../complements/styles/partials/exercises.css">
+
+
+	<!-- main -->
+	<link rel="shortcut icon" href="../complements/images/logo.png">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	<link rel="stylesheet" href="../complements/styles/partials/container.css">
+	<link rel="stylesheet" href="../complements/styles/partials/menu_mob.css">
+	<link rel="stylesheet" href="../complements/styles/partials/header.css">
+	<link rel="stylesheet" href="../complements/styles/partials/footer.css">
+	<link rel="stylesheet" href="../complements/styles/partials/alerts.css">
+	<link rel="stylesheet" href="../complements/styles/partials/link_word.css">
+
+
+	<!--SCRIPTS-->
+	<script type="text/javascript" src="../complements/scripts/menu_mob.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/content.js" defer></script>
+	<script type="text/javascript" src="../complements/scripts/complements_content.js" defer></script>
+
+
+	<!--BUTTONS-->
+	<link rel="stylesheet" href="../complements/styles/partials/dinamic_buttons.css">
+	<link rel="stylesheet" href="../complements/styles/partials/learn_more.css">
+</head>
+
+<body>
+
+	<header id="header">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="../complements/images/logo.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+
+
+			<nav class="menu">
+				<a href="../index.html" class="menu-link" id="home_link">Sobre</a>
+				<a href="#footer" title="No rodapé" id="cont_link" class="menu-link">Contato</a>
+				<a href="../subscription.html" id="cron_link" class="menu-link">Cronograma</a>
+				<a href="../classroom.html" class="menu-link" id="class_link">Sala de aula</a>
+			</nav>
+
+		</div>
+
+		<div
+			style="display: flex; align-items: center; align-content: center; justify-content: center; align-self: center; justify-self: center; height: 100%;">
+			<button id="menu_button"><i class="fas fa-bars" style="color: white; font-size: 18px;"></i>
+				<span class="menu_mobile hidden">
+					<span id="close_menu_mobile"><i class="fas fa-angle-up"></i></span>
+					<a href="../index.html" class="menu_mobile_option">Sobre</a>
+					<a href="#footer" class="menu_mobile_option">Contato</a>
+					<a href="../subscription.html" class="menu_mobile_option">Cronograma</a>
+					<a style="border-radius: 0px 0px 5px 5px" href="../classroom.html" class="menu_mobile_option">Sala de
+						aula</a>
+				</span>
+			</button>
+
+		</div>
+
+	</header>
+
+	<div class="alert_div">
+		<div class="wrapper danger hidden">
+			<p><b>Acertos insuficientes!</b> Refaça os exercícios do módulo para avançar. <br> Clique no botão abaixo
+			</p>
+			<button class="close_alert" onclick="location.reload()">OK</button>
+		</div>
+		<div class="wrapper congratulations hidden">
+			<p>Parabéns! O módulo seguinte será desbloqueado.<i id="unlock_icon" class="fas fa-unlock"></i></p><br>
+			<button class="close_alert close_alert_congrat" onclick="location.reload()">OK</button>
+		</div>
+	</div>
+
+	<div class="container_module_btns" id="container_module_btns">
+
+		<div class="buttons">
+			
+			<button class="module_btn user mod1_btn" data-module="container_mod1" onclick="openModule(this)"
+				id="1" name="1" ><a href="./module1.html">Módulo 1</a></button>
+			<button class="module_btn mod2_btn" data-module="container_mod2" onclick="openModule(this)" id="2"
+				name="2"><a href="./module2.html">Módulo 2</a></button>
+			<button class="module_btn mod3_btn" data-module="container_mod3" onclick="openModule(this)" id="3"
+				name="3"><a href="./module3.html">Módulo 3</a></button>
+			<button class="module_btn mod4_btn" data-module="container_mod4" onclick="openModule(this)" id="4"
+				name="4"><a href="./module4.html">Módulo 4</a></button>
+			<button class="module_btn mod5_btn" data-module="container_mod5" onclick="openModule(this)" id="5"
+				name="5"><a href="./module5.html">Módulo 5</a></button>
+			<button class="module_btn mod6_btn" data-module="container_mod6" onclick="openModule(this)" id="6"
+				name="6"><a href="./module6.html">Conclusão</a></button>
+				<div class="line">
+					<span class="line_btn"></span>
+				</div>
+		</div>
+	</div>
+
+	<!-- module_1 -->
+	<section id="container_mod1" class="container container_mod1 container_func">
+
+		<section id="module1_content">
+			<section class="info">
+
+				<div class="wrapper">
+					<h1 class="info_introduction">Introdução <br> ao SASP</h1>
+					<p class="info_description">
+						Neste módulo iremos conhecer as principais caracterísitcas do Sistema Agrosilvipastoril, também
+						conhecida como sistema ILPF (Integração Lavoura-Pecuária-Floresta). Apresentaremos as vantagens
+						e limitações desse importante sistema no cerrado.
+					</p>
+				</div>
+				<img class="info_img info_img_icon" src="../complements/images/module1/img_1.jpg">
+
+			</section>
+
+			<div>
+				<a target="_blank" href="../complements/books/module_1.pdf" class="download_button">Baixar apostila</a>
+			</div>
+
+			<section class="video_wrapper">
+				<p class="video_description">Acompanhe os vídeos sobre o módulo:</p>
+				<iframe class="video_class" src="https://www.youtube.com/embed/dW2YxCqDLVU" title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+				<br> <br> <br>
+				<iframe class="video_class" src="https://www.youtube.com/embed/kDXROoBcA-k" title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</section>
+
+			<!-- topic 01 mod1 -->
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">01</b>Contextualizando</h1>
+					<p class="text_content">
+
+						&nbsp &nbsp O Brasil é o país que tem o maior potencial em expansão de áreas e aumento na
+						intensidade do uso das áreas agrícolas. O país contribui com a crescente demanda para alimentos
+						em todo o mundo, no entanto a abertura de novas áreas tanto para a produção de alimentos como
+						para a produção de energia tem sido bastante questionada pela população em geral. <br>
+						&nbsp &nbsp Com isso, os sistemas integrados surgem como uma solução para produzir diferentes
+						produtos agropecuários, com a intensificação do uso das áreas já <button
+							class="word_link">antropizadas <span class="word_description">Uma área antropizada é uma
+								área cujas características originais foram alteradas pela ação do homem. As alterações
+								foram no solo, na vegetação, relevo etc</span>
+						</button>. O uso intensivo não significa o uso excessivo ou indiscriminado dos recursos
+						produtivos, e sim o uso racional e eficiente, o que torna o sistema sustentável.
+					</p>
+
+					<p style="padding-top: 40px;">Veja a seguir as alternativas de sistemas integrados:</p>
+				</div>
+			</section>
+
+			<section class="cards_wrapper">
+
+				<div class="card_info">
+					<img title="redeilpf.org.br/" src="../complements/images/module1/img_3.png">
+				</div>
+
+				<div class="card_info">
+					<img title="redeilpf.org.br/" src="../complements/images/module1/img_4.png">
+				</div>
+
+				<div class="card_info">
+					<img title="redeilpf.org.br/" src="../complements/images/module1/img_5.png">
+				</div>
+
+				<div class="card_info">
+					<img title="redeilpf.org.br/" src="../complements/images/module1/img_6.png">
+				</div>
+			</section>
+
+			<div class="wrapper_short_info">
+				<h1 class="h1_short_info">Qual o melhor sistema?</h1>
+				<div class="short_info">
+					<img title="vectorstock.com" src="../complements/images/module1/img_7.png">
+
+					<p> A escolha por qual estratégia utilizar dependerá das características da região e da propriedade,
+						como proximidade de mercado, logística, relevo, clima, aptidão da propriedade maquinário
+						disponível, entre outros <a href="#ref_M1">[1]</a>. <br> <br>
+						É importante destacar que todos os sistemas são viáveis a todos os tamanhos de propriedades
+						pequenas, médias e grandes, assim como ao <b>pecuarista</b>, ao <b>agricultor</b> e ao
+						<b>silvicultor;</b>
+					</p>
+
+				</div>
+			</div>
+
+			<!-- topic 02 mod1 -->
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">02</b>Sustentabilidade do Sistema</h1>
+					<p class="text_content">A sustentabilidade de um sistema de produção somente é verificado quando
+						atende os seguintes pilares:</p>
+
+					<ul style="  padding-left: 4vw;">
+						<li>Tecnicamente eficiente;</li>
+						<li>Economicamente viável;</li>
+						<li>Ambientalmente adequado e;</li>
+						<li>Socialmente justo.</li>
+					</ul>
+
+				</div>
+			</section>
+
+			<section class="learn_more">
+
+				<i class="fas fa-video"></i>
+
+				<button onclick="show_info(this)" data-lrn_mr="lrn_mr_1" class="button_visible">Por que utilizar o
+					sistema?</button>
+
+				<div id="lrn_mr_1" class="information hidden">
+					<section class="video_wrapper">
+						<iframe class="video_class" src="https://www.youtube.com/embed/YI7AaIQSJhE"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</section>
+				</div>
+			</section>
+
+			<section class="wrapper_add_info">
+				<p class="add_info">O sistema de Integração Lavoura Pecuária Floresta é um sistema que integra as
+					atividades agrícolas, pecuárias e florestais realizadas em uma mesma área permitindo uma maior
+					sinergia entre os componentes do agroecossistema, contemplando os quatro pilares da
+					sustentabilidade.</p>
+			</section>
+
+			<div class="isolated_img_div">
+				<img title="revistarural.com.br" class="isolated_img" src="../complements/images/module1/img_8.jpg">
+			</div>
+
+			<div class="wrapper_short_info">
+				<h1 class="h1_short_info">Desafios</h1>
+				<div class="short_info">
+					<img style="width: 80px;" title="pngwing.com" src="../complements/images/module1/img_9.png">
+					<p> Dentre os principais entraves identificados para a adoção do sistema ILPF estão a necessidade de
+						nivelamento do conhecimento entre os pesquisadores, a pouca formação de consultores técnicos e a
+						necessidade
+						de interação e capacidade interna entre os produtores <a href="#ref_M1">[1]</a>.
+				</div>
+			</div>
+
+
+			<!-- topic 03 mod1 -->
+
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">03</b>Benefícios do Sistema ILPF
+					</h1>
+
+					<p> Podemos citar os seguintes benefícios do uso do sistema ILPF: </p>
+					<br>
+
+					<ul>
+						<li>Aumento na renda líquida do produtor;</p> <br>
+						<li>Aumento na produção de grãos, carne, leite e madeira;</p> <br>
+						<li>Melhoria da qualidade e conservação do solo;</p> <br>
+						<li>Possibilidade de aplicação em propriedades rurais de diferentes tamanhos;</p> <br>
+						<li>Melhoria do bem estar animal;</p> <br>
+						<li>Redução da pressão pela abertura de novas áreas;</p> <br>
+						<li>Redução da sazonalidade do uso da mão de obra;</p> <br>
+						<li>Menor risco das atividades devido à diversificação;</p> <br>
+						<li>Mitigação da emissão dos gases de efeito estufa.<a href="#ref_M1">[2]</a></p> <br> <br>
+					</ul>
+
+					<h1 class="h1_short_info">Motivos para adotar o sistema ILPF:</h1>
+
+					<div class="box_info" style="margin-bottom: 60px;">
+						<ul>
+							<li>Redução do impacto ambiental;</li>
+							<li>Recuperação de pastagens;</li>
+							<li>Rotação de culturas por necessidade técnica;</li>
+							<li>Aumento da rentabilidade por hectare;</li>
+							<li>Diminuição do risco financeiro.</li>
+						</ul>
+
+						<img title="beefpoint.com.br" class="box_img_right"
+							src="../complements/images/module1/img_10.png">
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<section class="learn_more">
+
+				<i class="fas fa-video"></i>
+
+				<button onclick="show_info(this)" data-lrn_mr="lrn_mr_2" class="button_visible">Saiba Mais</button>
+
+				<div id="lrn_mr_2" class="information hidden">
+					<section class="video_wrapper">
+						<iframe class="video_class" src="https://www.youtube.com/embed/m3L2yOCyZQM"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</section>
+				</div>
+			</section>
+
+
+			<!-- topic 04 mod1 -->
+
+			<section class="container_text">
+
+				<div class="wrapper">
+					<h1 class="text_title"><b class="topic_number">04</b>Expansão do sistema nos últimos anos</h1>
+
+					<p> &nbsp &nbsp Em 10 anos a área ocupada com algum tipo de sistema integrado de produção saltou de
+						1,87 milhões de hectares para 11,47 milhões. Para 2020 a estimativa foi de 17,4 milhões de
+						hectares. <br>
+						&nbsp &nbsp Do total da área com algum tipo de sistema integrado, 83% são de <b>ILP</b> e 9% de
+						<b>ILPF</b>, ou seja 1,8 milhões de hectares com este último. <br>
+						&nbsp &nbsp No último congresso mundial de ILPF, realizado em maio de 2021, a <b>Associação REDE
+							ILPF</b> lançou um desafio de dobrar esta área até o ano de <b>2030</b>, chegando a <b>35
+							milhões de hectares</b> <a href="#ref_M1">[3]</a>. <br>
+						&nbsp &nbsp Esta meta permitiria o país <b>aumentar a produção</b> de carne, grãos e madeira,
+						<b>sem a necessidade de abertura de novas áreas</b>.
+					</p>
+
+					<div class="isolated_img_div">
+
+						<img title="embrapa.com.br" class="isolated_img" src="../complements/images/module1/img_11.jpg">
+
+					</div>
+
+
+					<section class="video_wrapper" style="margin-top: 100px;">
+						<p style="font-size: 20px; font-weight: 600;">Conheça uma das histórias de sucesso com a iLPF:
+						</p>
+						<iframe class="video_class" src="https://www.youtube.com/embed/S5s2ER0E0M4"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</section>
+
+
+					<!-- topic 05 mod1 -->
+
+					<section class="container_text">
+
+						<div class="wrapper">
+							<h1 class="text_title"><b class="topic_number">05</b>Considerações</h1>
+
+							<p>
+								Assim, devido aos inúmeros benefícios trazidos pelo sistema, o seu estudo é de extrema
+								importância para que venhamos a ter sistemas de produção mais sustentáveis,
+								economicamente viáveis e acima de tudo, profissionais capacitados para dar o suporte
+								necessário aos produtores.
+							</p>
+
+					</section>
+
+
+					<!-- EXERCISES MOD1 -->
+					<section class="info">
+
+						<div class="wrapper">
+							<h1 class="info_title">Exercícios</h1>
+							<p class="info_description">
+								Ao responder os exercícios, você deve acertar no mínimo 3 questões para avançar para o
+								próximo módulo, caso contrário, a página será recarregada e você deverá tentar responder
+								os exercícios novamente.
+							</p>
+						</div>
+
+					</section>
+
+
+					<!-- Question 1 mod1-->
+
+					<section class="master_form master_formM1" id="master_form">
+
+						<section id="1" data-question="Q1" class="form form1 form_from_M1">
+							<p class="question"><b>Questão 1:</b> Dentre as opções abaixo, qual não é uma alternativa de
+								sistema integrado de produção?</p>
+
+							<input class="false input_option" id="option1_q1_M1" hidden type="radio">
+							<label class="option" for="option1_q1_M1">a) ILPF</label>
+
+							<input class="false input_option" id="option2_q1_M1" hidden type="radio">
+							<label class="option" for="option2_q1_M1">b) ILP</label>
+
+							<input class="true false input_option" id="option3_q1_M1" hidden type="radio">
+							<label class="option option_true" for="option3_q1_M1">c) PD</label>
+
+							<input class="false input_option" id="option4_q1_M1" hidden type="radio">
+							<label class="option" for="option4_q1_M1">d) ILF</label>
+
+							<button type="button" id="Q1" class="send_answer send_answer1">Responder</button>
+
+							<div class="feedback">
+								<div class="hidden correct_answer correct_answerQ1">
+									<p>
+										<i class="fas fa-check-circle"></i>
+										<b>PARABÉNS!</b> <br>
+										<b>Resposta Correta.</b> PD, plantio direto é um sistema conservacionista de
+										manejo do solo, onde não há o revolvimento do solo. Ele pode ser
+										uma estratégia de manejo dentro do ILPF, porém sozinho, o Plantio
+										Direto não é um sistema integrado.
+									</p>
+								</div>
+								<div class="hidden wrong_answer wrong_answerQ1">
+									<p><i class="fas fa-times-circle"></i>
+										<b>RESPOSTA INCORRETA!</b>
+								</div>
+							</div>
+
+						</section>
+
+						<div id="1" class="div_answer hidden">
+							<button class="see_answer" id="ans_Q1_M1">
+								Ver resposta</button>
+							<p class="hidden answer ans_Q1_M1">c) PD <br>
+								PD, plantio direto é um sistema conservacionista de
+								manejo do solo, onde não há o revolvimento do solo. Ele pode ser
+								uma estratégia de manejo dentro do ILPF, porém sozinho, o Plantio
+								Direto não é um sistema integrado.
+							</p>
+						</div>
+						<!-- Question 2 mod1-->
+
+						<section id="1" data-question="Q2" class="form form2 form_from_M1">
+							<p class="question"><b>Questão 2:</b> De acordo com o material apresentado qual fator abaixo
+								NÃO é
+								considerado um entrave para a adoção do sistema ILPF? </p>
+
+							<input class="true input_option" id="option1_q2_M1" hidden type="radio">
+							<label class="option option_true" for="option1_q2_M1">a) Valor da terra</label>
+
+							<input class="false input_option" id="option2_q2_M1" hidden type="radio">
+							<label class="option" for="option2_q2_M1">b) Nivelamento do conhecimento entre os
+								pesquisadores</label>
+
+							<input class="false input_option" id="option3_q2_M1" hidden type="radio">
+							<label class="option" for="option3_q2_M1">c) Formação de consultores técnicos</label>
+
+							<input class="false input_option" id="option4_q2_M1" hidden type="radio">
+							<label class="option" for="option4_q2_M1">d) Necessidade de interação</label>
+
+							<button type="button" id="Q2" class="send_answer send_answer2">Responder</button>
+
+							<div class="feedback">
+								<div class="hidden correct_answer correct_answerQ2">
+									<p>
+										<i class="fas fa-check-circle"></i>
+										<b>PARABÉNS!</b> <br>
+										<b>Resposta Correta.</b> O Valor da terra não é considerado como um entrave à
+										adoção do Sistema ILPF, pois não é levado em conta pelos
+										produtores que já possuem a terra e consideram implantar o Sistema
+										em suas áreas.
+									</p>
+								</div>
+								<div class="hidden wrong_answer wrong_answerQ2">
+									<p><i class="fas fa-times-circle"></i>
+										<b>RESPOSTA INCORRETA!</b>
+								</div>
+							</div>
+
+						</section>
+
+						<div id="1" class="div_answer hidden">
+							<button class="see_answer" id="ans_Q2_M1">
+								Ver resposta</button>
+							<p class="hidden answer ans_Q2_M1">a) Valor da terra <br>
+								O Valor da terra não é considerado como um entrave à
+								adoção do Sistema ILPF, pois não é levado em conta pelos
+								produtores que já possuem a terra e consideram implantar o Sistema
+								em suas áreas. </p>
+						</div>
+
+						<!-- Question 3 mod1-->
+						<section id="1" data-question="Q3" class="form form3 form_from_M1">
+							<p class="question"><b>Questão 3:</b> Qual das opções abaixo NÃO é uma consequência do uso
+								do sistema ILPF?
+							</p>
+
+							<input class="false input_option" id="option1_q3_M1" hidden type="radio">
+							<label class="option" for="option1_q3_M1">a) Melhoria do bem estar animal</label>
+
+							<input class="false input_option" id="option2_q3_M1" hidden type="radio">
+							<label class="option" for="option2_q3_M1">b) Mitigação da emissão dos gases de efeito
+								estufa</label>
+
+							<input class="true input_option" id="option3_q3_M1" hidden type="radio">
+							<label class="option option_true" for="option3_q3_M1">c) Aumento dos processos erosivos no
+								solo</label>
+
+							<input class="false input_option" id="option4_q3_M1" hidden type="radio">
+							<label class="option" for="option4_q3_M1">d) Redução da pressão pela abertura de novas
+								áreas</label>
+
+							<button type="button" id="Q3" class="send_answer send_answer3">Responder</button>
+
+							<div class="feedback">
+								<div class="hidden correct_answer correct_answerQ3">
+									<p>
+										<i class="fas fa-check-circle"></i>
+										<b>PARABÉNS!!</b> <br>
+										<b>Resposta Correta</b>! Os processos erosivos não são benefícios e sim prejuízo
+										ao produtor caso venha a acontecer em sua área. Neste caso o Sistema ILPF
+										contribui para que estes processos não ocorram.
+									</p>
+								</div>
+								<div class="hidden wrong_answer wrong_answerQ3">
+									<p><i class="fas fa-times-circle"></i>
+										<b>RESPOSTA INCORRETA!</b>
+								</div>
+							</div>
+
+						</section>
+
+						<div id="1" class="div_answer div_answer hidden">
+							<button class="see_answer" id="ans_Q3_M1">
+								Ver resposta</button>
+							<p class="hidden answer ans_Q3_M1">c) Aumento dos processos erosivos no solo <br> Os
+								processos erosivos não são benefícios e sim prejuízo
+								ao produtor caso venha a acontecer em sua área. Neste caso o
+								Sistema ILPF contribui para que estes processos não ocorram.</p>
+						</div>
+
+						<div class="form" id="1">
+							<button class="finish" id="send_answer_finish" onclick="checkAll()">Próximo módulo</button>
+						</div>
+					</section>
+
+					<!-- References mod1-->
+					<section class="container_text" id="ref_M1">
+						<div class="wrapper references">
+							<h1 class="text_title">REFERÊNCIAS:</h1>
+
+							<p>[1] REDE ILPF. Disponível em: www.redeilpf.org.br. Acesso em: 28 de set. de 2021. </p>
+							<br>
+							<p>[2] STONE, L.F.; BARCELLOS, A.O.; BALBINO, L.C.; Marco Referencial: Integração Lavoura
+								Pecuária Floresta.
+								Brasília, DF. Embrapa 2011. 130 p.</p> <br>
+							<p>[3] CANAL RURAL. Disponível em:
+								https://www.canalrural.com.br/noticias/area-ilpf-brasil-2030/. Acesso em 29
+								de set. de 2021.</p>
+
+						</div>
+					</section>
+
+
+			</section>
+		</section>
+
+
+	</section>
+
+
+	<div class="iftm_logo">
+		<a href="https://iftm.edu.br/"><img style="height: 20vh;" src="../complements/images/iftm.jpeg" alt=""></a>
+		<div class="wrapper_arrow">
+			<a href="#container_module_btns"><i class="arrow_to_top fas fa-arrow-alt-circle-up"></i></a>
+		</div>
+	</div>
+
+	<footer id="footer">
+
+		<div class="wrapper">
+
+			<div class="logo">
+				<img class="logo-img" src="../complements/images/logo_normal.png" alt="IFTM">
+				<h1 class="logo-name">GESA</h1>
+				<p class="Group">Grupo de estudos em <br> Sistema Agrossilvipastoril</p>
+			</div>
+		</div>
+
+		<div class="contact">
+			<div class="contact_card">
+				<a href="mailto: gesaiftm@gmail.com" id="email"><i id="mail_icon" class="far fa-envelope"
+						style="font-weight: 300"></i>
+					<br>
+					<p id="email">gesaiftm@gmail.com</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://chat.whatsapp.com/LCHVQ9RcYoa8yTDaPfpsZE" id="whatsapp"> <i id="whatsapp_icon"
+						class="fab fa-whatsapp" style="font-weight: 300"></i> <br>
+					<p id="whatsapp" class="cont">Grupo GESA</p>
+				</a>
+			</div>
+			<div class="contact_card">
+				<a href="https://www.instagram.com/gesa_iftm/" id="insta"><i id="insta_icon" class="fab fa-instagram"
+						style="font-weight: 300"></i> <br>
+					<p id="insta" class="cont">Gesa_IFTM</p>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

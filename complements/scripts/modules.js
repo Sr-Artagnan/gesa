@@ -1,3 +1,4 @@
+/*
 const container_mod1 = document.querySelector(".container_mod1");
 const container_mod2 = document.querySelector(".container_mod2");
 const container_mod3 = document.querySelector(".container_mod3");
@@ -45,3 +46,4 @@ const choice_btn = Array.from(document.querySelectorAll(".module_btn"));
 choice_btn.map((btn) => {
   btn.onclick = (event) => Select_btn(event.target);
 });
+*/

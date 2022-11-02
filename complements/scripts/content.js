@@ -1,6 +1,7 @@
 const Mod_from_LocStor = localStorage.getItem("Module");
 let Points = 0;
 
+
 if (Mod_from_LocStor == null) {
   localStorage.setItem("Module", 1);
   location.reload();
@@ -12,6 +13,7 @@ const btnActive = document.querySelector(
   `[data-module='container_mod${Mod_from_LocStor}']`
 );
 
+
 openModule(btnActive);
 function openModule(btn) {
   const module_actual = localStorage.getItem("Module");
@@ -19,21 +21,24 @@ function openModule(btn) {
   const btnBrothers = Array.from(btn.parentElement.children);
 
   btnBrothers.map((brother) => {
-    brother.classList.remove("user");
+   /* brother.classList.remove("user");
     btn.classList.add("user");
-
-    parseInt(brother.id) <= module_actual
+*/
+        parseInt(brother.id) <= module_actual
       ? brother.classList.add("active_mod")
       : brother.classList.remove("active_mod");
+    
   });
 
   const target = btn.getAttribute("data-module");
 
+  /*
   modules.map((module) => {
     module.id == target
       ? module.classList.remove("hidden")
       : module.classList.add("hidden");
   });
+  */
 }
 
 const modules_active = Array.from(
@@ -56,10 +61,16 @@ function checkAll() {
 }
 
 function next_module(){
+const number_mod = parseInt(Mod_from_LocStor) + 1;
+const string_mod = number_mod.toString();
+
     localStorage.setItem("Module", module_user);
     localStorage.setItem("Points", "0");
     window.scrollTo(0, 0);
     document.querySelector(".congratulations").classList.remove("hidden");
+    setTimeout(()=> {
+      window.location.href = "./module" + string_mod + ".html"
+    }, 3000)
 }
 
 inative_btns_finish()
