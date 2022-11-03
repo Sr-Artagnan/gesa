@@ -242,11 +242,12 @@ ul {
 
 .wrapper_add_info .add_info {
   color: #0C9F4C;
-  font-weight: 600;
+  font-weight: 500;
   padding-left: 25px;
   padding-right: 25px;
   hyphens: auto;
   display: flex;
+  flex-direction: column;
 }
 
 
@@ -332,6 +333,11 @@ ul {
   font-size: 25px;
   position: relative;
 }
+
+p{
+  text-align: justify;
+}
+
 @media (max-width: 800px) {
   .video_wrapper  .video_class {
     width: 280px !important;
