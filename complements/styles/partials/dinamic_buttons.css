@@ -29,6 +29,9 @@
   height: 80px;
 }
 
+.dinamic-btn-column {
+  width: 80%;
+}
 
  .container_dinamic .dinamic_buttons .d_button:hover, 
  .container_dinamic .dinamic_buttons .d_button.active  {
@@ -57,6 +60,7 @@
   height: max-content;
 }
 
+
 @media (max-width: 500px) {
   .container_dinamic .dinamic_buttons {
     padding-top: 30px;
@@ -66,4 +70,7 @@
     padding: 5px;
     margin: 3px;
   }
+  .container_dinamic .dinamic_buttons .dinamic-btn-column {
+    width: 80%;
+}
 }

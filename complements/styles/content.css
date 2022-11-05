@@ -123,7 +123,6 @@ ul {
 }
 
 .container_module_btns .line .line_btn{
-  display: flex;
   content: "";
   width: 100%;
   background-color: #a1a1a1;;
@@ -350,7 +349,7 @@ p{
   .container_module_btns .buttons .module_btn{
     margin-top: 25px;
   }
-  .line {
+  .container_module_btns .line .line_btn {
     display: none;
   }
   .download_button {
@@ -370,7 +369,7 @@ p{
     width: 100%;
     height: max-content;
     margin-top: 80px;
-    border-bottom: solid 3px #40bfa2;
+
   }
 
   .wrapper_short_info {

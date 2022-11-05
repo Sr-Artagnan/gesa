@@ -138,7 +138,7 @@
 display: none; 
 }
 
-.finish{
+.finish, .finish_course{
   font-size: 25px;
   font-weight: 700;
   margin-top: 30px;
@@ -150,7 +150,7 @@ display: none;
   box-shadow: 5px 5px 10px #44475A;
 }
 
-.finish:hover {
+.finish:hover, .finish_course:hover {
   cursor: pointer;
   box-shadow: 5px 5px 10px #40bfa2;
   color: #40bfa2;

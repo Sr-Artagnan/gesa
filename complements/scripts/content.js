@@ -87,15 +87,7 @@ btn_finish.map((item) => {
 }
 
 function to_certify() {
-  const Points_from_LocStor = localStorage.getItem("Points", Points);
-  if (Points_from_LocStor >= 3) {
-    window.open("https://forms.gle/oFQHoJEA2MSCaUf38", '_blank')
-  } else {
-    localStorage.setItem("Points", "0");
-    location.reload();
-    document.querySelector(".danger").classList.remove("hidden");
-    inative_btns_finish()
-  }
+    window.open("https://forms.gle/LcutQNtQukcfy72TA", '_blank')
 }
 
 const forms = Array.from(document.querySelectorAll(".form"));
