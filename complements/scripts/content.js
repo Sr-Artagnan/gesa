@@ -30,7 +30,7 @@ function openModule(btn) {
     
   });
 
-  const target = btn.getAttribute("data-module");
+//  const target = btn.getAttribute("data-module");
 
   /*
   modules.map((module) => {
